@@ -242,6 +242,7 @@ body {
 .logo-git img {
     max-width: 60px;
     min-height: 60px;
+    animation: lefttextan 1s linear;
 }
 
 .header__contanier {
@@ -251,10 +252,12 @@ body {
 
 .Logo a {
     color: #fff;
+    animation: lefttextan 1s linear;
 }
 
 .header__list {
     display: flex;
+    animation: righttextan 1s linear;
 }
 
 .lang {
@@ -356,6 +359,7 @@ body {
 
 
 .title {
+    
     font-size: 60px;
     position: absolute;
     left: 100px;
@@ -369,6 +373,7 @@ body {
     animation:  
     typing 3.5s steps(30, end),
     blink-caret .7s step-end infinite;
+    
   }
   
   @keyframes typing {
@@ -439,6 +444,7 @@ input:checked+.slider:before {
     top: 100px;
     right: 100px;
     border-radius: 20px;
+    animation: an 2s linear;
 }
 
 .button_works{
@@ -452,6 +458,7 @@ input:checked+.slider:before {
     font-weight: bold;
     transition: 0.3s;
     font-size: 30px;
+    
 }
 
 .button_works:hover{
@@ -475,6 +482,7 @@ input:checked+.slider:before {
     height: 800px;
     border-radius: 20px;
     padding-left: 20%;
+    animation: an 10s linear;
 }
 .my-photo{
     flex: 1 1 auto;
@@ -482,6 +490,7 @@ input:checked+.slider:before {
 
 .about-text{
     flex: 1 1 700px;
+    animation: lefttextan 5s linear;
 }
 
 .about-text h1{
@@ -544,6 +553,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181818",endCo
     width: 50px;
     margin-right: 50px;
     padding-top: 60px;
+    
 }
 
 .telme{
@@ -560,193 +570,47 @@ background: #eaeaf9;
 color: #000;
 }
 
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
 
-@media (max-width: 1440px) {
-    .about-me img{
-        position: absolute;
-        top: 100px;
-        left: 900px;
-        width: 450px;
-        height: 600px;
-    }
-    .about-me p{
-        font-size: 14px;
-    }
-    .about-me span{
-        font-size: 44px;
-    }
-    .title{
-       font-size: 44px;
-    }
-    .my-photo img{
-        width: 450px;
-        height: 600px;
-        border-radius: 20px;
-    }
-    .main{
-        height: 700px;
-    }
-    .about-text h1{
-        font-size: 25px;
-    }
-    .about-text p {
-        font-size: 25px;
-    }
-    .button_works2{
+@keyframes righttextan {
+    0%{
         position: relative;
-        top: 200px;
-    }
-}
-
-@media  (max-width: 1024px) {
-    .about-me img{
-        width: 500px;
-        height: 600px;
-        position: absolute;
-        left: 280px;
-        top: 400px;
-    }
-    .title{
-        text-align: center;
-        padding-left: 10%;
-    }
-    .about-me{
-
-        text-align: center;
-        padding-left: 50%;
-    }
-    .main{
-        height: 900px;
-    }
-    .button_works{
-        position: absolute;
-        top: 1100px;
-        left: 370px;
-    }
-    .my-photo img{
-        display: none;
-    }
-    .button_works2{
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .header__menu{
-        display: none;
-    }
-    .logo-git{
-        margin-left: 30%;
-    }
-    .title{
-        text-align: center;
-        position: absolute;
-        left: 20px;
-        top: 130px;
-    }
-    .about-me img{
-        width: 500px;
-        height: 600px;
-        position: absolute;
-        left: 150px;
-        top: 280px;
-    }
-    .button_works{
-        position: absolute;
-        top: 1000px;
-        left: 240px;
-    }
-    .about-text h1{
-        font-size: 25px;
-        text-align: center;
-    }
-    .about-text p {
-        font-size: 25px;
-        text-align: center;
-    }
-    .about-text{
-        position: relative;
-        bottom: 100px;
-        left: 15px;
-    }
-}
-
-@media  (max-width: 480px) {
-    .logo-git{
-        margin-left: 20%;
-    }
-    .title{
-        font-size: 20px;
-    }
-    .about-me span{
-        font-size: 30px;
-    }
-    .about-me img{
-        width: 400px;
-        height: 500px;
-        position: absolute;
-        left: 47px;
-        top: 280px;
-    }
-    .button_works{
-        position: absolute;
-        top: 900px;
-        left: 90px;
-    }
-    .about-text{
-        position: absolute;
+        top: 0;
         left: 50px;
-        top: 1050px;
-        font-size: 18px;
-        
+        opacity: 0;
     }
-    .about-text h1{
-        font-size: 20px;
-        text-align: center;
-    }
-    .about-text p {
-        font-size: 20px;
-        text-align: center;
-    }
-    .links img{
-        width: 50px;
-        padding: 0;
-        margin: 0;
-        margin-right: 10px;
-
-    }
-    .links{
+    100%{
         position: relative;
-        top: 60px;
-        left: 30px;
+        top: 0;
+        left: 0px;
+        opacity: 1;
     }
 }
 
-@media  (max-width: 414px) {
-    .about-me{
-        display: inline-block;
-        padding-left: 10%;
-    }
-    .main{
+@keyframes lefttextan {
+    0%{
         position: relative;
-        right: 40px;
+        top: 0;
+        right: 50px;
+        opacity: 0;
     }
-    .button_works{
-        position: absolute;
-        top: 830px;
-        left: 90px;
+    100%{
+        position: relative;
+        top: 0;
+        right: 0px;
+        opacity: 1;
     }
-    .logo-git{
-        margin-left: 13%;
-    }
-    .about-me img{
-        width: 350px;
-        height: 450px;
-        position: absolute;
-        left: 60px;
-        top: 280px;
-    }
-    
-    
 }
+
+
+
 
