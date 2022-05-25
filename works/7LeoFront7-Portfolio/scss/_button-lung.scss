@@ -67,12 +67,12 @@
 }
 
 .cybr-btn:before {
-  background: var(--shadow-primary);
+  background: rgb(129, 0, 250);
   transform: translate(var(--border), 0);
 }
 
 .cybr-btn:after {
-  background: var(--primary);
+  background: rgb(191, 0, 255);
 }
 
 .cybr-btn__tag {
@@ -112,7 +112,7 @@
   bottom: calc(var(--border) * 1);
   left: calc(var(--border) * 1);
   clip-path: var(--clip);
-  background: rgb(255, 0, 0);
+  background: rgb(198, 0, 233);
   z-index: -1;
 }
 
@@ -187,7 +187,7 @@
   bottom: calc(var(--border) * 1);
   left: calc(var(--border) * 1);
   clip-path: var(--clip);
-  background: rgb(0, 255, 0);
+  background: rgb(108, 0, 231);
   z-index: -1;
 }
 

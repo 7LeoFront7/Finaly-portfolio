@@ -6,6 +6,7 @@
 @import "burger";
 @import "forms";
 @import "popup";
+@import "home";
 
 
 .mask {
@@ -93,7 +94,7 @@ justify-content: right;
 
 .breadcrumb__item {
 height: 100%;
-background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(255, 0, 0) 50%) right;
+background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(157, 0, 255) 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
 color: #252525;
@@ -496,6 +497,136 @@ padding: 0;
   50% {top: 50%;}
   }
 
+.main{
+  margin-top: 50px;
+}
+
+.home__body{
+  display: flex;
+}
+
+.home__text{
+  flex: 1 0 50%;
+}
+
+.home__img{
+  flex: 1 0 50%;
+  
+}
+
+.home__img img{
+  width: 100%;
+}
+  
+
+.satodsan-uvemopag h1 {
+  font-family: 'Anonymous Pro', monospace;
+  color: #17002b;
+  max-width: 800px;
+  overflow: hidden;
+  border-right: .17em solid #9d00ff;  
+  white-space: nowrap; 
+  font-size: 43px;
+  font-weight: bold;
+  animation:  
+  typing 3.5s  steps(30, end),
+  blink-caret .7s step-end infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(183, 0, 255) }
+}
+
+.arrow-8 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 30px auto 80px auto;
+}
+.arrow-8:before,
+.arrow-8:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-left: 26px solid rgb(183, 0, 255);
+  border-bottom: 26px solid rgb(150, 0, 209);
+  animation: arrow-8 3s linear infinite;
+}
+.arrow-8:after {
+  animation: arrow-8 3s linear infinite -1.5s;
+}
+@keyframes arrow-8 {
+  0% {
+      opacity: 0;
+      transform: translate(0, -53px) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(0, 53px) rotate(-45deg);
+  }
+}
+
+.home__buttons{
+  margin-bottom: 100px;
+  margin-top: 70px;
+  text-align: center;
+  button{
+    cursor: pointer;
+    text-align: center;
+    outline:0; 
+    font-size:1em;
+    font-weight:600;
+    background:#fff;
+    border:none;
+    padding:2em 4em;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+      1px 1px 0 0 #9c00f0,
+      2px 2px 0 0 #9c00f0,
+      3px 3px 0 0 #9c00f0,
+      4px 4px 0 0 #9c00f0,
+      5px 5px 0 0 #9c00f0,
+      6px 6px 0 0 #9c00f0,
+      7px 7px 0 0 #9c00f0,
+      8px 8px 0 0 #9c00f0,
+      9px 9px 0 0 #9c00f0,
+      10px 10px 0 0 #9c00f0,
+      11px 11px 0 0 #9c00f0,
+      12px 12px 0 0 #9c00f0
+  }
+  button:hover{
+    color:#444;
+  }
+  button:active{
+    color:#222;
+    box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+      1px 1px 0 0 #9c00f0,
+      2px 2px 0 0 #9c00f0,
+      3px 3px 0 0 #9c00f0,
+      4px 4px 0 0 #9c00f0,
+      5px 5px 0 0 #9c00f0;
+  }
+}
+
+
+
+
 
 
 
@@ -596,7 +727,12 @@ padding: 0;
   .breadcrumb__item {
   padding: 0 30px;
   }
+  .satodsan-uvemopag h1{
+    margin-left: 50px;
+    max-width: 730px;
+    font-size: 40px;
   }
+}
   
   @media all and (max-width: 1466px) {
     .cybr-btn{
@@ -605,6 +741,14 @@ padding: 0;
     }
     .breadcrumb__item {
       width: 30px;
+      }
+      .satodsan-uvemopag h1{
+        margin-left: 50px;
+        max-width: 630px;
+        font-size: 30px;
+      }
+      .home__buttons button{
+        padding: 1rem 2rem;
       }
   }
   
@@ -615,12 +759,49 @@ padding: 0;
     .hamburger-menu{
       display: block;
     }
+    .home__body{
+      flex-wrap: wrap-reverse;
+    }
+    .home__body img{
+      max-width: 500px;
+    }
+    .home__img{
+      display: flex;
+      justify-content: center;
+    }
+    .satodsan-uvemopag h1{
+      margin-left: 50px;
+      max-width: 430px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .home__buttons button{
+      padding: 0.5rem 1rem;
+      box-shadow: 2px 2px 4px 4px rgb(156, 0, 241);
+    }
+    .satodsan-uvemopag{
+      text-align: center;
+    }
+    .satodsan-uvemopag h1{
+      margin: 0;
+    }
+    
   }
   
   
   @media all and (max-width: 830px) {
   .cyber-min{
     display: block;
+  }
+  .satodsan-uvemopag h1{
+    max-width: none;
+  }
+  .home__buttons{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .home__img{
+    margin-bottom: 50px;
   }
   .cyber-big{
     display: none;
@@ -630,6 +811,12 @@ padding: 0;
   }
   .screen-body-item .left{
     display: none;
+  }
+  .satodsan-uvemopag{
+    text-align: center;
+  }
+  .satodsan-uvemopag h1{
+    margin: 0;
   }
   .left{
     padding: 0;
@@ -716,8 +903,16 @@ padding: 0;
     .box .role p{
       font-size: 10px;
     }
+    .satodsan-uvemopag h1{
+      font-size: 14px;
+    }
     
   }
+
+.footer{
+  height: 5000px;
+}
+
 
 
 

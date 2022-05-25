@@ -39,7 +39,7 @@ const langArr = {
         'en':'Nazarov Maxim',
     },
     'logo-text' :{
-        'ru':'Веб-программист',
+        'ru':'Веб-разработчик',
         'en':'Frontend Developer',
     },
     'language' :{
@@ -102,6 +102,10 @@ const langArr = {
         'ru':'Игры <i class="bx bx-dice-3"></i>',
         'en':'Games <i class="bx bx-dice-3"></i>',
     },
+    'home-logo' :{
+      'ru':'Назаров Максим | Веб-разработчик',
+      'en':'Nazarov Maxim | Frontend Developer',
+  },
     
 }
 
@@ -115,6 +119,19 @@ function chanchLang(){
             document.querySelector('.lan-'+key).innerHTML = langArr[key]['en'];
         }
 }}
+
+
+// Master DOManipulator v2 ------------------------------------------------------------
+const items = document.querySelectorAll('.item'),
+  controls = document.querySelectorAll('.control'),
+  headerItems = document.querySelectorAll('.item-header'),
+  descriptionItems = document.querySelectorAll('.item-description'),
+  activeDelay = .76,
+  interval = 5000;
+
+let current = 0;
+
+
 
 
 
