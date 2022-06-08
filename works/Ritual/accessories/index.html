@@ -1,0 +1,404 @@
+<?include $_SERVER['DOCUMENT_ROOT'].'/header.php'?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="../fonts/Circle/style.css">
+    <link rel="stylesheet" href="../fonts/VacansiaC/style.css">
+    <link rel="stylesheet" href="../fonts/Arial/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../modal/modal.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="../css/fancybox.css">
+
+    <!-- Slick-slider -->
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+
+    <!-- Пользовательские стили -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(212, 212, 212);"> 
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="header__top-logo col-12 col-lg-3 offset-lg-1">
+                        <div>
+                            <a href="/"><img src="../img/header_top/logo_new.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    <div class="header__top-content col-12 col-lg-8">
+                        <div class="header__top-name mb-2">Городская похоронная Служба</div>
+                        <div class="header__top-info">
+                            <span><a class="mb-3 number1" href="tel:+79870240101">+7 (987) 024-01-01</a></span>
+                            <span style="line: height 40px;">КРУГЛОСУТОЧНЫЙ ВЫЕЗД РИТУАЛЬНОГО АГЕНТА <br>Г. УФА, УЛ. НЕВСКОГО, 10</span>
+                        </div>
+                        <div class="header__top-buttons row align-items-center ">
+                            <div class="col-12 col-md-5 mx-auto ">
+                                <a href="#feedback" data-fancybox class="feedback-agent btn callback col-12 knopka1">Вызвать агента</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-wrapper">
+                    <img src="../img/header_bottom/lenta-2.png" alt="">
+                    <ul class="nav">
+                        <li class="col-3"><a href="monument/index.html">ПАМЯТНИКИ</a></li>
+                        <li class="col-3"><a href="../pageritual/index.html">РИТУАЛЬНЫЕ УСЛУГИ</a></li>
+                        <li class="col-3"><a href="accessories/index.html">АКСЕССУАРЫ</a></li>
+                        <li class="col-3"><a href="/care/">УХОД ЗА ЗАХОРОНЕНИЯМИ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger-menu">
+                    <div>
+                        <div class="burger-icon">
+                            <div class="burger-icon-1"></div>
+                            <div class="burger-icon-2"></div>
+                            <div class="burger-icon-3"></div>
+                        </div>
+                    </div>
+                    <div class="burger-text">МЕНЮ</div>
+                <div class="burger-nav">
+                    <div class="burger-close">
+                        <div class="burger-close-1"></div>
+                        <div class="burger-close-2"></div>
+                    </div>
+                    <ul>
+                        <li class=""><a href="/monument/">ПАМЯТНИКИ</a></li>
+                        <li class=""><a href="../pageritual/index.html">РИТУАЛЬНЫЕ УСЛУГИ</a></li>
+                        <li class=""><a href="accessories/index.html">АКСЕССУАРЫ</a></li>
+                        <li class=""><a href="/care/">УХОД МОГИЛ</a></li>
+                    </ul>
+                    
+                    <div class="footer__bottom-contacts">
+                        <div class="phone"><a href="tel:++79870240101">+7(987)-024-01-01</a></div>
+                        <div class="mail"><a href="mailto:ritualsalon1@bk.ru">ritualsalon1@bk.ru</a></div>
+                    </div>
+                    <div class="">
+                    <div class="footer__bottom-social row">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/viber.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="../img/footer/tg.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="../img/footer/whatsapp.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="../img/footer/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="../img/footer/vk.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="../img/footer/facebook.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container-acces">
+    <div class="title-acces">
+        <p>АКСЕССУАРЫ</p>
+    </div>
+
+    <div class="magrinn">
+        <div class="container-acces">
+        <div class="acces--text">
+                <p>При планировании композиции надгробного комплекса особое внимание следует уделить ритуальным аксессуарам. Помимо стандартных элементов вроде памятников и оград, существуют такие ритуальные аксессуары, как мемориальные таблички, вазы, кресты, которые выполняют декоративные и утилитарные функции. <br>
+        
+                    Ходовым материалом при создании аксессуаров на могилу является гранит. В частности, он используется в изготовлении цоколей и мемориальных ваз. <br>
+                    
+                    Для цоколей имеется альтернативное сырьевое решение – бетон. Материал, конечно, уступает граниту в долговечности, надежности и привлекательности, но при этом бетон экономичнее, а конструкции из него проще в реализации. <br>
+                    
+                    Один из вариантов в оформлении - использовать менее распространенное, но удобное и экономное решение - ритуальную табличку. Мемориальная табличка выполняется в трех вариациях: <br>
+                    
+                    - гранитные, <br>
+                    
+                    - керамические, <br>
+                    
+                    - металлические пластины. <br>
+                    
+                    На плоскости таблички обычно гравируют портрет усопшего и/или эпитафию (надгробную надпись). Мемориальная табличка может быть использована как временная альтернатива памятнику, так и полноценная его замена. Кроме того, ритуальные пластинки отличаются широким размерным рядом и вариативностью форменного исполнения, что упрощает их подбор для крепления к памятнику или нишам колумбария, служащим для размещения урны с прахом. <br>
+                    
+                    Древнейший аксессуар – могильный крест, символизирующий в христианстве переход в мир иной, может быть выполнен из различных материалов (мрамор, гранит, металл, дерево) и украшен резьбой или росписью. Деревянные кресты - самые дешевые, но приоритет отдают металлическим крестам, так как они менее подвержены воздействию внешних факторов.<br>
+                    
+                    Помимо ритуальных ваз, цоколей, табличек и крестов, в нашем каталоге Вы можете заказать цветники открытого и закрытого типа, газоны для благоустройства могилы, бордюры, а также купить ритуальные аксессуары на любой вкус, изучив весь представленный ассортимент и подробные характеристики интересующих товаров.<br>
+                    
+                    Ритуальные аксессуары из качественных материалов с возможностью изготовления под индивидуальный заказ мы установим в оговоренные сроки. Вы всегда можете обратиться с вопросами или уточнить наличие определенных товаров у наших менеджеров.</p>
+            </div>
+            </div>
+            </div>
+
+
+    <div class="acees__items">
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img src="../img/acces/1.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Вазы из гранита</h2>
+            </div>
+        </div></a>
+
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img class="biggimg" src="../img/acces/2.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Таблички</h2>
+            </div>
+        </div></a>
+        
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img src="../img/acces/3.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Лампадки</h2>
+            </div>
+        </div></a>
+        
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img class="biggimg" src="../img/acces/4.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Фотокерамика</h2>
+            </div>
+        </div></a>
+        
+        <a href="#">
+            <div class="acces-item">
+            <div class="acces__img">
+                <img src="../img/acces/5.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Фото на гранитной плитке</h2>
+            </div>
+        </div>
+        </a>
+        
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img src="../img/acces/6.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Фигуры из литьевого мрамора</h2>
+            </div>
+        </div></a>
+        
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img class="biggimg" src="../img/acces/7.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Венки</h2>
+            </div>
+        </div></a>
+
+        <a href="#"><div class="acces-item">
+            <div class="acces__img">
+                <img src="../img/acces/8.png" alt="">
+            </div>
+            <div class="acces-title">
+                <h2>Композиции из искусственных цветов</h2>
+            </div>
+        </div></a>
+        
+        
+        
+    </div>
+    
+    
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="footer-bg">
+        <img src="/img/footer/bg.png" alt="">
+    </div>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-12 order-2 col-lg-3 order-lg-1 footer-links">
+                    <ul>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Памятники</a></li>
+                        <li><a href="">Ритуальные услуги</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                        <li><a href="">Уход могил</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 order-1 col-lg-7 order-lg-2 footer-info">
+                    <div class="footer-info-items">
+                        <div class="footer-info-item">
+                            <a href="https://www.ritualsalon1.ru">
+                                <img class="image_bottom1" src="/img/bottom1.png" alt>
+                                <span>www.ritualsalon1.ru</span>
+                            </a>
+                            <a href="mailto:ritualsalon1@bk.ru">
+                                <img class="image_bottom1" src="/img/bottom2.png" alt>
+                                <span>ritualsalon1@bk.ru</span>
+                            </a>
+                        </div>
+                        <div class="footer-info-item">
+                            <a href="tel:89870240101">
+                                    <img class="image_bottom1" src="/img/bottom3.png" alt>
+                                <span>8-987-024-01-01</span>
+                            </a>
+                            <span class="social-links">
+                         
+                                <a href="" class="inst_soc-common">
+                                    <img class="image_bottom1" src="/img/bottom5.png" alt>
+                                </a>
+                                <a href="" class="inst_soc-common">
+                                    <img class="image_bottom1" src="/img/bottom6.png" alt>
+                                </a>
+                                <span>ritaulsalon1</span>
+                            </span>
+                        </div>
+                    </div>
+                    <p>КРУГЛОСУТОЧНЫЙ ВЫЕЗД РИТУАЛЬНОГО АГЕНТА <br>Г. УФА, УЛ. НЕВСКОГО, 10</p>
+                </div>
+                <div class="d-none d-xl-block col-xl-2 order-xl-3 footer-logo">
+                    <img class="w-100" src="/img/header_top/logo_bottom_new.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="footer__top"></div>
+            <div class="footer__bottom">
+                <div class="row align-items-center">
+                    <div class="footer__bottom-contacts col-12 col-md-3">
+                        <div class="phone"><a href="tel:++79870240101">+7(987)-024-01-01</a></div>
+                        <div class="mail"><a href="mailto:ritualsalon1@bk.ru">ritualsalon1@bk.ru</a></div>
+                    </div>
+                    <div class="col-12 col-md-7 offset-md-2">
+                        <div class="footer__bottom-social row">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/viber.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/tg.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/whatsapp.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/vk.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="">
+                                    <img src="/img/footer/facebook.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</footer>
+
+<div class="callback__form" id="feedback">
+    <form id="feedback-form">
+        <div class="callback__form-text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время</div>
+        <div class="callback__form-body">
+            <div class="callback__form-input">
+                <input type="text" name="name" id="" placeholder="Ваше имя" required>
+            </div>
+            <!-- <div class="callback__form-input">
+                <input type="email" name="email" id="" placeholder="Ваш email">
+            </div> -->
+            <div class="callback__form-input">
+                <input type="tel" name="phone" id="" placeholder="Ваш телефон" required data-tel-input>
+            </div>
+            <button type="submit" class="callback__form-submit">Отправить</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="/modal/modal.js"></script>
+
+<!-- jQuery -->
+<script src="/js/jQuery v3.6.0.js"></script>
+
+<!-- Bootstrap -->
+<script src="/js/bootstrap.js"></script>
+
+<!-- Fancybox -->
+<script src="/js/Fancybox v4.0.26.js"></script>
+
+<!-- Маска PhoneInput -->
+<script src="/js/phoneinput.js"></script>
+
+<!-- Форма обратной связи -->
+<script src="/js/action.js"></script>
+
+<!-- Slick-slider -->
+<script src="/js/slick.js"></script>
+
+<!-- Пользовательские скрипты -->
+<script src="/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!----<?include $_SERVER['DOCUMENT_ROOT'].'/footer.php'?>
+
