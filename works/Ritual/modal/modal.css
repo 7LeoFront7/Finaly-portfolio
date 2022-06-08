@@ -1,0 +1,51 @@
+.stt-modal{
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #00000024; 
+    z-index: 999; 
+    justify-content: center; 
+    align-items: center;
+    display: none;
+}
+.stt-background{
+    width: 100%; 
+    height: 100%;
+    cursor: pointer;
+}
+.stt-container{
+    width: 400px; 
+    min-height: 200px;
+    position: absolute; 
+    background-color: #fff;
+    padding: 20px;
+}
+.stt-content{
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stt-btn_container{
+    height: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.stt-btn{
+    cursor: pointer;
+    flex: 1;
+    text-decoration: none;
+    width: 100%;
+    max-width: 203px;
+    height: 48px;
+    background: #26b15d;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+}
