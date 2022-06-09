@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/Google-Noto-Emoji-Objects-62862-orange-book.ico"
+      type="image/x-icon"
+    />
+    <title>Online BookStore</title>
+  </head>
+  <body>
+    <div class="wrapepr">
+      <div class="popup" id="popup">
+        <ul class="popup__list">
+          <li class="popup__item">
+            <button class="popup-addNewBalance">Изменить баланс</button>
+          </li>
+          <li class="popup__item poppup-balance">
+            <span >Мой баланс: 10000&#8381;</span>
+          </li>
+          <li class="popup__item popupsearch">
+            
+          </li>
+        </ul>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__logo">
+              <a href="index.html">
+                <svg
+                  class="book-shelf"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid"
+                  viewBox="0 0 84 94"
+                  height="94"
+                  width="84"
+                >
+                  <path
+                    fill="none"
+                    d="M37.612 92.805L4.487 73.71c-2.75-1.587-4.45-4.52-4.45-7.687L.008 27.877c-.003-3.154 1.676-6.063 4.405-7.634L37.558 1.167c2.73-1.57 6.096-1.566 8.835.013l33.124 19.096c2.75 1.586 4.45 4.518 4.45 7.686l.028 38.146c.002 3.154-1.677 6.063-4.406 7.634L46.445 92.818c-2.73 1.57-6.096 1.566-8.834-.013z"
+                  />
+                  <g
+                    class="book-shelf__book book-shelf__book--one"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      fill="#5199fc"
+                      d="M31 29h4c1.105 0 2 .895 2 2v29c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2V31c0-1.105.895-2 2-2z"
+                    />
+                    <path
+                      fill="#afd7fb"
+                      d="M34 36h-2c-.552 0-1-.448-1-1s.448-1 1-1h2c.552 0 1 .448 1 1s-.448 1-1 1zm-2 1h2c.552 0 1 .448 1 1s-.448 1-1 1h-2c-.552 0-1-.448-1-1s.448-1 1-1z"
+                    />
+                  </g>
+                  <g
+                    class="book-shelf__book book-shelf__book--two"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      fill="#ff9868"
+                      d="M39 34h6c1.105 0 2 .895 2 2v24c0 1.105-.895 2-2 2h-6c-1.105 0-2-.895-2-2V36c0-1.105.895-2 2-2z"
+                    />
+                    <path
+                      fill="#d06061"
+                      d="M42 38c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z"
+                    />
+                  </g>
+                  <g
+                    class="book-shelf__book book-shelf__book--three"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      fill="#ff5068"
+                      d="M49 32h2c1.105 0 2 .86 2 1.92v25.906c0 1.06-.895 1.92-2 1.92h-2c-1.105 0-2-.86-2-1.92V33.92c0-1.06.895-1.92 2-1.92z"
+                    />
+                    <path
+                      fill="#d93368"
+                      d="M50 35c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1s-1-.448-1-1v-2c0-.552.448-1 1-1z"
+                    />
+                  </g>
+                  <g fill-rule="evenodd">
+                    <path
+                      class="book-shelf__shelf"
+                      fill="#ae8280"
+                      d="M21 60h40c1.105 0 2 .895 2 2s-.895 2-2 2H21c-1.105 0-2-.895-2-2s.895-2 2-2z"
+                    />
+                    <path
+                      fill="#855f6d"
+                      d="M51.5 67c-.828 0-1.5-.672-1.5-1.5V64h3v1.5c0 .828-.672 1.5-1.5 1.5zm-21 0c-.828 0-1.5-.672-1.5-1.5V64h3v1.5c0 .828-.672 1.5-1.5 1.5z"
+                    />
+                  </g>
+                </svg>
+                <span>Online BookStore</span></a
+              >
+              <img src="img/Ellipse.svg" alt="alipse" />
+            </div>
+            <div class="header__search">
+              <input id="elastic" type="search" placeholder="Введите название книги ..." />
+              <button type="submit">Go</button>
+            </div>
+
+            <div class="header__chache-balance">
+              <button class="chanch-balance">Изменить</button>
+            </div>
+
+            <div class="header__my-balance">
+              <span class="balance" id="ddd sss">10000 ₽</span>
+            </div>
+            <div id="burger" class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+          <section class="sub-header">
+            <div class="sub-header__container">
+                <div class="sub-header__body">
+                  <div class="sortAndKat">
+                    <button class="sort" id="sortmin">Сортировать <i class='bx bx-sort'></i></button>
+
+                      <select id="seelcttt" onchange="fun1()">
+                          <option selected id="opi" value="kat">Выберите категорию</option>
+                          <option id="opi" value="diz">Дизайн</option>
+                          <option id="opi" value="upr">Управление проектами</option>
+                          <option id="opi" value="raz">Разработка</option>
+                          <option id="opi" value="tes">Тестирование</option>
+                      </select>
+                      
+                  </div>
+                  <div class="buscetddd">
+                    <span class="buscettt">Корзина <i class='bx bx-cart-alt'></i></span> 
+                  </div>
+                    
+                </div>
+            </div>
+          </section>
+        <section class="box-books">
+          <div class="box-books__container">
+            <div class="box-books__body">
+              <div class="box-books-all elastic">
+
+              </div>
+              <div class="box-books-buscet hide">
+                
+                <div class="buscet__box buscet__title">
+                  <h1>Ваша корзина <i class='bx bx-cart-alt'></i></h1>
+                  <div data-cart-empty>
+                    <h2 class="buscet-none">В корзине пока ничего нет</h2>
+                  </div>
+                  <div data-cart-bay class="buscet-bay hide">
+                    <button class="btn-pay">Заказать</button>
+                    <h1></h1>
+                  </div>
+                  <div class="buscet-box-books">
+
+                  
+                  
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+
+
+      <script src="js/cart.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/books.js"></script>
+      
+      
+      <script type="text/javascript">
+
+        document.querySelector('#elastic').oninput = function () {
+            let val = this.value.trim();
+            let elasticItems = document.querySelectorAll('.card');
+            if (val != '') {
+                elasticItems.forEach(function (elem) {
+                    if (elem.innerText.search((RegExp(val,"gi"))) == -1) {
+                        elem.classList.add('hide');
+                    }
+                    else {
+                        elem.classList.remove('hide');
+                    }
+                });
+            }
+            else {
+                  elasticItems.forEach(function (elem) {
+                   
+                        elem.classList.remove('hide');
+                    
+                  });
+            }
+        }
+    </script>
+    </div>
+  </body>
+</html>
