@@ -1,0 +1,42 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.home h1{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+.home__body{
+  display: flex;
+}
+
+.home__img img{
+  max-width: 100%;
+  box-shadow: 10px 10px 0px 0px rgb(255, 208, 0);
+}
+
+.home__text h2{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.home__text span{
+  
+  font-weight: bold;
+  color: rgb(136, 0, 255);
+}
+.home__text{
+  padding-left: 30px;
+}
+.home__text a.link-home-kblock{
+  margin-top: 100px;
+  padding: 15px 40px;
+  background-color: rgb(136, 0, 255);
+  color: white;
+  transition: .3s;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.home__text div.btn_hometext{
+  margin-top: 50px;
+}
