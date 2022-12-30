@@ -1,0 +1,13 @@
+.geloroy__body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  
+ }
+ .geloroy__box{
+  max-width: 400px;
+  margin-bottom: 100px;
+ }
+ .geloroy__box img{
+  max-width: 100%;
+ }

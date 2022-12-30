@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="ico.ico" />
+    <title>Завод К-Блок</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="popup__bg">
+        <form action="sender.php" method="post" class="popup">
+          <img src="cross-svgrepo-com.svg" width="15px" class="close-popup" />
+          <label>
+            <input type="text" name="user_name" />
+            <div class="label__text">Ваше имя</div>
+          </label>
+          <label>
+            <input type="text" name="user_tel" />
+            <div class="label__text">Ваш телефон</div>
+          </label>
+          <label>
+            <textarea name="user_message"></textarea>
+            <div class="label__text">Ваше сообщение</div>
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__logo logo">
+              <a href="#"><img class="img-logo" src="image 2.svg" alt="logo" /></a>
+              <div class="logo__body">
+                <h1 class="logo__title">К - Блок</h1>
+                <h2 class="logo__subtitle">Газобетонные блоки</h2>
+              </div>
+            </div>
+            <div class="header__nav skew-menu">
+              <ul class="header__nav__list">
+                <li class="header__nav-item"><a href="#home">Главная</a></li>
+                <li class="header__nav-item"><a href="#about">О нас</a></li>
+                <li class="header__nav-item"><a href="#prem">Наши преимущества</a></li>
+                <li class="header__nav-item"><a href="#product">Продукция</a></li>
+                <li class="header__nav-item"><a href="#contact">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__contact">
+              <div class="header__contact-text">
+                <a href="tel:+88007774400">+ 8 800 777 4400</a> <br />
+                <a href="tel:+88007774400">+ 8 999 555 4400</a>
+              </div>
+            </div>
+
+            <!--    Made by Erik Terwan    -->
+            <!--   24th of November 2015   -->
+            <!--        MIT License        -->
+            <div class="navigat" role="navigation">
+              <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input id="closeIcon" type="checkbox" />
+
+                <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                  <li>
+                    <a href="#home">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#about">О нас</a>
+                  </li>
+                  <li>
+                    <a href="#prem">Наши преимущества</a>
+                  </li>
+                  <li>
+                    <a href="#product">Продукция</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section>
+          <div id="home" class="klbock">
+            <div class="kblock__container">
+              <div class="kblock__body">
+                <div class="kblock__text">
+                  <div class="kblock__title">
+                    <h1>К БЛОК - производитель настоящих газобетонных блоков</h1>
+                  </div>
+                  <div class="kblock__subtitle">
+                    <h2>Никаких переплат посредникам при заказе напрямую с нашего завода</h2>
+                  </div>
+                  <div class="kblock__p">
+                    <p>Подробно ответим на любой ваш вопрос о нашем высококачественном продукте</p>
+                  </div>
+                  <div class="kblock__btn">
+                    <a href="#about">Узнать больше</a>
+                  </div>
+                </div>
+                <div class="kblock__form">
+                  <form action="mail.php" method="POST" class="kblock__form-box">
+                    <div class="kblock__logo">
+                      <a href="#"><img class="img-form-logo" src="image 2.svg" alt="logo" /></a>
+                      <div class="kblock__content">
+                        <h1 class="kblock__form-title">К - Блок</h1>
+                        <h2 class="kblock__form-subtitle">Газобетонные блоки</h2>
+                      </div>
+                    </div>
+                    <div class="kblock__kform-text">
+                      <h3>Заявка на обратный звонок от специалиста!</h3>
+                    </div>
+                    <div class="kblock__inpit-name">
+                      <input type="text" name="user_name" placeholder="Ваше имя ..." />
+                    </div>
+                    <div class="kblock__inpit-tel">
+                      <input type="tel" name="user_tel" placeholder="Ваш телефон ..." />
+                    </div>
+                    <div class="kblock__btn2">
+                      <a href="#">Отправить</a>
+                    </div>
+                    <div class="kblock__last">
+                      <p>Мы можем Вам перезвонить!</p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <div class="about__container">
+            <div class="about__body">
+              <div class="about__text">
+                <h1>
+                  <b>Завод газобетонных блоков К-Блок</b> - производитель самых качественных
+                  газобетонных блоков по лучшей цене! Газобетонные блоки с плотностью d400-d1200 с
+                  доставкой от завода!
+                </h1>
+                <p>
+                  Хотите купить качественные газобетонные блоки с доставкой? Лучше всего это сделать
+                  напрямую с завода без лишних переплат!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="geloroy">
+          <div class="geloroy__container">
+            <div class="geloroy__body">
+              <div class="geloroy__box">
+                <img src="gel1.jpg" alt="" />
+              </div>
+              <div class="geloroy__box">
+                <img src="gel2.jpg" alt="" />
+              </div>
+              <div class="geloroy__box">
+                <img src="gel3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <div class="video__container">
+            <div class="video__body">
+              <div class="video__text">
+                <h1>
+                  Наша компания долгие годы занималась продажей стеновых материалов. В последнее
+                  время очень сильно вырос спрос на газобетонный блок с высокой плотностью (от D800)
+                  и выше ( в том числе на программу реновации Москвы), а качественных материалов на
+                  рынке очень мало.
+                </h1>
+                <h1>
+                  Поэтому собрав команду высококвалифицированных специалистов было принято решение
+                  организовать и наладить производство максимально качественного товара!
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="prem" class="prem">
+          <div class="prem__container">
+            <div class="prem__content">
+              <h1>Преимущества К-Блок</h1>
+              <p>
+                Номер один завод газобетонных блоков по объему производства за 2021 год по Москве и
+                Московской области!
+              </p>
+            </div>
+            <div class="prem__body">
+              <div class="prem__cart">
+                <img src="free-icon-factory-plant-2411927 1.png" alt="" />
+                <h2>СОБСТВЕННОЕ ПРОИЗВОДСТВО</h2>
+                <p>Газобетонные блоки производятся на собственном оборудовании</p>
+              </div>
+              <div class="prem__cart">
+                <img src="free-icon-ruble-1490839 1.png" alt="" />
+                <h2>ЦЕНА НА ГАЗОБЕТОН</h2>
+                <p>Никаких переплат перекупам при сотрудничестве с заводом!</p>
+              </div>
+              <div class="prem__cart">
+                <img src="free-icon-fast-delivery-3757891 1.png" alt="" />
+                <h2>ДОСТАВКА И РАЗГРУЗКА</h2>
+                <p>Доставка в любую точку России по выгодной цене. Есть возможность самовывоза!</p>
+              </div>
+            </div>
+            <div class="prem__content2">
+              <h1>
+                Отвечаем за качество своей продукции и гарантируем, что при настолько качественном
+                товаре, цены лучше вы не найдёте!
+              </h1>
+              <p>Чётко налаженная работа производственного цеха - Наша Гордость!</p>
+            </div>
+            <div class="prem__card2">
+              <div class="content">
+                <a class="card" href="#!">
+                  <div class="front" style="background-image: url(cart1.png)">
+                    <p>Производство газобетона по ГОСТ и всем возможным стандартам качетсва!</p>
+                  </div>
+                  <div class="back">
+                    <div>
+                      <p>
+                        Производим газобетон на чётко отлаженных станках, долговременном опыте и
+                        отличном мастерстве нашей рабочей бригады!
+                      </p>
+                      <button class="button open-popup">Заказать</button>
+                    </div>
+                  </div> </a
+                ><a class="card" href="#!">
+                  <div class="front" style="background-image: url(cart2.png)">
+                    <p>Газобетон по нужным именно Вам размерам и техническим характеристикам!</p>
+                  </div>
+                  <div class="back">
+                    <div>
+                      <p>
+                        Благодаря нашему современному и технологичному оборудованию мы можем
+                        подстроиться под заказ любой сложности!
+                      </p>
+                      <button class="button open-popup">Заказать</button>
+                    </div>
+                  </div> </a
+                ><a class="card" href="#!">
+                  <div class="front" style="background-image: url(cart3.png)">
+                    <p>Оптом выгоднее и дешевле!</p>
+                  </div>
+                  <div class="back">
+                    <div>
+                      <p>
+                        Мы настроенны на долгосрочную работу с нашими клиентами, поэтому с радостью
+                        можем договориться о скидках на очень крупный опт!
+                      </p>
+                      <button class="button open-popup">Заказать</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="product" class="product">
+          <div class="product__container">
+            <div class="product__content">
+              <div class="product__content-text">
+                <h1>
+                  Мы готовы доставить вам образцы газобетонных блоков с нашего завода в Ваш офис
+                </h1>
+                <p>
+                  * Внимание! При производстве своих газобетонных блоков мы добавляем фиброволокно и
+                  алюминиевую пудру! Они еще… А значит данные добавки увеличат качество и срок
+                  службы в суровых Российских погодных реалиях!
+                </p>
+              </div>
+
+              <div class="product__body">
+                <div class="product__card">
+                  <h1>Газобетонный блок D500 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>6000 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D600 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>6000 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D700 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7100 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D800 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7300 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D900 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7500 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D1000 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7700 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+
+                <div class="product__card">
+                  <h1>Газобетонный блок D1100 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>8400 ₽</p>
+                  <button class="button-bug open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D1200 стеновой</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>8700 ₽</p>
+                  <button class="button-bug open-popup">Заказать</button>
+                </div>
+
+                <div class="product__card card_error">
+                  <h1>Газобетонный блок D700 перегородочный</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7300 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D800 перегородочный</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7400 ₽</p>
+                  <button class="open-popup card_error2">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D1000 перегородочный</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>7700 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+                <div class="product__card">
+                  <h1>Газобетонный блок D1200 перегородочный</h1>
+                  <img src="image 10.png" alt="" />
+                  <p>8700 ₽</p>
+                  <button class="open-popup">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="location">
+          <div class="location__container">
+            <div class="location__body">
+              <div class="location__office">
+                <img src="work 1.svg" alt="" />
+                <h1>Адрес офиса:</h1>
+                <p>
+                  141090, Россия, Московская область, микрорайон Юбилейный, улица Маяковского, 2,
+                  помещение 03
+                </p>
+                <a class="pochta" href="mailto:88007774400@mail.ru"
+                  >Написать на почту <img src="free-icon-email-6052372 1.png" alt=""
+                /></a>
+              </div>
+              <div class="location__town">
+                <img src="free-icon-factory-plant-2411927 1.svg" alt="" />
+                <h1>Адрес производства:</h1>
+                <p>
+                  141180, Россия, Московская область, городской округ Щёлково, пгт. Загорянский,
+                  улица Строителей, 1
+                </p>
+                <a class="pochta" href="mailto:88007774400@mail.ru"
+                  >Написать на почту <img src="free-icon-email-6052372 1.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="map">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac8c126dfba4beffe1e531c82ffbe98d2b522d71b056929cbc466050bee85a1b0&amp;width=100%25&amp;height=375&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </section>
+        <section class="companies">
+          <div class="companies__body">
+            <div class="marquee">
+              <ul class="marquee-content">
+                <li><img src="logo1.jpg" alt="" /></li>
+                <li><img src="logo2.jpg" alt="" /></li>
+                <li><img src="logo3.jpg" alt="" /></li>
+                <li><img src="logo4.jpg" alt="" /></li>
+                <li><img src="logo5.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <h1>
+          © 2020 Завод К-Блок газобетонных блоков. Королевские газобетонные блоки от производителя!
+        </h1>
+      </footer>
+    </div>
+
+    <script src="jquery.maskedinput.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
