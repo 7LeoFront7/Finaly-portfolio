@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  background-color: rgb(163, 163, 153);
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1766px;
+  padding: 0 78px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header{
+  background-color: #fff;
+}
+
+.header__body{
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__info-adress{
+  margin-top: 7px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header__info-adress:hover{
+  color: #E3896F;
+}
+
+.header__link{
+  transition: .3s;
+  font-size: 24px;
+  font-weight: 300;
+  margin-right: 30px;
+}
+
+.header__whatsup{
+  margin-right: 10px;
+}
+
+.header__info{
+  font-size: 18px;
+}
+
+.header__tel{
+  transition: .3s;
+  font-size: 18px;
+}
+
+.header__tel:hover{
+  color: #E3896F;
+}
+
+.header__list{
+  display: flex;
+}
+
+.header__link:hover{
+  color: #E3896F;
+}
+
+.header__other{
+  color: #E3896F;
+  text-decoration: underline;
+}
+.header__contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.home{
+  min-height: 972px;
+  max-height: 972px;
+  background: url(../img/slide1.jpg);
+}
+
+.home__title{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 65.47px;
+}
+.home__title span{
+  color: #A87F6D;
+}
+
+.home-titleUgol{
+  padding-left: 100px;
+  padding-top: 150px;
+}
+
+.home__ufol1{
+position: relative;
+right: 30px;
+top: 15px;
+}
+
+.home__ufol2{
+  position: relative;
+  left: 630px;
+  bottom: 15px;
+}
+
+.home__button-reg{
+  background: linear-gradient(91.7deg, #A87F6D 48.56%, #E4C4AB 111%);
+box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 15px 30px;
+font-size: 30px;
+color: #fff;
+font-weight: 300;
+margin-right: 50px;
+
+}
+
+.home__buttons{
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.home__text-videos{
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #585858;
+}
