@@ -59,8 +59,10 @@ a{
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  background-color: rgb(163, 163, 153);
+  background-color: rgb(255, 255, 255);
 }
+
+body {}
 
 .wrapper {
   height: 100vh;
@@ -155,12 +157,20 @@ body {
   justify-content: flex-end;
   margin-bottom: 6px;
 }
+.header__contact{
+  margin-right: -9em;
+}
+
+/* ====== HOME ======= */
 
 .home{
   min-height: 972px;
   max-height: 972px;
   width: 100%;
   background: url(../img/ohone1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 
 .home__title{
@@ -177,6 +187,7 @@ body {
 .home-titleUgol{
   padding-left: 100px;
   padding-top: 150px;
+  padding-top: 7em;
 }
 
 .home__ufol1{
@@ -224,13 +235,6 @@ color: #585858;
 
 .logo-image{
   max-width: 200px;
-}
-
-
-@media screen and (max-width:1675px){
-  /* .header__info-time{
-    display: none;
-  } */
 }
 
 .skew-menu {
@@ -414,6 +418,10 @@ color: #585858;
   transform: translateY(-30%);
 }
 
+.menuArea{
+  z-index: 99;
+}
+
 #menuArea {
   display: none;
 }
@@ -421,213 +429,14 @@ color: #585858;
   display: none;
 }
 
-@media screen and (max-width:1440px){
-  .header__nav{
-    font-size: 0.9em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__link{
-    font-size: 2.5em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2em;
-  }
-  
-}
 
-@media screen and (max-width:1650px){
-  .header__info{
-    font-size: 1em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.2em;
-  }
-  
-}
-
-@media screen and (max-width:1470px){
-  .header__info{
-    font-size: 1em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.2em;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  
-}
 
 .header__info img{
   width: 0.7em;
   margin-right: 0.5em;
 }
 
-@media screen and (max-width:1366px){
-  .header__info{
-    font-size: 0.7em;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.1em;
-  }
-  
-}
 
-@media screen and (max-width:1030px){
-.header__body{
-  height: 80px;
-}
-  .header__container{
-  padding: 0em 1em;
-  margin: 0;
- }
-  .logo-image{
-    width: 9em;
-  }
-  .header__info{
-    font-size: 0.6em;
-    width: 100;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  .header__contact{
-    font-size: 0.3em;
-    margin-right: -10em;
-  }
-  .header__contact img{
-    width: 4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 0.9em;
-    margin: 0.7em;
-  }
-  
-}
-@media screen and (max-width:950px){
-  .header__body{
-    height: 80px;
-  }
-    .header__container{
-    padding: 0em 1em;
-    margin: 0;
-   }
-    .logo-image{
-      width: 9em;
-    }
-    .header__info{
-      font-size: 0.6em;
-      width: 100;
-    }
-    .header__info img{
-      width: 0.7em;
-      margin-right: 0.5em;
-    }
-    .header__contact{
-      font-size: 0.3em;
-      margin-right: -5em;
-    }
-    .header__contact img{
-      width: 4em;
-    }
-    .header__tel{
-      font-size: 2.5em;
-    }
-    .header__other{
-      font-size: 2.2em;
-    }
-    .header__link{
-      font-size: 0.9em;
-      margin: 0.7em;
-    }
-    
-  }
-@media screen and (max-width:900px){
-  .header__body{
-    height: 60px;
-  }
-    .header__container{
-    padding: 0em 1em;
-    margin: 0;
-   }
-    .logo-image{
-      width: 9em;
-    }
-    .header__nav{
-      display: none;
-    }
-    .header__info{
-      display: none;
-    }
-    .header__info img{
-      width: 0.7em;
-      margin-right: 0.5em;
-    }
-    .header__contact{
-      display: none;
-    }
-    .header__contact img{
-      width: 4em;
-    }
-    .header__tel{
-      font-size: 2.5em;
-    }
-    .header__other{
-      font-size: 2.2em;
-    }
-    .header__link{
-      font-size: 0.9em;
-      margin: 0.7em;
-    }
-    #menuArea{
-      display: block;
-    }
-    
-  }
 
 .btn-77,
 .btn-77 *,
@@ -694,21 +503,7 @@ color: #585858;
 }
 
 
-@media screen and (max-width:500px){
-  [class*="__container"] {
-    margin: 0 auto;
-    max-width: 1766px;
-    padding: 0 28px;
-  }
-  
-}
 
-@media screen and (max-width:768px){
-  .logo-image{
-    max-width: 200px;
-  }
-  
-}
 
 .home__textSertifacate{
   font-weight: 400;
@@ -736,3 +531,369 @@ color: #555555;
 .home__span-text{
   font-weight: 300;
 }
+
+/* ======== MEDIA ======== */
+
+@media screen and (max-width:2561px) and (min-width:1980px){
+  .header__info{
+    font-size: 1.3em;
+  }
+  .header__contact{
+    font-size: 0.6em;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2.2em;
+  }
+  .header__link{
+    font-size: 1.5em;
+  }
+  section.home{
+    background-size: cover;
+  }
+  .home-titleUgol {
+    padding: 7em 0 0 0;
+  }
+  .home__textSertifacate {
+    padding-left: 0;
+  }
+  .home__buttons {
+    padding-left: 0;
+    padding-top: 1em;
+  }
+  .home__video-izum {
+    margin-left: 0;
+    margin-top: 6em;
+}
+.header__container {
+  padding-left: 0;
+}
+
+}
+
+@media screen and (max-width:1650px){
+  .header__info{
+    font-size: 1vw;
+  }
+  .header__contact{
+    font-size: 0.4em;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2.2em;
+  }
+  .header__link{
+    font-size: 1.2em;
+  }
+  .home-titleUgol h1{
+    font-size: 4vw;
+  }
+  .home__textSertifacate p{
+    font-size: 2.6vw;
+    line-height: 1.3em;
+  }
+  img.home__ufol2 {
+    left: 32vw;
+}
+  a.home__button-reg.btn-77 {
+  font-size: 1.1vw;
+}
+  .home__video-izum img{
+    width: 4vw;
+  }
+  p.home__text-videos{
+    font-size: 1.5vw;
+    margin-top: 0em;
+    line-height: 1.5em;
+  }
+  
+}
+
+@media screen and (max-width:1470px){
+  .header__info{
+    font-size: 1em;
+  }
+  .header__contact{
+    font-size: 0.4em;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2.2em;
+  }
+  .header__link{
+    font-size: 1.2em;
+  }
+  .header__info img{
+    width: 0.7em;
+    margin-right: 0.5em;
+  }
+  
+}
+
+@media screen and (max-width:1440px){
+  .header__nav{
+    font-size: 0.9em;
+  }
+  .header__contact{
+    font-size: 0.4em;
+  }
+  .header__link{
+    font-size: 1.3vw;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2em;
+  }
+  .home__textSertifacate {
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+    .home__video-izum {
+    margin-top: 4vw;
+} 
+p.home__text-videos{
+  max-width: 16vw;
+}
+
+}
+
+@media screen and (max-width:1366px){
+  .header__info{
+    font-size: 0.9em;
+  }
+  .header__info img{
+    width: 0.7em;
+    margin-right: 0.5em;
+  }
+  .header__contact{
+    font-size: 0.4em;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2.2em;
+  }
+  .header__link{
+    font-size: 1.1em;
+  }
+  .home-titleUgol {
+    padding-top: 5vw;
+}
+  
+}
+
+@media screen and (max-width:1030px){
+.header__body{
+  height: 80px;
+}
+  .header__container{
+  padding: 0em 1em;
+  margin: 0;
+ }
+  .logo-image{
+    width: 9em;
+  }
+  .header__info{
+    font-size: 0.8em;
+  }
+  .header__info img{
+    width: 0.7em;
+    margin-right: 0.5em;
+  }
+  .header__contact{
+    font-size: 0.3em;
+    margin-right: -10em;
+  }
+  .header__contact img{
+    width: 4em;
+  }
+  .header__tel{
+    font-size: 2.5em;
+  }
+  .header__other{
+    font-size: 2.2em;
+  }
+  .header__link{
+    font-size: 1em;
+    margin: 0.7em;
+  }
+  .home__container {
+    padding: 0;
+}
+img.home__ufol1 {
+  top: 3vh;
+  left: -3vw;
+  width: 3vw;
+}
+img.home__ufol2{
+  width: 3vw;
+  left: 31vw;
+  top: -3vh;
+}
+  
+}
+@media screen and (max-width:950px){
+  .header__body{
+    height: 80px;
+  }
+    .header__container{
+    padding: 0em 1em;
+    margin: 0;
+   }
+    .logo-image{
+      width: 9em;
+    }
+    .header__info{
+      font-size: 0.6em;
+      width: 100;
+    }
+    .header__info img{
+      width: 0.7em;
+      margin-right: 0.5em;
+    }
+    .header__contact{
+      font-size: 0.3em;
+      margin-right: -5em;
+    }
+    .header__contact img{
+      width: 4em;
+    }
+    .header__tel{
+      font-size: 2.5em;
+    }
+    .header__other{
+      font-size: 2.2em;
+    }
+    .header__link{
+      font-size: 0.9em;
+      margin: 0.7em;
+    } 
+    
+    
+  }
+@media screen and (max-width:900px){
+  .header__body{
+    height: 60px;
+  }
+    .header__container{
+    padding: 0em 1em;
+    margin: 0;
+   }
+    .logo-image{
+      width: 9em;
+    }
+    .header__nav{
+      display: none;
+    }
+    .header__info{
+      display: none;
+    }
+    .header__info img{
+      width: 0.7em;
+      margin-right: 0.5em;
+    }
+    .header__contact{
+      display: none;
+    }
+    .header__contact img{
+      width: 4em;
+    }
+    .header__tel{
+      font-size: 2.5em;
+    }
+    .header__other{
+      font-size: 2.2em;
+    }
+    .header__link{
+      font-size: 0.9em;
+      margin: 0.7em;
+    }
+    #menuArea{
+      display: block;
+    }
+    
+  }
+@media screen and (max-width:768px){
+    .logo-image{
+      max-width: 200px;
+    }
+    
+}
+@media screen and (max-width:600px){
+  .main{
+    
+  }
+ .home{
+  background-position: 92% 0%;
+    background-size: cover;
+    position: relative;
+    background-size: 308%;
+ }
+  .home__container{
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  margin-top: 0vw;
+  width: 100vw;
+  margin-top: 15vw;
+ }
+
+ .home-titleUgol{
+  text-align: center;
+  padding-left: 0;
+  width: auto;
+ }
+
+ .home-titleUgol h1{
+  font-size: 4.2vh;
+}
+.home__textSertifacate{
+  text-align: center;
+  padding-left: 0;
+  width: auto;
+}
+
+.home__textSertifacate p{
+  font-size: 0.45em;
+}
+img.home__ufol1{
+  display: none;
+}
+img.home__ufol2{
+  display: none;
+}
+.home__buttons{
+  padding-left: 0;
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
+}
+a.home__button-reg.btn-77{
+  font-size: 3vw;
+  padding: 4vw 6vw;
+  margin-top: 2.5em;
+}
+.home__video-izum{
+  margin: 2em auto;
+  
+  justify-content: center;
+}
+.home__video-izum img {
+  width: 9vw;
+}
+p.home__text-videos {
+  font-size: 3.5vw;
+  max-width: 34vw;
+  margin-left: 1em;
+}
+  
+}
+
