@@ -66,7 +66,6 @@ body {}
 
 .wrapper {
   height: 100vh;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +90,8 @@ body {}
 
 .header{
   background-color: #fff;
+  position: fixed;
+  width: 100vw;
 }
 
 .header__body{
@@ -171,6 +172,8 @@ body {}
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0% 0%;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .home__title{
@@ -187,7 +190,7 @@ body {}
 .home-titleUgol{
   padding-left: 100px;
   padding-top: 150px;
-  padding-top: 7em;
+  padding-top: 10em;
 }
 
 .home__ufol1{
@@ -686,7 +689,7 @@ p.home__text-videos{
     font-size: 1.1em;
   }
   .home-titleUgol {
-    padding-top: 5vw;
+    padding-top: 13vw;
 }
   
 }
@@ -738,6 +741,9 @@ img.home__ufol2{
   width: 3vw;
   left: 31vw;
   top: -3vh;
+}
+.home-titleUgol {
+  padding-top: 10vw;
 }
   
 }
@@ -829,6 +835,9 @@ img.home__ufol2{
     
 }
 @media screen and (max-width:600px){
+ .header{
+  z-index: 9999;
+ }
   .main{
     
   }
@@ -918,7 +927,7 @@ p.home__text-videos {
 .form__data-phone{
   display: none;
 }
-.open{
+.openActifeSert{
   display: block;
 }
 
@@ -1008,8 +1017,4 @@ p.home__text-videos {
   background-color: #4b4b4b9c;
   width: 100vw;
   height: 100vh;
-}
-
-.home-titleUgol{
-  padding-top: 3em;
 }
