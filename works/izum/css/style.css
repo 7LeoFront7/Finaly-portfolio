@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/*===================================================================
+=====================Reset=styles==================================
+===================================================================*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,13 +59,17 @@ a{
   color: black;
 }
 
+/*===================================================================
+=======================All=Styles==================================
+===================================================================*/
+
+
 body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   background-color: rgb(255, 255, 255);
 }
 
-body {}
 
 .wrapper {
   height: 100vh;
@@ -87,6 +94,10 @@ body {}
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+/*===================================================================
+=======================HEADER===============================
+===================================================================*/
 
 .header{
   background-color: #fff;
@@ -163,7 +174,18 @@ body {}
   margin-right: -9em;
 }
 
-/* ====== HOME ======= */
+.header__info img{
+  width: 0.7em;
+  margin-right: 0.5em;
+}
+/*===================================================================
+=====================END=HEADER======================================
+===================================================================*/
+
+
+/*===================================================================
+=====================HOME================================
+===================================================================*/
 
 .home{
   min-height: 972px;
@@ -240,6 +262,119 @@ color: #585858;
 .logo-image{
   max-width: 200px;
 }
+
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-77 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #570420;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-77:disabled {
+  cursor: default;
+}
+.btn-77:-moz-focusring {
+  outline: auto;
+}
+.btn-77 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-77 [hidden] {
+  display: none;
+}
+.btn-77 {
+  margin-top: 6px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  -webkit-animation: pulse 3s infinite;
+  animation: 2s cubic-bezier(0, 0, 0.2, 1) 0s infinite normal none running pulse;
+
+  border-radius: 10px;
+  box-shadow: 0 0 0 0.8em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px 10px #570420;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px 10px #570420;
+  }
+}
+
+.home__textSertifacate{
+  font-weight: 400;
+font-size: 54px;
+line-height: 74px;
+padding-left: 100px;
+margin-top: 20px;
+margin-bottom: 40px;
+color: #555555;
+}
+
+.home__video-izum{
+  display: flex;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.home__text-videos{
+  margin-top: 7px;
+  margin-left: 30px;
+    max-width: 286px;
+    font-weight: 500;
+    line-height: 41px;
+}
+
+.home__span-text{
+  font-weight: 300;
+}
+
+/*===================================================================
+=======================END=HOME=============================
+===================================================================*/
+
+/*===================================================================
+=======================REWARD=============================
+===================================================================*/
+
+.reward{
+  background-image: url(../img/reward.png);
+  background-size: 100%;
+  background-position-x: -1vw;
+}
+
+/*===================================================================
+=======================END=REWARD=============================
+===================================================================*/
+
+/*===================================================================
+=======================BURGER=============================
+===================================================================*/
 
 .skew-menu {
   text-align: center;
@@ -433,125 +568,116 @@ color: #585858;
   display: none;
 }
 
+/*===================================================================
+=====================END=BURGER================================
+===================================================================*/
 
-
-.header__info img{
-  width: 0.7em;
-  margin-right: 0.5em;
-}
-
-
-
-.btn-77,
-.btn-77 *,
-.btn-77 :after,
-.btn-77 :before,
-.btn-77:after,
-.btn-77:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-.btn-77 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #570420;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-}
-.btn-77:disabled {
-  cursor: default;
-}
-.btn-77:-moz-focusring {
-  outline: auto;
-}
-.btn-77 svg {
-  display: block;
-  vertical-align: middle;
-}
-.btn-77 [hidden] {
+/*===================================================================
+======================FORM================================
+===================================================================*/
+.form__data-phone{
   display: none;
 }
-.btn-77 {
-  margin-top: 6px;
-  font-size: 24px;
-  letter-spacing: 1px;
-  -webkit-animation: pulse 3s infinite;
-  animation: 2s cubic-bezier(0, 0, 0.2, 1) 0s infinite normal none running pulse;
-
-  border-radius: 10px;
-  box-shadow: 0 0 0 0.8em transparent;
-  box-sizing: border-box;
+.openActifeSert{
   display: block;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
+}
+
+.formActive-clouse{
   position: relative;
-  text-transform: uppercase;
-}
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px 10px #570420;
-  }
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px 10px #570420;
-  }
+  bottom: 120px;
+  left: 10px;
 }
 
-/*section{
-  margin-bottom: 150px;
-}*/
-
-
-.home__textSertifacate{
-  font-weight: 400;
-font-size: 54px;
-line-height: 74px;
-padding-left: 100px;
-margin-top: 20px;
-margin-bottom: 40px;
-color: #555555;
+.form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative;
 }
-
-.home__video-izum{
-  display: flex;
-  margin-top: 70px;
-  margin-left: 100px;
+.form__date h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #570420;
+  border-bottom: 3px solid #570420;
 }
-.home__text-videos{
-  margin-top: 7px;
-  margin-left: 30px;
-    max-width: 286px;
-    font-weight: 500;
-    line-height: 41px;
+.form__date input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
 }
-
-.home__span-text{
-  font-weight: 300;
+.form__date input:focus {
+  border-bottom: 2px solid #570420;
 }
-
-/* ======= REWARD ========= */
-
-.reward{
-  background-image: url(../img/reward.png);
-  background-size: 100%;
-  background-position-x: -1vw;
+.form__date p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
 }
-
-.reward__container{
+.form__date button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #570420;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form__date button:hover {
+  background: #570420;
+  color: #fff;
+}
+.form__date div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000000;
  
 }
+.form__date span {
+  margin: 0 5px 0 15px;
+}
+
+.form__data-phone{
+  z-index: 22222;
+  position: absolute;
+  background-color: #4b4b4b9c;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*===================================================================
+======================END==FORM================================
+===================================================================*/
 
 
-/* ======== MEDIA ======== */
+/*===================================================================
+======================MEDIA================================
+===================================================================*/
 
 @media screen and (max-width:2561px) and (min-width:1980px){
   .header__info{
@@ -937,100 +1063,7 @@ p.home__text-videos {
 }
 }
 
+/*===================================================================
+======================END==MEDIA================================
+===================================================================*/
 
-
-
-.form__data-phone{
-  display: none;
-}
-.openActifeSert{
-  display: block;
-}
-
-.formActive-clouse{
-  position: relative;
-  bottom: 120px;
-  left: 10px;
-}
-
-.form {
-  width: 340px;
-  height: 440px;
-  background: #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
-  padding: 20px 30px;
-  max-width: calc(100vw - 40px);
-  box-sizing: border-box;
-  position: relative;
-}
-.form__date h2 {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
-  color: #570420;
-  border-bottom: 3px solid #570420;
-}
-.form__date input {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  font-family: "Montserrat", sans-serif;
-  transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
-}
-.form__date input:focus {
-  border-bottom: 2px solid #570420;
-}
-.form__date p:before {
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #5a5a5a;
-}
-.form__date button {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  font-family: "Montserrat", sans-serif;
-  border: 2px solid #570420;
-  background: 0;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.form__date button:hover {
-  background: #570420;
-  color: #fff;
-}
-.form__date div {
-  content: "Hi";
-  position: absolute;
-  bottom: -15px;
-  right: -20px;
-  background: #50505a;
-  color: #fff;
-  width: 320px;
-  padding: 16px 4px 16px 0;
-  border-radius: 6px;
-  font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000000;
- 
-}
-.form__date span {
-  margin: 0 5px 0 15px;
-}
-
-.form__data-phone{
-  z-index: 22222;
-  position: absolute;
-  background-color: #4b4b4b9c;
-  width: 100vw;
-  height: 100vh;
-}
