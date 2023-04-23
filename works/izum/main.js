@@ -3,9 +3,9 @@ let popupActive = document.querySelector('.form__data-phone');
 let formActiveClouse = document.querySelector('.formActive-clouse')
 
 BtnActive.addEventListener('click', function(){
-    popupActive.classList.toggle('open')
+    popupActive.classList.toggle('openActifeSert')
 })
 
 formActiveClouse.addEventListener('click', function(){
-    popupActive.classList.remove('open')
+    popupActive.classList.remove('openActifeSert')
 })
