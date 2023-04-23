@@ -1,899 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-  background-color: rgb(255, 255, 255);
-}
-
-body {}
-
-.wrapper {
-  height: 100vh;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-[class*="__container"] {
-  margin: 0 auto;
-  max-width: 1766px;
-  padding: 0 78px;
-}
-
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.header{
-  background-color: #fff;
-}
-
-.header__body{
-  height: 108px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__info-adress{
-  margin-top: 7px;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.header__info-adress:hover{
-  color: #E3896F;
-}
-
-.header__link{
-  transition: .3s;
-  font-size: 21px;
-  font-weight: 300;
-  margin-right: 30px;
-}
-
-.header__whatsup{
-  margin-right: 10px;
-}
-
-.header__info{
-  font-size: 18px;
-}
-
-.header__tel{
-  transition: .3s;
-  font-size: 18px;
-}
-
-.header__tel:hover{
-  color: #E3896F;
-}
-
-.header__list{
-  display: flex;
-}
-
-.header__link:hover{
-  color: #E3896F;
-}
-
-.header__other{
-  color: #000000;
-  text-decoration: underline;
-}
-
-.header__other:hover{
-  transition: .3s;
-  color: #E3896F;
-}
-.header__contact-box{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 6px;
-}
-.header__contact{
-  margin-right: -9em;
-}
-
-/* ====== HOME ======= */
-
-.home{
-  min-height: 972px;
-  max-height: 972px;
-  width: 100%;
-  background: url(../img/ohone1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-}
-
-.home__title{
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 65.47px;
-  color: #A87F6D;
-  text-transform: uppercase;
-}
-.home__title span{
-  color: #A87F6D;
-}
-
-.home-titleUgol{
-  padding-left: 100px;
-  padding-top: 150px;
-  padding-top: 7em;
-}
-
-.home__ufol1{
-position: relative;
-right: 30px;
-top: 15px;
-}
-
-.home__ufol2{
-  position: relative;
-  left: 552px;
-  bottom: 22px;
-}
-
-.home__button-reg{
-  background: linear-gradient(91.7deg, #A87F6D 48.56%, #E4C4AB 111%);
-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-padding: 15px 30px;
-font-size: 45px;
-color: #fff;
-font-weight: 300;
-margin-top: 50px;
-margin-right: 50px;
-
-}
-
-.home__buttons{
-  padding-left: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.home__text-videos{
-  margin-left: 15px;
-  font-size: 30px;
-  font-weight: normal;
-  color: #585858;
-  font-weight: 300;
-line-height: 55px;
-
-color: #585858;
-
-}
-
-.logo-image{
-  max-width: 200px;
-}
-
-.skew-menu {
-  text-align: center;
-}
-
-.skew-menu ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transform: skew(-25deg);
-}
-
-.skew-menu ul li {
-  background: #fff;
-  float: left;
-  border-left: 1px solid rgb(0, 0, 0);
-  border-top: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-
-  text-transform: uppercase;
-  color: rgb(179, 179, 179);
-  font-weight: bolder;
-  transition: all 0.3s linear;
-  margin-left: 100px;
-}
-
-.open {
-  background-color: #E3896F;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-  top: 8px;
-}
-
-.open:before {
-  content: '';
-  background-color: #E3896F;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: -8px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-}
-
-.open:after {
-  content: '';
-  background-color: #E3896F;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: 4px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-}
-
-.menuOpen {
-  width: 24px;
-  height: 20px;
-  display: block;
-  padding: 15px;
-  cursor: pointer;
-  float: right;
-}
-
-.menuOpen:hover .open:before {
-  top: -9px;
-}
-
-.menuOpen:hover .open:after {
-  top: 5px;
-}
-
-.menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #E4C4AB;
-}
-
-.menu label {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background-size: 100%;
-  cursor: pointer;
-}
-
-.menu .menuContent {
-  position: relative;
-  top: 50%;
-  font-size: 24px;
-  text-align: center;
-  padding-bottom: 20px;
-  margin-top: -170px;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.menu ul li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-family: Trebuchet MS;
-  text-transform: uppercase;
-  padding: 10px 0;
-}
-
-.menu ul li a:hover {
-  color: #E3896F;
-}
-
-.menu ul li:hover {
-  background: white;
-}
-
-.menuEffects {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-
-.menuEffects ul {
-  transform: translateY(0%);
-  transition: all 0.5s;
-}
-
-#menuToggle:checked ~ .menuEffects {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s;
-}
-
-#menuToggle:checked ~ .menuEffects ul {
-  opacity: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open {
-  background-color: transparent;
-}
-
-#menuToggle:checked ~ .menuOpen .open:before {
-  content: '';
-  background-color: white;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open:after {
-  content: '';
-  background-color: white;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#menuToggle:not(:checked) ~ .menuEffects ul {
-  transform: translateY(-30%);
-}
-
-.menuArea{
-  z-index: 99;
-}
-
-#menuArea {
-  display: none;
-}
-#menuToggle {
-  display: none;
-}
-
-
-
-.header__info img{
-  width: 0.7em;
-  margin-right: 0.5em;
-}
-
-
-
-.btn-77,
-.btn-77 *,
-.btn-77 :after,
-.btn-77 :before,
-.btn-77:after,
-.btn-77:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-.btn-77 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #570420;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-}
-.btn-77:disabled {
-  cursor: default;
-}
-.btn-77:-moz-focusring {
-  outline: auto;
-}
-.btn-77 svg {
-  display: block;
-  vertical-align: middle;
-}
-.btn-77 [hidden] {
-  display: none;
-}
-.btn-77 {
-  margin-top: 6px;
-  font-size: 24px;
-  letter-spacing: 1px;
-  -webkit-animation: pulse 3s infinite;
-  animation: 2s cubic-bezier(0, 0, 0.2, 1) 0s infinite normal none running pulse;
-
-  border-radius: 10px;
-  box-shadow: 0 0 0 0.8em transparent;
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
-}
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px 10px #570420;
-  }
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px 10px #570420;
-  }
-}
-
-
-
-
-.home__textSertifacate{
-  font-weight: 400;
-font-size: 54px;
-line-height: 74px;
-padding-left: 100px;
-margin-top: 20px;
-margin-bottom: 40px;
-color: #555555;
-}
-
-.home__video-izum{
-  display: flex;
-  margin-top: 70px;
-  margin-left: 100px;
-}
-.home__text-videos{
-  margin-top: 7px;
-  margin-left: 30px;
-    max-width: 286px;
-    font-weight: 500;
-    line-height: 41px;
-}
-
-.home__span-text{
-  font-weight: 300;
-}
-
-/* ======== MEDIA ======== */
-
-@media screen and (max-width:2561px) and (min-width:1980px){
-  .header__info{
-    font-size: 1.3em;
-  }
-  .header__contact{
-    font-size: 0.6em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.5em;
-  }
-  section.home{
-    background-size: cover;
-  }
-  .home-titleUgol {
-    padding: 7em 0 0 0;
-  }
-  .home__textSertifacate {
-    padding-left: 0;
-  }
-  .home__buttons {
-    padding-left: 0;
-    padding-top: 1em;
-  }
-  .home__video-izum {
-    margin-left: 0;
-    margin-top: 6em;
-}
-.header__container {
-  padding-left: 0;
-}
-
-}
-
-@media screen and (max-width:1650px){
-  .header__info{
-    font-size: 1vw;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.2em;
-  }
-  .home-titleUgol h1{
-    font-size: 4vw;
-  }
-  .home__textSertifacate p{
-    font-size: 2.6vw;
-    line-height: 1.3em;
-  }
-  img.home__ufol2 {
-    left: 32vw;
-}
-  a.home__button-reg.btn-77 {
-  font-size: 1.1vw;
-}
-  .home__video-izum img{
-    width: 4vw;
-  }
-  p.home__text-videos{
-    font-size: 1.5vw;
-    margin-top: 0em;
-    line-height: 1.5em;
-  }
-  
-}
-
-@media screen and (max-width:1470px){
-  .header__info{
-    font-size: 1em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.2em;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  
-}
-
-@media screen and (max-width:1440px){
-  .header__nav{
-    font-size: 0.9em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__link{
-    font-size: 1.3vw;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2em;
-  }
-  .home__textSertifacate {
-    margin-top: 0;
-    margin-bottom: 2vw;
-}
-    .home__video-izum {
-    margin-top: 4vw;
-} 
-p.home__text-videos{
-  max-width: 16vw;
-}
-
-}
-
-@media screen and (max-width:1366px){
-  .header__info{
-    font-size: 0.9em;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  .header__contact{
-    font-size: 0.4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1.1em;
-  }
-  .home-titleUgol {
-    padding-top: 5vw;
-}
-  
-}
-
-@media screen and (max-width:1030px){
-.header__body{
-  height: 80px;
-}
-  .header__container{
-  padding: 0em 1em;
-  margin: 0;
- }
-  .logo-image{
-    width: 9em;
-  }
-  .header__info{
-    font-size: 0.8em;
-  }
-  .header__info img{
-    width: 0.7em;
-    margin-right: 0.5em;
-  }
-  .header__contact{
-    font-size: 0.3em;
-    margin-right: -10em;
-  }
-  .header__contact img{
-    width: 4em;
-  }
-  .header__tel{
-    font-size: 2.5em;
-  }
-  .header__other{
-    font-size: 2.2em;
-  }
-  .header__link{
-    font-size: 1em;
-    margin: 0.7em;
-  }
-  .home__container {
-    padding: 0;
-}
-img.home__ufol1 {
-  top: 3vh;
-  left: -3vw;
-  width: 3vw;
-}
-img.home__ufol2{
-  width: 3vw;
-  left: 31vw;
-  top: -3vh;
-}
-  
-}
-@media screen and (max-width:950px){
-  .header__body{
-    height: 80px;
-  }
-    .header__container{
-    padding: 0em 1em;
-    margin: 0;
-   }
-    .logo-image{
-      width: 9em;
-    }
-    .header__info{
-      font-size: 0.6em;
-      width: 100;
-    }
-    .header__info img{
-      width: 0.7em;
-      margin-right: 0.5em;
-    }
-    .header__contact{
-      font-size: 0.3em;
-      margin-right: -5em;
-    }
-    .header__contact img{
-      width: 4em;
-    }
-    .header__tel{
-      font-size: 2.5em;
-    }
-    .header__other{
-      font-size: 2.2em;
-    }
-    .header__link{
-      font-size: 0.9em;
-      margin: 0.7em;
-    } 
-    
-    
-  }
-@media screen and (max-width:900px){
-  .header__body{
-    height: 60px;
-  }
-    .header__container{
-    padding: 0em 1em;
-    margin: 0;
-   }
-    .logo-image{
-      width: 9em;
-    }
-    .header__nav{
-      display: none;
-    }
-    .header__info{
-      display: none;
-    }
-    .header__info img{
-      width: 0.7em;
-      margin-right: 0.5em;
-    }
-    .header__contact{
-      display: none;
-    }
-    .header__contact img{
-      width: 4em;
-    }
-    .header__tel{
-      font-size: 2.5em;
-    }
-    .header__other{
-      font-size: 2.2em;
-    }
-    .header__link{
-      font-size: 0.9em;
-      margin: 0.7em;
-    }
-    #menuArea{
-      display: block;
-    }
-    
-  }
-@media screen and (max-width:768px){
-    .logo-image{
-      max-width: 200px;
-    }
-    
-}
-@media screen and (max-width:600px){
-  .main{
-    
-  }
- .home{
-  background-position: 92% 0%;
-    background-size: cover;
-    position: relative;
-    background-size: 308%;
- }
-  .home__container{
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  margin-top: 0vw;
-  width: 100vw;
-  margin-top: 15vw;
- }
-
- .home-titleUgol{
-  text-align: center;
-  padding-left: 0;
-  width: auto;
- }
-
- .home-titleUgol h1{
-  font-size: 4.2vh;
-}
-.home__textSertifacate{
-  text-align: center;
-  padding-left: 0;
-  width: auto;
-}
-
-.home__textSertifacate p{
-  font-size: 0.45em;
-}
-img.home__ufol1{
-  display: none;
-}
-img.home__ufol2{
-  display: none;
-}
-.home__buttons{
-  padding-left: 0;
-  width: auto;
-  margin: 0 auto;
-  justify-content: center;
-}
-a.home__button-reg.btn-77{
-  font-size: 3vw;
-  padding: 4vw 6vw;
-  margin-top: 2.5em;
-}
-.home__video-izum{
-  margin: 2em auto;
-  
-  justify-content: center;
-}
-.home__video-izum img {
-  width: 9vw;
-}
-p.home__text-videos {
-  font-size: 3.5vw;
-  max-width: 34vw;
-  margin-left: 1em;
-}
-  
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Студия лазерной эпиляции #IZUM</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <img class="logo-image" src="img/Logo.png" alt="logo">
+                    </div>
+                    <div class="header__info">
+                        <p class="header__info-time">Без выходных с 10:00 до 22:00</p>
+                        <p class="header__info-adress"><img src="img/icon-map.png" alt="iconmap"> Наши адреса <img src="img/icon-up.png" alt="iconup"></p>
+                    </div> 
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class='header__link' href="#">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class='header__link' href="#">Популярные услуги</a>
+                            </li>
+                            <li class="header__item">
+                                <a class='header__link' href="#">Запись</a>
+                            </li>
+                            <li class="header__item">
+                                <a class='header__link' href="#">Акции</a>
+                            </li>
+                            <li class="header__item">
+                                <a class='header__link' href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contact">
+                        <div class="header__contact-box">
+                           <a class="header__whatsup" href="#"><img src="img/whatsapp-icon.png" alt="whatsup"></a><a class="header__tel" href="tel:+74953238964">+7(495)323-89-64</a>  
+                        </div>
+                       
+                        <a href="#" class="header__other">Заказать обратный звонок</p></a>
+                    </div>
+                    <div class="menuArea">
+                        <div id="menuArea">
+              <input type="checkbox" id="menuToggle"></input>
+            
+            <label for="menuToggle" class="menuOpen">
+              <div class="open"><span></span><span></span><span></span></div>
+            </label>
+            
+            <div class="menu menuEffects">
+              <label for="menuToggle"></label>
+              <div class="menuContent">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Популярные услуги</a></li>
+                  <li><a href="#">Запись</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Наши адреса</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <main class="main">
+            <section class="home">
+                <div class="home__container">
+                    <div class="home__body">
+                        <div class="home-titleUgol">
+                            <img class="home__ufol1" src="img/ygol1.png" alt="ygol1">
+                        <h1 class="home__title">
+                        Вам подарок!</h1><img class="home__ufol2" src="img/ygol2.png" alt="ygol2">
+                        </div>
+                        <div class="home__textSertifacate">
+                            <p>Сертификат на 1000 рублей <br><span class="home__span-text">на лазерную эпиляцию</span></p>
+                        </div>
+                        <div class="home__buttons">
+                            <a class="home__button-reg btn-77" href="#">Активировать</a>
+                        </div>
+                        <div class="home__video-izum">
+                            <a class="button-videos" href="#"><img src="img/icon-vidos.png" alt="video"></a>
+                            <p class="home__text-videos">Познакомьтесь с #IZUM за 40 секунд</p>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+               
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
