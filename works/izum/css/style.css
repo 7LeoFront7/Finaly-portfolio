@@ -92,6 +92,7 @@ body {}
   background-color: #fff;
   position: fixed;
   width: 100vw;
+  z-index: 999;
 }
 
 .header__body{
@@ -168,7 +169,7 @@ body {}
   min-height: 972px;
   max-height: 972px;
   width: 100%;
-  background: url(../img/ohone1.jpg);
+  background: url(../img/homeecrann.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -505,7 +506,9 @@ color: #585858;
   }
 }
 
-
+/*section{
+  margin-bottom: 150px;
+}*/
 
 
 .home__textSertifacate{
@@ -534,6 +537,19 @@ color: #555555;
 .home__span-text{
   font-weight: 300;
 }
+
+/* ======= REWARD ========= */
+
+.reward{
+  background-image: url(../img/reward.png);
+  background-size: 100%;
+  background-position-x: -1vw;
+}
+
+.reward__container{
+ 
+}
+
 
 /* ======== MEDIA ======== */
 
