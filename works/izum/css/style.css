@@ -204,6 +204,7 @@ body {
 
 .home__body-left{
   flex: 1 1 50%;
+  margin-left: -5vw;
 }
 
 .home__body-right{
@@ -383,7 +384,7 @@ color: #555555;
 ===================================================================*/
 
 .reward{
-  background-image: url(../img/reward.png);
+  background-image: url(../img/phone-reward.png);
   background-size: 100%;
   background-position-x: -1vw;
   height: 100vh;
@@ -393,6 +394,7 @@ color: #555555;
   display: flex;
   height: 100vh;
   align-items: center;
+  
 }
 .reward__leftBox{
   flex: 1 1 50%;
@@ -406,6 +408,9 @@ color: #555555;
 .reward__title{
   display: flex;
 }
+.reward__rightBox img{
+  width: 80%;
+}
 .reward__text{
   font-weight: 300;
   font-size: 2vw;
@@ -413,25 +418,40 @@ color: #555555;
   color: #000000;
   text-transform: none;
   width: 34vw;
+  margin-top: 3vh;
 }
 .reward__ygol1{
+  margin-bottom: 17vh;
   height: 2vw;
+
 }
 .reward__ygol2{
   height: 2vw;
-  margin-top: 16vw;
+  margin-top: 19vh;
   transform: translate(-7vw, 0%);
 }
 .reward__button_action{
-  font-size: 24px;
-  width: 32%;
-  margin-left: 2vw;
+  font-size: 1.5vw;
+  width: 15vw;
+  margin-left: 7vw;
+  margin-top: 4vh;
 }
 .reward__button_action a{
   color: #fff;
 }
+.reward__lefttBox{
+  
+  display: flex;
+  justify-content: center;
+}
 .reward__rightBox{
-  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.reward__title{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -801,6 +821,10 @@ color: #555555;
 .reward__text {
   margin-top: 1vw;
 }
+
+.reward__button_action{
+  margin-left: 7vw;
+}
 /*===================================================================
 =======================REWARD MEDIA=============================
 ===================================================================*/
@@ -810,7 +834,7 @@ color: #555555;
 .reward__button_action{
   font-size: 1.3vw;
   width: 12vw;
-  margin-left: 2vw;
+  margin-left: 7vw;
 }
 .reward__ygol2{
   margin-top: 10vw;
@@ -826,7 +850,6 @@ color: #555555;
 /*===================================================================
 =======================END=REWARD=============================
 ===================================================================*/
-
 }
 
 @media screen and (max-width:1650px){
@@ -1020,6 +1043,42 @@ img.home__ufol2{
 .home-titleUgol {
   padding-top: 10vw;
 }
+.reward__container{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reward__title{
+  width: 80vw;
+  margin-top: 5vh;
+}
+.reward__text{
+  width: 80vw;
+  font-size: 4vw;
+  text-align: center;
+ 
+}
+.reward__text-body{
+  display: flex;
+  justify-content: center;
+}
+.reward__button_action {
+  margin: 0 auto;
+  margin-top: 4vh;
+  font-size: 2vw;
+  width: 18vw;
+}
+.reward__rightBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.reward__rightBox img{
+ 
+  display: flex;
+  justify-content: center;
+  width: 58vw;
+  margin: 0 auto;
+}
   
 }
 @media screen and (max-width:950px){
@@ -1104,6 +1163,10 @@ img.home__ufol2{
     
   }
 @media screen and (max-width:768px){
+  .reward{
+    background-repeat: repeat;
+    background-size: 150%;
+  }
     .logo-image{
       max-width: 200px;
     }
@@ -1167,7 +1230,7 @@ img.home__ufol2{
       margin-top: 1em;
     }
     .home__video-izum{
-      margin: 14vh auto ;
+      margin: 10vh auto ;
       
       
       justify-content: center;
@@ -1190,5 +1253,42 @@ img.home__ufol2{
       margin: 0 auto;
       margin-top: 1.3em;
     }
+    .reward__text{
+      line-height: 4vh;
+    }
+    .reward__button_action a{
+      font-size: 5vw;
+    }
+    .reward__button_action{
+      width: 45vw;
+    }
+    .reward__rightBox{
+      margin-top: 0;
+    }
+    .reward__text{
+      color: #000;
+      font-weight: 300;
+      margin-bottom: 3vh;
+    }
+    .reward__ygol1{
+      position: relative;
+      left: 12vw;
+      top: 4vh;
+    }
+    .reward__ygol2{
+      position: relative;
+      top: 4vh;
+      right: 4vw;
+    }
+    .home__title{
+      border: none;
+    }
+    .reward__title{
+      border-bottom: 2px solid #A87F6D;
+      margin-top: 0vw;
+    }
+    .reward__rightBox img{
+      margin-bottom: 13vh;
     
+    }
 }
