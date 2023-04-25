@@ -204,7 +204,7 @@ body {
 
 .home__body-left{
   flex: 1 1 50%;
-  margin-left: -5vw;
+  margin-left: 0vw;
 }
 
 .home__body-right{
@@ -768,6 +768,92 @@ color: #555555;
 ===================================================================*/
 
 
+
+
+
+
+.lazer{
+  background: linear-gradient(270deg, #FFFFFF 53.3%, #E7C0A2 99.93%);
+}
+
+.lazer__body{
+  display: flex;
+}
+.lazer__left{
+  flex: 1 0 50%;
+}
+.lazer__right{
+  flex: 1 0 50%;
+}
+.lazer__title{
+  display: flex;
+}
+
+.lazer__text{
+  font-size: 2.3vw;
+  color: #000;
+  font-weight: normal;
+  line-height: 3.2vw;
+}
+
+.lazer__text span{
+  font-size: 2.3vw;
+  color: #A87F6D;
+}
+.lazer__right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazer__ygol1{
+  height: 3vh;
+  position: relative;
+  bottom: 2vh;
+}
+.lazer__ygol2{
+  height: 3vh;
+  position: relative;
+  top: 8vh;
+}
+
+.lazer__right p{
+  font-size: 1.5vw;
+  margin-top: 4vh;
+  color: #757575;
+}
+
+.lazer__bootomtext{
+  padding-left: 1.4vw;
+}
+
+.lazer__right p.lazerSpan{
+  font-size: 2.2vw;
+  color: #A87F6D;
+}
+
+.lazer__button_action a{
+  color: #fff;
+  font-size: 2.5vw;
+}
+.lazer__button_action{
+  width: 23vw;
+}
+
+.lazer__left img{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
 /*===================================================================
 ======================MEDIA================================
 ===================================================================*/
@@ -841,11 +927,11 @@ color: #555555;
 }
 .reward__leftBox{
   margin-left: -2vw;
+  margin-bottom: 10vh;
+ 
 }
 
-.reward__leftBox{
-  margin-bottom: 10vh;
-}
+
 
 /*===================================================================
 =======================END=REWARD=============================
@@ -1079,8 +1165,86 @@ img.home__ufol2{
   width: 58vw;
   margin: 0 auto;
 }
-  
+.lazer__body{
+    flex-wrap: wrap;
+  }
+
+  .lazer__container{
+    flex-wrap: wrap;
+  }
+
+.lazer__body{
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
+.lazer__left{
+  flex: 1 1 60%;
+}
+
+.lazer__left img{
+  width: 50%;
+
+}
+.lazer__left{
+  display: flex;
+  justify-content: center;
+}
+.lazer__right, .lazer__title{
+  display: flex;
+  font-size: 3vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.lazer__right p{
+  font-size: 2.5vw;
+  margin-top: 4vh;
+  color: #757575;
+}
+
+.lazer__bootomtext{
+  padding-left: 1.4vw;
+}
+
+.lazer__right p.lazerSpan{
+  font-size: 3.2vw;
+  color: #000;
+}
+
+.lazer__button_action a{
+  color: #fff;
+  font-size: 3.5vw;
+}
+.lazer__text{
+  color: #000000;
+  font-size: 4.5vw;
+  line-height: 5vh;
+}
+.lazer__text span{
+  color: #A87F6D;
+  font-size: 4.5vw;
+  line-height: 5vh;
+}
+.lazer__right{
+  margin-top: 8vh;
+}
+.lazer__button_action{
+margin: 0 auto;
+width: 34vw;
+margin-top: 5vh;
+margin-bottom: 10vh;
+}
+.lazer__ygol2{
+  top: 6vh;
+}
+.lazer__ygol1{
+  bottom: 8vh;
+  left: 3vh;
+}
+
+}
+
+
 @media screen and (max-width:950px){
   .header__body{
     height: 80px;
@@ -1291,4 +1455,5 @@ img.home__ufol2{
       margin-bottom: 13vh;
     
     }
+  
 }
