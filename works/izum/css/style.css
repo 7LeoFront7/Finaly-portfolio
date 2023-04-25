@@ -105,6 +105,7 @@ body {
   position: fixed;
   width: 100vw;
   z-index: 999;
+  border-bottom: 1px solid #adadad;
 }
 
 .header__body{
@@ -199,7 +200,7 @@ body {
 
 .home__body{
   display: flex;
-  margin-top: 7vh;
+  margin-top: 5vh;
 }
 
 .home__body-left{
@@ -826,6 +827,7 @@ color: #555555;
 
 .lazer__bootomtext{
   padding-left: 1.4vw;
+  line-height: 4vh;
 }
 
 .lazer__right p.lazerSpan{
@@ -1204,6 +1206,7 @@ img.home__ufol2{
 
 .lazer__bootomtext{
   padding-left: 1.4vw;
+  line-height: 2vh;
 }
 
 .lazer__right p.lazerSpan{
