@@ -205,7 +205,8 @@ body {
 
 .home__body-left{
   flex: 1 1 50%;
-  margin-left: 0vw;
+  margin-left: -6vw;
+  margin-top: 4vh;
 }
 
 .home__body-right{
