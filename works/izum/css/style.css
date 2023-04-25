@@ -1455,5 +1455,22 @@ margin-bottom: 10vh;
       margin-bottom: 13vh;
     
     }
+    .lazer__text, .lazer__text span{
+      font-size: 5vw;
+      line-height: 4.2vh;
+    }
+    .lazer__right p {
+      font-size: 3.5vw;
+      line-height: 3vh;
+    }
+    .lazer__right p.lazerSpan{
+      font-size: 4vw;
+    }
+    .lazer__button_action{
+      font-size: 4vw;
+    }
+    .lazer__container{
+      padding: 0 2vw;
+    }
   
 }
