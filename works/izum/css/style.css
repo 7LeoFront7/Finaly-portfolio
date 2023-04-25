@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -135,7 +136,7 @@ body {
 }
 
 .header__info{
-  font-size: 18px;
+  font-size: 2vh;
 }
 
 .header__tel{
@@ -188,15 +189,34 @@ body {
 ===================================================================*/
 
 .home{
-  min-height: 972px;
-  max-height: 972px;
   width: 100%;
-  background: url(../img/homeecrann.png);
-  background-size: contain;
+  
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 0%;
-  min-height: 100vh;
-  max-height: 100vh;
+  background-position: 0 8vw;
+  height: 93vh;
+}
+
+.home__body{
+  display: flex;
+  margin-top: 7vh;
+}
+
+.home__body-left{
+  flex: 1 1 50%;
+}
+
+.home__body-right{
+    background-image: url(../img/Demo1.webp);
+    position: absolute;
+    width: 41vw;
+    height: 97vh;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home__body-right img{
+  width: 50vw;
 }
 
 .home__title{
@@ -328,7 +348,7 @@ color: #585858;
 }
 
 .home__textSertifacate{
-  font-weight: 400;
+font-weight: 400;
 font-size: 54px;
 line-height: 74px;
 padding-left: 100px;
@@ -366,11 +386,64 @@ color: #555555;
   background-image: url(../img/reward.png);
   background-size: 100%;
   background-position-x: -1vw;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
+.reward__container{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.reward__leftBox{
+  flex: 1 1 50%;
+  margin-left: 2vw;
+}
+.reward__text-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.reward__title{
+  display: flex;
+}
+.reward__text{
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 5vh;
+  color: #000000;
+  text-transform: none;
+  width: 34vw;
+}
+.reward__ygol1{
+  height: 2vw;
+}
+.reward__ygol2{
+  height: 2vw;
+  margin-top: 16vw;
+  transform: translate(-7vw, 0%);
+}
+.reward__button_action{
+  font-size: 24px;
+  width: 32%;
+  margin-left: 2vw;
+}
+.reward__button_action a{
+  color: #fff;
+}
+.reward__rightBox{
+  flex: 1 1 50%;
+}
+
+
 
 /*===================================================================
 =======================END=REWARD=============================
 ===================================================================*/
+
+.fullEkran{
+  width: 100vw;
+  height: 100vh;
+}
 
 /*===================================================================
 =======================BURGER=============================
@@ -699,7 +772,7 @@ color: #555555;
     background-size: cover;
   }
   .home-titleUgol {
-    padding: 7em 0 0 0;
+    padding: 14vw 0 0 0;
   }
   .home__textSertifacate {
     padding-left: 0;
@@ -715,6 +788,44 @@ color: #555555;
 .header__container {
   padding-left: 0;
 }
+.home{
+  width: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1vw 8vw;
+  min-height: 72vh;
+  max-height: 100vh;
+}
+
+.reward__text {
+  margin-top: 1vw;
+}
+/*===================================================================
+=======================REWARD MEDIA=============================
+===================================================================*/
+
+
+
+.reward__button_action{
+  font-size: 1.3vw;
+  width: 12vw;
+  margin-left: 2vw;
+}
+.reward__ygol2{
+  margin-top: 10vw;
+}
+.reward__leftBox{
+  margin-left: -2vw;
+}
+
+.reward__leftBox{
+  margin-bottom: 10vh;
+}
+
+/*===================================================================
+=======================END=REWARD=============================
+===================================================================*/
 
 }
 
@@ -811,8 +922,16 @@ p.home__text-videos{
 }
 
 @media screen and (max-width:1366px){
+  .home{
+    background-position: 6vw 8vw;
+    background-size: cover;
+  }
+  .header__container{
+    padding: 0em 1em;
+    margin: 0;
+   }
   .header__info{
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
   .header__info img{
     width: 0.7em;
@@ -822,16 +941,29 @@ p.home__text-videos{
     font-size: 0.4em;
   }
   .header__tel{
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .header__other{
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .header__link{
     font-size: 1.1em;
   }
   .home-titleUgol {
     padding-top: 13vw;
+}
+.logo-image{
+  width: 10vw;
+}
+.header__contact{
+  margin-right: 1vw;
+}
+.home{
+  background-size: cover;
+  background-position: 25% 25%;
+  height: 100vh;
+  width: 100vw;
+  background-position-y: 100%;
 }
   
 }
@@ -840,8 +972,9 @@ p.home__text-videos{
 .header__body{
   height: 80px;
 }
+
   .header__container{
-  padding: 0em 1em;
+  padding: 0em 2vw;
   margin: 0;
  }
   .logo-image{
@@ -856,7 +989,7 @@ p.home__text-videos{
   }
   .header__contact{
     font-size: 0.3em;
-    margin-right: -10em;
+    margin-right: -5em;
   }
   .header__contact img{
     width: 4em;
@@ -974,96 +1107,88 @@ img.home__ufol2{
     .logo-image{
       max-width: 200px;
     }
+    .header{
+      z-index: 9999;
+     }
+     .home__body-right{
+      background-position: 81% 0%;
+        background-size: cover;
+        position: absolute;
+        background-size: 103%;
+        width: 100vw;
+        z-index: -1;
+     }
+      .home__container{
+        background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+      position: absolute;
+      margin-top: 0vw;
+      width: 100vw;
+      margin-top: 7vh;
+      }
+    
+     .home-titleUgol{
+      text-align: center;
+      padding-left: 0;
+      width: auto;
+     }
+    
+     .home-titleUgol h1{
+      font-size: 5vh;
+    }
+    .home__textSertifacate{
+      text-align: center;
+      padding-left: 0;
+      width: auto;
+    }
+    
+    .home__textSertifacate p{
+      font-size: 0.45em;
+      margin-top: 1em;
+    }
+    img.home__ufol1{
+      display: none;
+    }
+    img.home__ufol2{
+      display: none;
+    }
+    .home__buttons{
+      padding-left: 0;
+      width: auto;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    a.home__button-reg.btn-77{
+      font-size: 4vw;
+      padding: 4vw 8vw;
+      margin-top: 1em;
+    }
+    .home__video-izum{
+      margin: 14vh auto ;
+      
+      
+      justify-content: center;
+    }
+    .home__video-izum img {
+      width: 9vw;
+    }
+    p.home__text-videos {
+      font-size: 3.5vw;
+      max-width: 34vw;
+      margin-left: 1em;
+    }
+    .home__title{
+      font-weight: 800;
+      line-height: 47.47px;
+      color: #A87F6D;
+      text-transform: uppercase;
+      border-bottom: 3px solid #A87F6D;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 1.3em;
+    }
     
 }
-@media screen and (max-width:600px){
- .header{
-  z-index: 9999;
- }
-  .main{
-    
-  }
- .home{
-  background-position: 92% 0%;
-    background-size: cover;
-    position: relative;
-    background-size: 308%;
- }
-  .home__container{
-    background: rgb(255,255,255);
-background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
-background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
-background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8995973389355743) 12%, rgba(255,255,255,0.9) 84%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-  position: absolute;
-  margin-top: 0vw;
-  width: 100vw;
-  margin-top: 15vw;
- }
-
- .home-titleUgol{
-  text-align: center;
-  padding-left: 0;
-  width: auto;
- }
-
- .home-titleUgol h1{
-  font-size: 5vh;
-}
-.home__textSertifacate{
-  text-align: center;
-  padding-left: 0;
-  width: auto;
-}
-
-.home__textSertifacate p{
-  font-size: 0.45em;
-  margin-top: 1em;
-}
-img.home__ufol1{
-  display: none;
-}
-img.home__ufol2{
-  display: none;
-}
-.home__buttons{
-  padding-left: 0;
-  width: auto;
-  margin: 0 auto;
-  justify-content: center;
-}
-a.home__button-reg.btn-77{
-  font-size: 4vw;
-  padding: 4vw 8vw;
-  margin-top: 1em;
-}
-.home__video-izum{
-  margin: 5em auto ;
-  
-  
-  justify-content: center;
-}
-.home__video-izum img {
-  width: 9vw;
-}
-p.home__text-videos {
-  font-size: 3.5vw;
-  max-width: 34vw;
-  margin-left: 1em;
-}
-.home__title{
-  font-weight: 800;
-  line-height: 47.47px;
-  color: #A87F6D;
-  text-transform: uppercase;
-  border-bottom: 3px solid #A87F6D;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 1.3em;
-}
-}
-
-/*===================================================================
-======================END==MEDIA================================
-===================================================================*/
-
