@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form" action="#" method="#" name="form" id="form">
+            <div class="form__title">
+                <h1>Форма бронирования переговорной</h1>
+            </div>
+            <div class="form__chooseTower form__block">
+                <select name="chooseTower">
+                    <option>Выберите башню</option>
+                    <option>Башня А</option>
+                    <option>Башня Б</option>
+                </select>
+            </div>
+            <div class="form__chooseTEtag form__block">
+                <select name="chooseTEtag">
+                    <option>Выберите этаж</option>
+                    <option>3 этаж</option>
+                    <option>4 этаж</option>
+                    <option>4 этаж</option>
+                    <option>5 этаж</option>
+                    <option>6 этаж</option>
+                    <option>7 этаж</option>
+                    <option>8 этаж</option>
+                    <option>9 этаж</option>
+                    <option>10 этаж</option>
+                    <option>11 этаж</option>
+                    <option>12 этаж</option>
+                    <option>13 этаж</option>
+                    <option>14 этаж</option>
+                    <option>15 этаж</option>
+                    <option>16 этаж</option>
+                    <option>17 этаж</option>
+                    <option>18 этаж</option>
+                    <option>19 этаж</option>
+                    <option>20 этаж</option>
+                    <option>21 этаж</option>
+                    <option>22 этаж</option>
+                    <option>23 этаж</option>
+                    <option>24 этаж</option>
+                    <option>25 этаж</option>
+                    <option>26 этаж</option>
+                    <option>27 этаж</option>
+                    
+                </select>
+            </div>
+            <div class="form__choosePeregovor form__block">
+                <select name="choosePeregovor">
+                                        <option>Выберите переговорную</option>
+                                        <option>1 Переговорная</option>
+                                        <option>2 Переговорная</option>
+                                        <option>3 Переговорная</option>
+                                        <option>4 Переговорная</option>
+                                        <option>5 Переговорная</option>
+                                        <option>6 Переговорная</option>
+                                        <option>7 Переговорная</option>
+                                        <option>8 Переговорная</option>
+                                        <option>9 Переговорная</option>
+                                        <option>10 Переговорная</option>
+                </select>
+            </div>
+            <div class="form__choosePeregovor form__block">
+                <p>Выберите дату: <input class="text-field__input form__data" type="text" id="datepicker"></p>
+            </div>
+
+            <div class="form__choosePeregovor form__block">
+                 <textarea name="textArea" class="text-field__input text-field__input-data" placeholder="Дополнительная информация"></textarea>
+            </div>
+
+            <div class="form__butons form__block">
+                <input class="text-field__input text-field__input-btn" type="submit" value="Отправить">
+                <button class="form__reset-btn" type="reset">Очистить</button>
+            </div>
+                       
+            
+        </form>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
