@@ -320,13 +320,17 @@ a {
   height: 100vh;
   background-color: #ffffff;
   z-index: 2;
-  top: -100%;
+  top: -200%;
   padding: 0 50px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .burger svg {
   margin-right: -20px;
+}
+
+.block-metros-burger-point {
+  display: none;
 }
 
 .open-burger {
@@ -612,11 +616,29 @@ a {
     font-size: 4vw;
     line-height: 1vw;
   }
+  .block-metros-burger {
+    display: none;
+  }
+  .accordion .menu-adress-item-item-burger {
+    padding: 15px 0;
+  }
+  .block-metros-burger-point {
+    display: block;
+    margin-right: 5px;
+  }
+  .block-metros-burger-point img {
+    margin-right: 2px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 513px) {
-  .block-metros-burger {
-    width: 15vw;
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 3vw;
+  }
+  .accordion .menu-adress-item-item-burger .ssub0adres-link {
+    font-size: 3.2vw;
   }
 }
 /* Extra Small Devices, Phones */
@@ -631,5 +653,5 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   color: var(--main-color-def);
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(255, 255, 255);
 }
