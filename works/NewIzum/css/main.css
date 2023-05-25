@@ -253,6 +253,149 @@ html .loader_inner {
           align-items: center;
 }
 
+.home {
+  background: -webkit-gradient(linear, left top, right top, color-stop(65.1%, #FFFFFF), color-stop(99.37%, #E7C0A2));
+  background: linear-gradient(90deg, #FFFFFF 65.1%, #E7C0A2 99.37%);
+  height: 100vh;
+  padding: 110px;
+}
+.home .home__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .home__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.home .home__left span {
+  color: var(--main-color);
+}
+.home .home__left .home__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7vw;
+}
+.home .home__left .home__title-box h1 {
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 124.4%;
+  width: 41vw;
+}
+.home .home__left .home__title-box .home__ugol1 {
+  position: relative;
+  bottom: 10vw;
+}
+.home .home__left .home__title-box .home__ugol2 {
+  position: relative;
+  top: 10vw;
+  right: 2vw;
+}
+.home .home__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.home .home__right img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  position: absolute;
+  bottom: -3vw;
+  right: -3.3vw;
+}
+.home .home__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.home .home__video-izum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.home .home__onlineZapis-btn {
+  background-color: #D7B298;
+  padding: 15px 25px;
+  font-size: 1.7vw;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 50px;
+  /* Важные стили для анимации */
+  position: relative;
+  overflow: hidden;
+}
+.home .home__text-videos {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  color: #585858;
+  margin-left: 15px;
+}
+.home .home__onlineZapis-btn:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 250px;
+  margin-left: 50px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(50%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.5) 100%);
+  left: -40px;
+  top: -100px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  -webkit-animation: movingFlare 3s ease-in-out 0.05s infinite;
+          animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+@-webkit-keyframes movingFlare {
+  0% {
+    opacity: 1;
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    opacity: 0;
+    left: 90%;
+    margin-left: 80px;
+  }
+  100% {
+    opacity: 0;
+    left: 90%;
+    margin-left: 80px;
+  }
+}
+@keyframes movingFlare {
+  0% {
+    opacity: 1;
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    opacity: 0;
+    left: 90%;
+    margin-left: 80px;
+  }
+  100% {
+    opacity: 0;
+    left: 90%;
+    margin-left: 80px;
+  }
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -550,6 +693,15 @@ a {
 }
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1813px) {
+  .home .home__right img {
+    position: absolute;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -7.2vw;
+    right: -8vw;
+  }
+}
 @media only screen and (max-width: 1540px) {
   .header {
     font-size: 1.5vw;
@@ -653,5 +805,4 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 24px;
   color: var(--main-color-def);
-  background-color: rgb(255, 255, 255);
 }
