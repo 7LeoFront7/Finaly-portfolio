@@ -1,0 +1,16 @@
+@import 'settings';
+@import 'loader';
+@import 'fonts';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/home';
+@import 'reset';
+@import 'components/burger';
+@import 'media';
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: var(--main-color-def);
+    background-color: rgb(201, 201, 201);
+}

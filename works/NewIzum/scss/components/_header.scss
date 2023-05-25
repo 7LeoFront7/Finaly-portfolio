@@ -1,0 +1,161 @@
+.header{
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    padding: 25px;
+    background-color: #fff;
+    font-weight: 300;
+    border-bottom: 1px solid #ececec;
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info{
+        display: flex;
+    }
+
+    .info__adress{
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        cursor: pointer;
+
+        .info-icon-adress{
+            height: 25px;
+        }
+
+        p{
+            margin: 0 8px;
+        }
+
+        .info-icon-up{
+            transition: .2s;
+        }
+    }
+
+    .info__adress:hover{
+
+        .info-icon-up{
+            transform: rotate(180deg);
+        }
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .contact__phone{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        a{
+            font-weight: normal;
+        }
+
+        img{
+            width: 24px;
+        }
+    }
+
+    .contact__order-call{
+        margin-top: 8px;
+    }
+
+    .contact__order-call a{
+        text-decoration: underline;
+        transition: .2s;
+    }
+
+    .header__contact a{
+        transition: .2s;
+    }
+
+    .contact__order-call, .header__contact a:hover{
+        color: var(--main-color);
+    }
+
+    .contact__phone img{
+        transition: .4s;
+        position: relative;
+        top: 1px;
+    }
+
+    .contact__phone img:hover{
+        transform: scale(1.1);
+    }
+
+   .header__menu-adress{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px 20px;
+    -webkit-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+-moz-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+
+z-index: 1;
+width: 45vw;
+top: 23px;
+   }
+
+
+   .menu-adress-item-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d6d6d6;
+   }
+   .menu-adress-item-item:last-child{
+    border-bottom: none;
+   }
+
+   .block-metros{
+    width: 8vw;
+    margin-right: 1vw;
+
+    img{
+        width: 1.8vw;
+        margin-right: 5px;
+    }
+
+   }
+
+   .menu-adress-item-item a{
+    transition: .3s;
+   }
+
+   .ssub0adres-link:hover{
+    color: var(--main-color);
+    padding-left: 10px;
+   }
+
+   .menu-adress-item-item:hover .ssub0adres-link{
+    color: var(--main-color);
+    padding-left: 10px;
+   }
+
+   .info__adress{
+    position: relative;
+   }
+
+   /***При наведении на адрес*/
+
+   .info__adress:hover  .header__menu-adress {display: block;}
+   
+   .info__working-hours{
+    display: flex;
+    align-items: center;
+   }
+}
+
+ 
+
+
