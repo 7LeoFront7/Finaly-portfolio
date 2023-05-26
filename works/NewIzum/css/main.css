@@ -114,6 +114,71 @@ html .loader_inner {
   display: -ms-flexbox;
   display: flex;
 }
+.header .bounce {
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+.header .header__logo p {
+  color: red;
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  left: 236px;
+  cursor: pointer;
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(0.6);
+            transform: translateY(0%) scaleY(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(-100%) scaleY(1.1);
+            transform: translateY(-100%) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+            transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+            transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+            transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+            transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(-100%) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
 .header .info__adress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +198,11 @@ html .loader_inner {
 .header .info__adress .info-icon-up {
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+.header .info__adress:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: var(--main-color);
 }
 .header .info__adress:hover .info-icon-up {
   -webkit-transform: rotate(180deg);
@@ -254,9 +324,9 @@ html .loader_inner {
 }
 
 .home {
-  background: -webkit-gradient(linear, left top, right top, color-stop(65.1%, #FFFFFF), color-stop(99.37%, #E7C0A2));
-  background: linear-gradient(90deg, #FFFFFF 65.1%, #E7C0A2 99.37%);
-  height: 100vh;
+  background: url(../../img/ddddddddd.png) no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
   padding: 110px;
 }
 .home .home__body {
@@ -268,6 +338,8 @@ html .loader_inner {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  position: relative;
+  z-index: 2;
 }
 .home .home__left span {
   color: var(--main-color);
@@ -298,13 +370,6 @@ html .loader_inner {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
-.home .home__right img {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  position: absolute;
-  bottom: -3vw;
-  right: -3.3vw;
-}
 .home .home__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,17 +389,36 @@ html .loader_inner {
           align-items: center;
   cursor: pointer;
 }
+.home .home__video-izum:hover .home__text-videos {
+  color: var(--main-color-lite);
+}
+.home .button-videos {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.home .home__video-izum:hover .button-videos {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .home .home__onlineZapis-btn {
   background-color: #D7B298;
+  border: 1px solid #D7B298;
   padding: 15px 25px;
   font-size: 1.7vw;
   color: #FFFFFF;
   font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border-radius: 10px;
   margin-right: 50px;
   /* Важные стили для анимации */
   position: relative;
   overflow: hidden;
+}
+.home .home__onlineZapis-btn:hover {
+  background-color: #FFFFFF;
+  color: var(--main-color-lite);
+  border: 1px solid var(--main-color-lite);
 }
 .home .home__text-videos {
   font-weight: 500;
@@ -342,6 +426,8 @@ html .loader_inner {
   line-height: 34px;
   color: #585858;
   margin-left: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .home .home__onlineZapis-btn:after {
   content: "";
@@ -364,36 +450,81 @@ html .loader_inner {
 @-webkit-keyframes movingFlare {
   0% {
     opacity: 1;
-    left: -30px;
+    left: 0px;
     margin-left: 0px;
   }
   30% {
     opacity: 0;
-    left: 90%;
+    left: 70%;
     margin-left: 80px;
   }
   100% {
     opacity: 0;
-    left: 90%;
+    left: 70%;
     margin-left: 80px;
   }
 }
 @keyframes movingFlare {
   0% {
     opacity: 1;
-    left: -30px;
+    left: 0px;
     margin-left: 0px;
   }
   30% {
     opacity: 0;
-    left: 90%;
+    left: 70%;
     margin-left: 80px;
   }
   100% {
     opacity: 0;
-    left: 90%;
+    left: 70%;
     margin-left: 80px;
   }
+}
+
+.slideRight {
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.one {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -462,7 +593,7 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 10;
   top: -200%;
   padding: 0 50px;
   -webkit-transition: 0.2s;
@@ -693,6 +824,35 @@ a {
 }
 
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1455px) {
+  .home {
+    background: url(../img/phone-hone.png) no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    min-height: 100vw;
+  }
+  .home__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .home__right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .home .home__left .home__title-box {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1625px) {
+  .home__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media only screen and (max-width: 1813px) {
   .home .home__right img {
     position: absolute;
