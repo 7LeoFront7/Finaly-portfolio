@@ -2,10 +2,11 @@
 
 @media only screen and (max-width : 1455px) {
 	.home{
-		background: url(../img/phone-hone.png) no-repeat;
-		background-size: 100%;
-    	min-height: 100vh;
-		min-height: 100vw;
+		background: url(../img/iPad\ Pro\ 11_\ -\ 7.png) no-repeat;
+		background-size: cover;
+		background-position: 0 90%;
+		padding: 72px;
+    	
 	}
 	.home__left{
 		flex: 1 1 100%;
@@ -15,6 +16,35 @@
 	}
 	.home .home__left .home__title-box{
 		width: 100%;
+	}
+	.home .home__left .home__title-box h1 {
+		font-weight: 500;
+		font-size: 3vw;
+		line-height: 124.4%;
+		width: 75vw;
+	}
+	.home .home__left .home__title-box .home__ugol1 {
+		position: relative;
+		bottom: 6vw;
+	}
+	.home .home__left .home__title-box .home__ugol2 {
+		position: relative;
+		top: 4vw;
+		right: 12vw;
+	}
+	.home .home__buttons {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		/* margin-left: 32vw; */
+		justify-content: flex-end;
+		margin-top: 60px;
+	}
+	.home .home__onlineZapis-btn{
+		font-size: 2.5vw;
 	}
 }
 
@@ -60,6 +90,15 @@
 	}
 }
 
+@media only screen and (max-width : 1080px) {
+	.home .home__left .home__title-box .home__ugol1{
+		width: 3.5vw;
+	}
+	.home .home__left .home__title-box .home__ugol2{
+		width: 3.5vw;
+	}
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1000px) {
 	.header__info{
@@ -79,6 +118,39 @@
 	}
 	.header .header__logo{
 		width: 220px;
+	}
+
+	.home .home__buttons{
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.home .home__left .home__title-box .home__ugol2 {
+		right: 8vw;
+	}
+	.home .home__video-izum{
+		margin-top: 40px;
+		margin-right: 40px;
+	}
+	.home .home__text-videos{
+		font-size: 2vw;
+		line-height: 3vw;
+	}
+	.home .button-videos{
+		width: 10vw;
+	}
+	.home .home__onlineZapis-btn:after {
+		height: 200px;
+	}
+	.home .home__left .home__title-box h1 {
+		font-size: 4vw;
+	}
+	.home .home__left .home__title-box .home__ugol1{
+		bottom: 10vw;
+	}
+	.home .home__left .home__title-box .home__ugol2{
+		top: 7vw;
+		right: 4vw;
 	}
 }
 
@@ -148,6 +220,29 @@
 		}
 	}
 
+
+	.home{
+		padding: 90px 0px;
+	}
+
+	.home .home__left .home__title-box h1 {
+		width: 90vw;
+	}
+	.home .home__left .home__title-box h1 {
+		font-size: 5vw;
+	}
+
+	.home .home__left .home__title-box .home__ugol1 {
+		bottom: 13vw;
+	}
+
+	.home .home__left .home__title-box .home__ugol2 {
+		top: 10vw;
+		right: 4vw;
+	}
+	.home .home__onlineZapis-btn:after{
+		display: none;
+	}
 	
 }
 
@@ -166,7 +261,38 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.home .home__onlineZapis-btn {
+		font-size: 4vw;
+	}
+	.home .home__left .home__title-box h1 {
+		font-size: 6vw;
+	}
+	.home .home__left .home__title-box .home__ugol1 {
+		bottom: 18vw;
+	}
+	.home .home__left .home__title-box .home__ugol2 {
+		top: 18vw;
+		right: 1vw;
+	}
+	.home .home__onlineZapis-btn{
+		margin-right: 0;
+	}
+	.home .home__text-videos {
+		font-size: 3vw;
+		line-height: 4vw;
+	}
+	.home .home__video-izum {
+		margin-top: 40px;
+		margin-right: 0;
+	}
+	.home .button-videos {
+		width: 13vw;
+	}
+	.home{
+		background: url(../img/TLEGONE.png) no-repeat center center;
+		background-size: 109%;
+		background-position: bottom;
+	}
 }
 
 /* Custom, iPhone Retina */
