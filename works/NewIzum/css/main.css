@@ -30,6 +30,119 @@ main {
           flex: 1 1 100%;
 }
 
+.formpopup-clouse {
+  position: relative;
+  height: 50px;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  color: #570420;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid #570420;
+}
+
+.formpopup-clouse:hover {
+  background-color: #570420;
+  color: #fff;
+}
+
+.actife__form {
+  display: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3232323;
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.7019607843);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.form-act {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+  height: 100%;
+}
+
+.actife__form-open {
+  display: block !important;
+}
+
+.actife__form-zakaz {
+  display: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3232323;
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.7019607843);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.form-act-zakaz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+  height: 100%;
+}
+
+.actife__form-open-zakaz {
+  display: block !important;
+}
+
+html .amoforms_iframe {
+  height: 100% !important;
+}
+
+#video-modal .btn-close {
+  position: absolute;
+  right: initial;
+  left: 100%;
+  bottom: 100%;
+  top: initial;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  opacity: 1;
+}
+#video-modal .modal-dialog {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#video-modal .modal-dialog .modal-content {
+  background: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  border: none;
+}
+
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1;
@@ -828,7 +941,7 @@ a {
   .home {
     background: url(../img/iPad\ Pro\ 11_\ -\ 7.png) no-repeat;
     background-size: cover;
-    background-position: 0 90%;
+    background-position: 0px -44%;
     padding: 72px;
   }
   .home__left {

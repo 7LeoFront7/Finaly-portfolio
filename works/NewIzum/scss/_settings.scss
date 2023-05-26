@@ -23,3 +23,110 @@
 main{
   flex: 1 1 100%;
 }
+
+.formpopup-clouse{
+  position: relative;
+  height: 50px;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  color: #570420;
+  font-weight: bold;
+  border: none;
+  transition: .2s;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid #570420;
+  
+}
+
+.formpopup-clouse:hover{
+  background-color: #570420;
+  color: #fff;
+}
+
+
+.actife__form{
+  display: none !important; 
+  display: flex;
+  justify-content: center;
+  z-index: 3232323;
+  position: absolute;
+  background-color: #2b2b2bb3;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.form-act{
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+  height: 100%;
+}
+
+.actife__form-open{
+  display: block !important;
+}
+
+
+
+
+.actife__form-zakaz{
+  display: none !important; 
+  display: flex;
+  justify-content: center;
+  z-index: 3232323;
+  position: absolute;
+  background-color: #2b2b2bb3;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.form-act-zakaz{
+  display: flex;
+  width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+  height: 100%;
+}
+
+.actife__form-open-zakaz{
+  display: block !important;
+}
+
+html .amoforms_iframe{
+  height: 100% !important;
+}
+
+#video-modal {
+  .btn-close {
+      position: absolute;
+      right: initial;
+      left: 100%;
+      bottom: 100%;
+      top: initial;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+      filter: invert(1);
+      opacity: 1;
+  }
+
+  .modal-dialog {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .modal-content {
+          background: none;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+          border: none;
+      }
+  }
+}
