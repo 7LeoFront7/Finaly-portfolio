@@ -4,13 +4,17 @@
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    z-index: 2;
-    top: -100%;
+    z-index: 10;
+    top: -200%;
     padding: 0 50px;
     transition: .2s;
     svg{
         margin-right: -20px;
     }
+}
+
+.block-metros-burger-point{
+    display: none;
 }
 
 .open-burger{

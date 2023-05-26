@@ -1,5 +1,43 @@
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-width : 1455px) {
+	.home{
+		background: url(../img/phone-hone.png) no-repeat;
+		background-size: 100%;
+    	min-height: 100vh;
+		min-height: 100vw;
+	}
+	.home__left{
+		flex: 1 1 100%;
+	}
+	.home__right{
+		flex: 1 1 100%;
+	}
+	.home .home__left .home__title-box{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width : 1625px) {
+	.home__body{
+		flex-direction: column;
+	}
+}
+
+
+
+@media only screen and (max-width : 1813px) {
+	.home .home__right img{
+		position: absolute;
+		transform: scale(0.8);
+		bottom: -7.2vw;
+		right: -8vw;
+	}
+}
+
+
+
+
 @media only screen and (max-width : 1540px) {
 	.header{
 		font-size: 1.5vw;
@@ -94,13 +132,35 @@
 		}
 
 	}
+	.block-metros-burger{
+		display: none;
+	}
+	.accordion .menu-adress-item-item-burger{
+		padding: 15px 0;
+	}
+
+	.block-metros-burger-point{
+		display: block;
+		margin-right: 5px;
+
+		img{
+			margin-right: 2px;
+		}
+	}
+
 	
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 513px) {
-	.block-metros-burger{
-		width: 15vw;
+	.accordion button .icon {
+		display: inline-block;
+		position: absolute;
+		top: 3vw;
+	}
+
+	.accordion .menu-adress-item-item-burger .ssub0adres-link {
+		font-size: 3.2vw;
 	}
 }
 
