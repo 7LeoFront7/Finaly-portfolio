@@ -14,16 +14,7 @@
 
 <body>
 
-	<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				<div class="ratio ratio-16x9">
-					<div id="player"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 	<div class="actife__form-zakaz">
         <div class="form-act-zakaz">
@@ -105,7 +96,7 @@
 				<a href="tel:+74953238964">+7(495)323-89-64</a>
 			</div>
 			<div class="contact__order-call-burger">
-				<a href="#" class="header__other">Заказать обратный звонок</a>
+				<a href="#" class="header__other zakzObratZvon2">Заказать обратный звонок</a>
 			</div>
 		</div>
 		<div class="burger__timeWork">
@@ -185,7 +176,7 @@
 							<a href="tel:+74953238964">+7(495)323-89-64</a>
 						</div>
 						<div class="contact__order-call">
-							<a href="#" class="header__other">Заказать обратный звонок</a>
+							<a href="#" class="header__other zakzObratZvon">Заказать обратный звонок</a>
 						</div>
 					</div>
 					<div class="header__burger">
@@ -217,11 +208,16 @@
 							 </div>
 							 <div class="home__buttons">
 								 <div id="anim_block" class="home__onlineZapis">
-									 <a class="home__onlineZapis-btn" href="https://b900210.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F701744%2Fselect-master%3Fo%3D&o=">Записаться онлайн</a>
+									 <a class="home__onlineZapis-btn" target="_blank" href="https://b900210.yclients.com/select-city/2/select-branch?previousStepUrl=%2Fcompany%2F701744%2Fselect-master%3Fo%3D&o=">Записаться онлайн</a>
 								 </div>
 								 <div id="anim_block" class="home__video-izum ">
-									 <img class="button-videos" src="img/utybe.png" alt="video">
+									<a class="btn" id="" href="#video1">
+										 <img class="button-videos" src="img/utybe.png" alt="video">
 									 <p class="home__text-videos">Познакомьтесь с<br> #IZUM за 40 секунд</p>
+									</a>
+									
+								
+
 								 </div>
 							 </div>
 							</div>
@@ -242,12 +238,53 @@
 			</div>
 		</footer>
 	</div>
+
+
+	<div class="clip">
+		<video src="videos/nub1.mp4" controls="true"></video>
+		<b class="close"><img src="img/close.png" alt="close"></b>
+	  </div>
+
+
+	  <script type="text/javascript">
+		  let btn = document.querySelector(".btn");
+		  let clip = document.querySelector(".clip");
+		  let video = document.querySelector("video");
+		  let close = document.querySelector(".close");
+		  btn.onclick = function(){
+			btn.classList.add("active");
+			clip.classList.add("active");
+			video.currentTime = 0;
+			video.play();
+		  }
+
+		  document.addEventListener('click', function(e){
+			let varAny = e.target.tagName;
+
+			if(varAny === 'DIV'){
+				btn.classList.remove("active");
+			clip.classList.remove("active");
+			video.pause(); 
+			}
+			
+		  })
+
+		  close.onclick = function(){
+			btn.classList.remove("active");
+			clip.classList.remove("active");
+			video.pause(); 
+		  }
+	  </script>
 	
+	
+
+
+
+	<script src="js/main.js"></script>
 	<script type="text/javascript" src="//w908159.yclients.com/widgetJS" charset="UTF-8"></script>
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-
-	<script src="js/main.js"></script>
+	
 	<script src="js/load.js"></script>
 
 	<script>
@@ -259,6 +296,8 @@
         }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
         mgo({calltracking: {id: 22610, elements: [{"numberText":"+74955677699"}], domain: 'izumstudios.ru'}});
         </script>
+	
+
 	
 </body>
 </html>
