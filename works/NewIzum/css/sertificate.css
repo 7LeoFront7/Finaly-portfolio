@@ -1,0 +1,374 @@
+:root {
+    --main-color-def: #000000;
+    --main-color: #9F7C6C;
+    --main-color-lite: #b49780;
+    --pechenka-color: #A87F6D;
+    }
+
+    .home {
+        background: url(../img/sertificate/sertif.png) no-repeat;
+        background-size: 100%;
+        min-height: 100vh;
+        padding: 110px;
+    }
+
+.home .home__left .home__title-box h1 {
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: 124.4%;
+    width: 43vw;
+}
+
+.home .home__left .home__title-box .home__ugol1 {
+    position: relative;
+    bottom: 4vw;
+}
+
+.home .home__left .home__title-box .home__ugol2 {
+    position: relative;
+    top: 4vw;
+    right: 8vw;
+}
+
+.home__subtext{
+    font-weight: 400;
+    font-size: 2.5vw;
+line-height: 124.4%;
+/* or 52px */
+
+color: #000000;
+}
+.home .home__left span {
+    font-weight: 600;
+    font-size: 3.5vw;
+line-height: 124.4%;
+/* or 72px */
+
+
+color: var(--pechenka-color);
+}
+
+.home .home__subtext span{
+    font-weight: 600;
+    font-size: 2.5vw;
+line-height: 124.4%;
+/* or 52px */
+
+
+color: var(--pechenka-color);
+
+}
+
+.home .home__subtext{
+    margin-top: 4vw;
+    padding-left: 3.5vw;
+}
+
+.home__subtext p{
+    font-size: 2.5vw;
+}
+
+.home .home__onlineZapis-btn {
+    background-color: var(--pechenka-color);
+    border: 1px solid var(--pechenka-color);
+    padding: 15px 25px;
+    font-size: 1.7vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1816px;
+     padding: 0px 25px; 
+    margin: 0px auto;
+}
+
+
+
+@media only screen and (max-width: 1455px){
+.home .home__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* margin-left: 32vw; */
+    /* -webkit-box-pack: end; */
+    -ms-flex-pack: end;
+     justify-content: start; 
+    /* margin-top: 60px; */
+}
+}
+
+.home .button-videos {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    width: 7vw;
+}
+
+.home .home__text-videos {
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    color: #585858;
+    margin-left: 15px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.btn{
+    background-color: #ffffffc9;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+.home .home__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+     flex-direction: row; 
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.home .home__buttons{
+    justify-content: start;
+    align-items: center;
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+.home .home__video-izum {
+    margin: 0;
+    /* margin-right: 40px; */
+}
+.home {
+    background: url(../img/sertificate/sertif.png) no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    padding: 70px 40px;
+}
+.home {
+    background: url(../img/sertificate/sertif.png) no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    padding: 7vw;
+}
+.home .home__onlineZapis-btn {
+    background-color: var(--pechenka-color);
+    border: 1px solid var(--pechenka-color);
+    padding: 7px 15px;
+    font-size: 2.7vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+}
+}
+
+@media only screen and (max-width: 786px){
+    .home {
+        background: url(../img/sertificate/sertif\ 1.png) no-repeat;
+        background-size: 100%;
+        min-height: 100vh;
+        padding: 7vw;
+        background-position: center bottom;
+    }
+    .home__subtext p {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .home .home__buttons {
+        justify-content: start;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 3vw;
+        flex-direction: column-reverse;
+    }
+    .home .home__onlineZapis-btn{
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .btn {
+        background: none;
+        padding-right: 20px;
+        border-radius: 10px;
+        margin-bottom: 3vw;
+    }
+    .home .home__left {
+        
+            border-radius: 16px;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+            position: relative;
+            z-index: 2;
+            background-color: #ffffffba;
+            padding: 4vw;
+        
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .home .home__left .home__title-box h1 {
+        font-weight: 500;
+        font-size: 4.5vw;
+        line-height: 124.4%;
+         width: 100vw; 
+    }
+    .home .home__left span {
+        font-weight: 600;
+        font-size: 4.5vw;
+        line-height: 124.4%;
+        color: var(--pechenka-color);
+    }
+    .home .home__left .home__title-box .home__ugol1 {
+        position: relative;
+        bottom: 6vw;
+    }
+    .home .home__left {
+        border-radius: 16px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
+        position: relative;
+        z-index: 2;
+        background-color: #ffffffba;
+        padding: 4vw 0;
+    }
+    .home .home__left .home__title-box .home__ugol2 {
+        position: relative;
+        top: 6vw;
+        right: 7vw;
+    }
+    .home__subtext p {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    .home .home__text-videos {
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 3vw;
+        color: #585858;
+        margin-left: 15px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+    .home .button-videos {
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        width: 8vw;
+    }
+    .home .home__buttons {
+        justify-content: start;
+        align-items: center;
+        margin-top: 7vw;
+        margin-left: 3vw;
+        margin-bottom: 4vw;
+        flex-direction: column-reverse;
+    }
+    .btn {
+        background: none;
+        padding-right: 20px;
+        border-radius: 10px;
+        margin-bottom: 6vw;
+    }
+    .home .home__onlineZapis-btn {
+        font-size: 3.7vw;
+    }
+    .home .home__left {
+        border-radius: 16px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
+        position: relative;
+        z-index: 2;
+        background-color: #ffffffba;
+        padding: 4vw 0;
+        padding-top: 20vw;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home .home__left .home__title-box h1 {
+        font-weight: 500;
+        font-size: 5.5vw;
+        line-height: 124.4%;
+        width: 100vw;
+    }
+    .home .home__left span {
+        font-weight: 600;
+        font-size: 6.5vw;
+        line-height: 124.4%;
+        color: var(--pechenka-color);
+    }
+    .home .home__left .home__title-box .home__ugol1 {
+        position: relative;
+        bottom: 7vw;
+    }
+    .home .home__left .home__title-box .home__ugol2 {
+        position: relative;
+        top: 7vw;
+        right: 3vw;
+    }
+    .home {
+        background: url(../img/sertificate/sertif\ 1.png) no-repeat;
+        background-size: 100%;
+        min-height: 100vh;
+        padding: 0vw;
+        background-position: center bottom;
+    }
+    .home__subtext p {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .home .home__subtext span{
+        font-size: 4.5vw;
+    }
+
+    .home__subtext p {
+        line-height: 5vw;
+        margin-top: 10vw;
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .home .button-videos {
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        width: 13vw;
+    }
+    .home .home__text-videos {
+        font-weight: 500;
+        font-size: 3.5vw;
+        line-height: 5vw;
+        color: #585858;
+        margin-left: 15px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+    .home .home__onlineZapis-btn {
+        font-size: 5.7vw;
+    }
+    .btn {
+        background: none;
+        padding-right: 0px;
+        border-radius: 10px;
+        margin-bottom: 11vw;
+    }
+    
+}
+
