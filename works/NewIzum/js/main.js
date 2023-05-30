@@ -5,7 +5,6 @@ let ZakazObratZvonok = document.querySelector('.zakzObratZvon')
 let ZakazObratZvonok2 = document.querySelector('.zakzObratZvon2')
 
 
-
 ZakazObratZvonok.addEventListener('click', function(){
   actifeFormZakaz.classList.add('actife__form-open-zakaz')
 })
