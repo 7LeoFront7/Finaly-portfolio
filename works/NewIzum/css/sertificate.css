@@ -5,11 +5,11 @@
     --pechenka-color: #A87F6D;
     }
 
-    .home {
+     .home {
         background: url(../img/sertificate/sertif.png) no-repeat;
         background-size: 100%;
         min-height: 100vh;
-        padding: 110px;
+        padding: 6vw 4vw;
     }
 
 .home .home__left .home__title-box h1 {
