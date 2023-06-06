@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 36" width="50" height="36">
-	<title>metrored-svg</title>
-	<defs>
-		<image  width="50" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAkBAMAAAA5nnQEAAAAAXNSR0IB2cksfwAAABVQTFRFAAAA7i8u5MIj3b0m48Ij4sIk7zAwW8+ZVgAAAAd0Uk5TAAD/yf/8AJLUFgQAAADaSURBVHichZFREsIgDERDRv2unAC2PYFewPEk3v8UpiSUAHXkh5C32ey0RHpCsoIX6g+vVsQ0kAgrkAcCqEsAJqIuPBKRZnNFH0GksFn0EUSqWmCIANPus5hIttmOBFin3D4Cd8RHKCZ40RUYIsA6qsBENnqPRANIx+4Wga3ztLtFMPvj5GGNO/9JmEiNwBNJPwK0CL63dYv0oZ7JEwug1+IjsFmrOLoItY6FV11b8yq9RBe3qJZB/RsJR4n2w5ukNB9Y/dsR3iOdkI/4LnQ7JSRzZ0SW3/1H/AIZfUI6rbrNRwAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-	</style>
-	<use id="img1" href="#img1" x="0" y="0"/>
-</svg>

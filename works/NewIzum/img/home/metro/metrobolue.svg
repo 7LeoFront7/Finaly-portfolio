@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 36" width="50" height="36">
-	<title>metrored-svg</title>
-	<defs>
-		<image  width="50" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAkCAMAAAD8bpkFAAAAAXNSR0IB2cksfwAAANVQTFRFAAAA7i8ucjBMcjBNdC9QckAcdi1Ucj8ecy9PbzssdkMScjFLcjBNbzwpdi5TdkMTc0EadS5SbjY9cy9PdC9QbjY7dUMUcD4kcD0mcy9Pcy9PdC9QczBObzoubzwpbzsrdS5SdS5SdS5SbzU+bjkzbjg1bzY8dUIVdS5Sbjkydi1Tdi1Udi5TbjU+bzU/bzU+bjY8cDJIbzwrbzstcD0ndi1UczBNcDJHcT4icT8gcDJIdi5Tc0EZcTFKcTFJckAeckAdcjBM7zAwc0EYdEEYcDJIdi5TN7sI/wAAAEd0Uk5TAACDeVn+BP5n9/+Mf/kj//8q3FxU4f/8+2JfV232+vg3MCzY7+3d/zPxEAwm2dXZ3qn49vsUd639/aYf/5ie/v6HAP//qBtdmUHGAAABmElEQVR4nI1U2UICMQxsFVaIQDkUWDxQQVcRFcQbL1D8/09ye0DT7QHz1EwmTdKmJcQE3coQZJtmmQxy+Sizx04hHEGLsGsyJSiH01QYVA0FzQPUgiF1AGhgYi8l9oN1NVNFC6Wh7ZRohiqLgaOjiQNBHAaSHAlFW+96LIiuP02NCQWcLIlTacOZN6SnFH21Kz1XxIW3rkQp2KVKorJC4qusA0tcSaK/IjwToJoXGHDiWttFd5oh05J6KqE32mbuCbjVCkjSNIMEEXfB5gVGcnhWcE5ADgxJFDUNInYkKRoKGI9N+95OU2GmJElMmw2tkDqswSjcvAvWBMTrIqwJoBPtamPdg15mJgDf/COStQYo3JyAnnaU1VMUiAk6e2MCcPMF8atIpL9NQ3uMA0B8PuWflsYWQfHGp0C7mn7m9otcv/Jt37QPTcAUNS9eikpT4mt0AGzquvmJTFvl63e5KXp5qz/AbF7gg68/rVuWBwAWOBt9AXxHHr87hMwAZmTjkLko9udXFDHfPIQsFsQX8mdBnYm6A9v/Dx43OySIUj0sAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-	</style>
-	<use id="img1" href="#img1" x="0" y="0"/>
-</svg>
