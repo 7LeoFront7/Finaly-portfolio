@@ -1,0 +1,659 @@
+.header{
+    position: fixed;
+    z-index: 1113;
+    width: 100vw;
+    padding: 25px;
+    background-color: #fff;
+    font-weight: 300;
+    border-bottom: 1px solid #ececec;
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info{
+        display: flex;
+    }
+
+   
+
+    .info__adress{
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        cursor: pointer;
+
+        .info-icon-adress{
+            height: 25px;
+        }
+
+        p{
+            margin: 0 8px;
+        }
+
+        .info-icon-up{
+            transition: .2s;
+        }
+    }
+
+    .info__adress:hover{
+        transition: .2s;
+        color: var(--main-color);
+        .info-icon-up{
+            transform: rotate(180deg);
+        }
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .contact__phone{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        a{
+            font-weight: normal;
+        }
+
+        img{
+            width: 24px;
+        }
+    }
+
+    .contact__order-call{
+        margin-top: 8px;
+    }
+
+    .contact__order-call a{
+        text-decoration: underline;
+        transition: .2s;
+    }
+
+    .header__contact a{
+        transition: .2s;
+    }
+
+    .contact__order-call, .header__contact a:hover{
+        color: var(--main-color);
+    }
+
+    .contact__phone img{
+        transition: .4s;
+        position: relative;
+        top: 1px;
+    }
+
+    .contact__phone img:hover{
+        transform: scale(1.1);
+    }
+
+   .header__menu-adress{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px 20px;
+    -webkit-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+-moz-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
+
+z-index: 1;
+width: 45vw;
+top: 23px;
+   }
+
+
+   .menu-adress-item-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d6d6d6;
+   }
+   .menu-adress-item-item:last-child{
+    border-bottom: none;
+   }
+
+   .block-metros{
+    width: 8vw;
+    margin-right: 1vw;
+
+    img{
+        width: 1.8vw;
+        margin-right: 5px;
+    }
+
+   }
+
+   .menu-adress-item-item a{
+    transition: .3s;
+   }
+
+   .ssub0adres-link:hover{
+    color: var(--main-color);
+    padding-left: 10px;
+   }
+
+   .menu-adress-item-item:hover .ssub0adres-link{
+    color: var(--main-color);
+    padding-left: 10px;
+   }
+
+   .info__adress{
+    position: relative;
+   }
+
+   /***При наведении на адрес*/
+
+   .info__adress:hover  .header__menu-adress {display: block;}
+   
+   .info__working-hours{
+    display: flex;
+    align-items: center;
+   }
+}
+
+
+.header__burger{
+    display: none;
+}
+//////////////////////////Burger//////////////////////////////////////
+.burger{
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 10;
+    top: -200%;
+    padding: 0 50px;
+    transition: .2s;
+    svg{
+        margin-right: -20px;
+    }
+}
+
+.block-metros-burger-point{
+    display: none;
+}
+
+.open-burger {
+    top: 78px;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:var(--main-color-lite);
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham8 .top {
+    stroke-dasharray: 40 160;
+  }
+  .ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+  }
+  .ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+  }
+  .ham8.active .top {
+    stroke-dashoffset: -64px;
+  }
+  .ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+  }
+  .ham8.active .bottom {
+    stroke-dashoffset: -64px;
+  }
+
+
+  .header__burger{
+    display: none;
+}
+
+
+$bg: #E4C4AB;
+$text: #E4C4AB;
+$gray: #E4C4AB;
+$lightgray: #E4C4AB;
+$blue: #E4C4AB;
+
+.accordion {
+
+    width: 100%;
+    
+    margin: 0 auto;
+
+    .accordion-item {
+      border-bottom: 2px solid $lightgray;
+      button[aria-expanded='true'] {
+        border-bottom: 2px solid $blue;
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: #000;
+      font-size: 3vw;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: #000;
+        &::after {
+          cursor: pointer;
+          color: #000;
+          border: 1px solid $blue;
+        }
+      }
+      .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 4vw;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: $blue;
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 19em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+    }
+
+    .menu-adress-item-item-burger{
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        border-bottom: 1px solid #cbcbcb;
+
+        .ssub0adres-link{
+            font-size: 2.5vw;
+        }
+    }
+
+    .block-metros-burger{
+        width: 14vw;
+        margin-right: 15px;
+    }
+
+    .block-metros-burger img{
+        width: 3vw;
+        margin-right: 5px;
+    }
+
+    
+  }
+
+  .contact-burger{
+    width: 100%;
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #E4C4AB;
+}
+
+.contact__order-call-burger{
+    margin-top: 2vw;
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+.contact__phone-burger img{
+    position: relative;
+    top: 4px;
+}
+
+.burger__timeWork{
+    width: 90vw;
+    margin: 0 auto;
+    
+    margin-top: 3vw;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////
+/// 
+/// /* Custom, iPhone Retina */
+@media only screen and (max-width : 1555px) {
+    .header__logo{
+        width: 262px;
+        img{
+            width: 100%;
+        }
+    }
+    .header .info__adress p{
+        font-size: 20px;
+    }
+    .info__working-hours{
+        font-size: 20px;
+    }
+    .header .info__adress .info-icon-adress {
+        height: 20px;
+    }
+    .header .header__contact a{
+        font-size: 20px;
+    }
+    .header .contact__order-call {
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width : 1263px) {
+    .header__logo{
+        width: 222px;
+        img{
+            width: 100%;
+        }
+    }
+    .header .info__adress p{
+        font-size: 18px;
+    }
+    .info__working-hours{
+        font-size: 18px;
+    }
+    .header .info__adress .info-icon-adress {
+        height: 18px;
+    }
+    .header .header__contact a{
+        font-size: 18px;
+    }
+    .header .contact__order-call {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 1170px) {
+    .header__burger{
+        display: block;
+    }
+    .header .info__adress{
+        display: none;
+    }
+    .header{
+        padding: 0;
+    }
+    .accordion-title{
+        font-weight: 300;
+    }
+    .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 3vw;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        border-radius: 22px;
+    }
+    .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 18px;
+        left: 12px;
+        width: 14px;
+        height: 2px;
+        background: currentColor;
+    }
+    .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 11px;
+        left: 18px;
+        width: 2px;
+        height: 15px;
+        background: currentColor;
+    }
+   
+}
+
+@media only screen and (max-width : 1000px) {
+    .header__info{
+        display: none;
+    }
+    .header__contact {
+        display: none;
+    }
+    .header__logo {
+        width: 260px;
+    }
+    .header {
+       
+        padding: 10px 25px;
+        
+    }
+    .burger-phone{
+        margin-top: 27px;
+    }
+}
+
+@media only screen and (max-width : 850px) {
+    .accordion button .accordion-title{
+        font-size: 25px;
+    }
+    .accordion-title img{
+        position: relative;
+        top: 4px;
+    }
+    .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 3vw;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 22px;
+    }
+    .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 8px;
+        left: 13px;
+        width: 2px;
+        height: 13px;
+        background: currentColor;
+    }
+    .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 14px;
+        left: 8px;
+        width: 12px;
+        height: 2px;
+        background: currentColor;
+    }
+    .header__container{
+        padding: 0;
+    }
+    .burger {
+        padding: 0 24px;
+    }
+    .header__burger{
+        position: relative;
+        left: 24px;
+    }
+}
+@media only screen and (max-width : 718px) {
+    .accordion .menu-adress-item-item-burger .ssub0adres-link{
+        font-size: 18px;
+    }
+    .accordion .block-metros-burger img{
+        width: 21px;
+    }
+    .accordion .block-metros-burger{
+        width: 80px;
+    }
+    .accordion .menu-adress-item-item-burger{
+        padding: 15px 0;
+    }
+}
+@media only screen and (max-width : 503px) {
+    .accordion .menu-adress-item-item-burger .ssub0adres-link{
+        font-size: 14px;
+    }
+    .accordion .block-metros-burger img{
+        width: 19px;
+    }
+    .accordion .block-metros-burger{
+        width: 80px;
+        margin-right: 0px;
+    }
+    .accordion .menu-adress-item-item-burger{
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width : 470px) {
+    .accordion-title img{
+        width: 20px;
+    }
+    .accordion button .accordion-title {
+        font-size: 20px;
+    }
+    .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 4vw;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid;
+        border-radius: 22px;
+    }
+    .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 8px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+    }
+    .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 8px;
+        left: 4px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+    }
+    .contact__phone-burger img{
+        width: 20px;
+    }
+    .contact__phone-burger a{
+        font-size: 22px;
+    }
+    .burger__timeWork p{
+        font-size: 20px;
+    }
+    .contact__order-call-burger a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 350px) {
+    
+    .burger-phone {
+        margin-top: 17px;
+    }
+    .header {
+        padding: 5px 20px;
+    }
+    .burger__timeWork p {
+        font-size: 19px;
+    }
+
+    .accordion button .icon{
+        top: 5vw;
+    }
+}
+
