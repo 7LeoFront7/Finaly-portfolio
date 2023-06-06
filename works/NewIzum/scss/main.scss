@@ -6,10 +6,10 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     color: var(--main-color-def);
-    background-color: rgb(198, 198, 198)
 }
 
 @import 'components/header'; // Подключение стилей Header
+@import 'components/home'; // Подключение стилей Home
 
 
 
