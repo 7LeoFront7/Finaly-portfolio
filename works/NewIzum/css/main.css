@@ -1088,21 +1088,24 @@ body {
     left: -5vw;
   }
   .home__body .home__left .home__buttons-OnlineZapis-btn {
-    padding: 0px 19px;
-    font-size: 16px;
+    padding: 0px 15px;
+    font-size: 14px;
     margin-left: 0;
   }
   .home__body .home__left h1 {
     margin-bottom: 30px;
   }
   .home__body .home__left .home__buttons-youtube img, .home__body .home__left .home__buttons-youtube h2 {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 16px;
   }
   .home__body .home__left .home__buttons-youtube img {
-    width: 50px;
+    width: 40px;
   }
   .home__body .home__left .home__buttons-OnlineZapis-btn {
     margin-bottom: 20px;
+  }
+  .home__body .home__left .home__buttons-youtube {
+    gap: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
