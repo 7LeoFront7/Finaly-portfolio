@@ -1074,6 +1074,7 @@ body {
     font-size: 20px;
   }
   .home__body .home__left {
+    margin-top: 100px;
     position: relative;
     bottom: none;
   }
