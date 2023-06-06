@@ -1,157 +1,8 @@
 /*==========  Desktop First Method  ==========*/
 
-@media only screen and (max-width : 1455px) {
-	.home {
-		background: url(../img/iPad\ Pro\ 11_\ -\ 7.png) no-repeat;
-		background-size: cover;
-		background-position: 0px -44%;
-		padding: 72px;
-	}
-	.home__left{
-		flex: 1 1 100%;
-	}
-	.home__right{
-		flex: 1 1 100%;
-	}
-	.home .home__left .home__title-box{
-		width: 100%;
-	}
-	.home .home__left .home__title-box h1 {
-		font-weight: 500;
-		font-size: 3vw;
-		line-height: 124.4%;
-		width: 75vw;
-	}
-	.home .home__left .home__title-box .home__ugol1 {
-		position: relative;
-		bottom: 6vw;
-	}
-	.home .home__left .home__title-box .home__ugol2 {
-		position: relative;
-		top: 4vw;
-		right: 12vw;
-	}
-	.home .home__buttons {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		/* margin-left: 32vw; */
-		justify-content: flex-end;
-		margin-top: 60px;
-	}
-	.home .home__onlineZapis-btn{
-		font-size: 2.5vw;
-	}
-}
-
-@media only screen and (max-width : 1625px) {
-	.home__body{
-		flex-direction: column;
-	}
-}
-
-
-
-@media only screen and (max-width : 1813px) {
-	.home .home__right img{
-		position: absolute;
-		transform: scale(0.8);
-		bottom: -7.2vw;
-		right: -8vw;
-	}
-}
-
-
-
-
-@media only screen and (max-width : 1540px) {
-	.header{
-		font-size: 1.5vw;
-
-		.header__logo{
-			width: 20vw;
-
-			img{
-				width: 100%;
-			}
-		}
-		 .contact__phone img{
-			width: 1.5vw;
-		 }
-		
-	}
-
-	.block-metros{
-		margin-right: 0;
-	}
-}
-
-@media only screen and (max-width : 1080px) {
-	.home .home__left .home__title-box .home__ugol1{
-		width: 3.5vw;
-	}
-	.home .home__left .home__title-box .home__ugol2{
-		width: 3.5vw;
-	}
-}
-
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1000px) {
-	.header__info{
-		display: none;
-	}
-	.header__contact{
-		display: none;
-	}
-	.header__burger{
-		display: block;
-		svg{
-			margin-right: -20px;
-		}
-	}
-	.header{
-		padding: 0 20px;
-	}
-	.header .header__logo{
-		width: 220px;
-	}
+@media only screen and (max-width : 1200px) {
 
-	.home .home__buttons{
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: flex-end;
-	}
-	.home .home__left .home__title-box .home__ugol2 {
-		right: 8vw;
-	}
-	.home .home__video-izum{
-		margin-top: 40px;
-		margin-right: 40px;
-	}
-	.home .home__text-videos{
-		font-size: 2vw;
-		line-height: 3vw;
-		margin-right: 2vw;
-	}
-	.home .button-videos{
-		width: 10vw;
-	}
-	.home .home__onlineZapis-btn:after {
-		height: 200px;
-	}
-	.home .home__left .home__title-box h1 {
-		font-size: 4vw;
-	}
-	.home .home__left .home__title-box .home__ugol1{
-		bottom: 10vw;
-	}
-	.home .home__left .home__title-box .home__ugol2{
-		top: 7vw;
-		right: 4vw;
-	}
 }
 
 /* Medium Devices, Desktops */
@@ -184,123 +35,42 @@
 		animation: none !important;
 	}
 
-
-	.accordion-title img{
-		width: 3vw;
-	}
-
-	.accordion-title{
-		font-size: 4vw;
-	}
-	.icon{
-		bottom: 3vw;
-	}
-
-	.burger-phone {
-
-		a,p{
-			font-size: 4vw;
-			line-height: 1vw;
-		}
-
-	}
-	.block-metros-burger{
-		display: none;
-	}
-	.accordion .menu-adress-item-item-burger{
-		padding: 15px 0;
-	}
-
-	.block-metros-burger-point{
-		display: block;
-		margin-right: 5px;
-
-		img{
-			margin-right: 2px;
-		}
-	}
-
-
-	.home{
-		padding: 90px 0px;
-	}
-
-	.home .home__left .home__title-box h1 {
-		width: 90vw;
-	}
-	.home .home__left .home__title-box h1 {
-		font-size: 5vw;
-	}
-
-	.home .home__left .home__title-box .home__ugol1 {
-		bottom: 13vw;
-	}
-
-	.home .home__left .home__title-box .home__ugol2 {
-		top: 10vw;
-		right: 4vw;
-	}
-	.home .home__onlineZapis-btn:after{
-		display: none;
-	}
-	
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 513px) {
-	.accordion button .icon {
-		display: inline-block;
-		position: absolute;
-		top: 3vw;
-	}
-
-	.accordion .menu-adress-item-item-burger .ssub0adres-link {
-		font-size: 3.2vw;
-	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.home .home__onlineZapis-btn {
-		font-size: 4vw;
-	}
-	.home .home__left .home__title-box h1 {
-		font-size: 5vw;
-	}
-	.home .home__left .home__title-box .home__ugol1 {
-		bottom: 13vw;
-	}
-	.home .home__left .home__title-box .home__ugol2 {
-		top: 10vw;
-		right: 1vw;
-	}
-	.home .home__onlineZapis-btn{
-		margin-right: 0;
-		font-weight: bold;
-	}
-	.home .home__text-videos {
-		font-size: 3vw;
-		line-height: 4vw;
-		margin-right: 2vw;
-	}
-	.home .home__video-izum {
-		margin-top: 40px;
-		margin-right: 0;
-	}
-	.home .button-videos {
-		width: 13vw;
-	}
-	.home{
-		background: url(../img/TLEGONE.png) no-repeat center center;
-		background-size: 109%;
-		background-position: bottom;
-	}
+
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 382px) {
-	
+@media only screen and (max-width : 320px) {
 
 }
 
 
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

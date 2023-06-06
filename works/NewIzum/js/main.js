@@ -1,28 +1,22 @@
+////////////////////////////////////////////////////
+////////////////////Burger//////////////////////////
+////////////////////////////////////////////////////
 
-let actifeFormZakaz = document.querySelector('.actife__form-zakaz')
-let clousefornacmZakaz = document.querySelector('.clousefornacm-zakaz')
-let ZakazObratZvonok = document.querySelector('.zakzObratZvon')
-let ZakazObratZvonok2 = document.querySelector('.zakzObratZvon2')
+let headerBurger = document.querySelector('.header__burger')
+let burgerPhone = document.querySelector('.burger-phone')
 
-
-ZakazObratZvonok.addEventListener('click', function(){
-  actifeFormZakaz.classList.add('actife__form-open-zakaz')
+headerBurger.addEventListener('click', function(){
+    burgerPhone.classList.toggle('open-burger')
 })
 
-ZakazObratZvonok2.addEventListener('click', function(){
-  actifeFormZakaz.classList.add('actife__form-open-zakaz')
-})
-
-clousefornacmZakaz.addEventListener('click', function(){
-    actifeFormZakaz.classList.remove('actife__form-open-zakaz')
-})
+////////////////////////////////////////////////////
+////////////////////Burger-end//////////////////////////
+////////////////////////////////////////////////////
 
 
-
-///////////////////////////////////////////////////////////////////////
-
-
-
+////////////////////////////////////////////////////
+////////////////////Accardion burger//////////////////////////
+////////////////////////////////////////////////////
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
@@ -41,18 +35,3 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
 //////////////////////////////////////////////////////////////////////////
-
-let headerBurger = document.querySelector('.header__burger')
-let burgerPhone = document.querySelector('.burger-phone')
-
-headerBurger.addEventListener('click', function(){
-    burgerPhone.classList.toggle('open-burger')
-})
-
-////////////////////////////////////////////////////////////////////
-
- 
-
-
-
-  

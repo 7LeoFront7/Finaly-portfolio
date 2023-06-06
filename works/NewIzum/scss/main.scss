@@ -1,16 +1,15 @@
-@import 'settings';
-@import 'loader';
-@import 'fonts';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/home';
-@import 'reset';
-@import 'components/burger';
-@import 'media';
-@import 'components/certificate';
+@import 'reset'; // Обнулиение стилей
+@import 'settings'; // Подклчение основных настроек стилей
+@import 'vidjets'; // Подключение файла стилей с виджетами
 
 body{
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     color: var(--main-color-def);
+    background-color: rgb(198, 198, 198)
 }
+
+@import 'components/header'; // Подключение стилей Header
+
+
+
