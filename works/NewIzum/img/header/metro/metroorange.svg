@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 36" width="50" height="36">
+	<title>metrored-svg</title>
+	<defs>
+		<image  width="50" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAkCAMAAAD8bpkFAAAAAXNSR0IB2cksfwAAAFFQTFRFAAAA7i8u/loAwjc1+1gD/1oAyVoi+FUH/VkC41UU6VUQ/FgD+lgE/FkC+1gE/lkB8FYM7FUO6lUP7lUN01cc0Fgf5lUS11Yb4FUW7zAw3VYXBy9CiAAAABt0Uk5TAAD/////Ov//5/H///////r28/ikh+y53wDVh0HqJAAAARVJREFUeJyVVOkawiAMg2kmHnPe1/s/qMLHpBdD+2sNaZOObs7x8J0A3MJLRMQSveixCvMVHgBHOmBeZg3BiD02syUfArYU2EHpal9MRgEqQmIMBdgnYGyJ0K4KkLHJjMMEHDNwqpYAvKv/Ai1fwJmL1J0NEF1LXtmAIgJcInAlgC1zA6fQFpUNoIwoc2FAy1ei8NxytuSUvue58QKEiA4ts26V3OaHN+NvX9pZaJeEv0WkDL35O6XR++QbQFn5U8xm2EnFV6CZd9uKM4GP03PHuw22CGjuheci86DzRmD8ivCFftjDE1lvn6rhCU3fspc9CjFtfl85t0viD79Ttqolz2w2mXj+XuKymlXyUpHfSb4Dff4GEUkXxW5wI9sAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" x="0" y="0"/>
+</svg>
