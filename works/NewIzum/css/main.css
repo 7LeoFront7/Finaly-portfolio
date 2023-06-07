@@ -811,18 +811,18 @@ body {
   margin-bottom: 50px;
 }
 .home__body .home__left .home__left-box-title::after {
-  content: url("../../img/home/bottom-corner.svg");
+  content: url("../img/home/bottom-corner.svg");
   width: 20px;
   height: 20px;
-  position: absolute;
+  position: relative;
   top: 17vw;
   left: -2vw;
 }
 .home__body .home__left .home__left-box-title::before {
-  content: url("../../img/home/upper-corner.svg");
+  content: url("../img/home/upper-corner.svg");
   width: 20px;
   height: 20px;
-  position: absolute;
+  position: relative;
   top: -1vw;
   left: 2vw;
 }
