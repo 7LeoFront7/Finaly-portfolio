@@ -7,9 +7,11 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.css">
 
 	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+	
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -115,11 +117,46 @@
 		</header>
 		<main class="main">
 			<section class="home">
-				<div class="home__container">
-					<div class="home__body">
-						d
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide">
+						<div class="home__container">
+							<div class="home__body">
+								<div class="home__left">
+									<div class="home__left-box">
+										<div class="home__left-box-title">
+											<h1>Избавьтесь от лишних<br> волос, пройдя курс <span>безопасной лазерной эпиляции на диодном аппарате</span> нового поколения</h1>
+										</div>
+										<div class="home__buttons">
+											<div class="home__buttons-OnlineZapis">
+												<button class="home__buttons-OnlineZapis-btn OnlineZapis-btn">Записаться онлайн</button>
+											</div>
+											<div class="home__buttons-youtube btn">
+												<img src="img/home/youtube.png" alt="youtube">
+												<h2>Познакомтесь с<br>#IZUM за 40 секунд</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="home__right">
+									<img src="img/home/home-img.png" alt="Лазерная эпиляция">
+								</div>
+							</div>
+						</div>
+					  </div>
+					  <div class="swiper-slide">Slide 2</div>
+					  <div class="swiper-slide">Slide 3</div>
+					  <div class="swiper-slide">Slide 4</div>
+					  <div class="swiper-slide">Slide 5</div>
+					  <div class="swiper-slide">Slide 6</div>
+					  <div class="swiper-slide">Slide 7</div>
+					  <div class="swiper-slide">Slide 8</div>
+					  <div class="swiper-slide">Slide 9</div>
 					</div>
-				</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				  </div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -136,6 +173,27 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/load.js"></script>
-	
+	<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2222500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
