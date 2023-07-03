@@ -1,37 +1,18 @@
-////////////////////////////////////////////////////
-////////////////////Burger//////////////////////////
-////////////////////////////////////////////////////
+$('.menu').click (function(){
+    $(this).toggleClass('open');
+  });
 
-let headerBurger = document.querySelector('.header__burger')
-let burgerPhone = document.querySelector('.burger-phone')
+  let burger = document.querySelector('.menu')
+let burgerWrapper = document.querySelector('.burger-wrapper')
 
-headerBurger.addEventListener('click', function(){
-    burgerPhone.classList.toggle('open-burger')
+burger.addEventListener('click', function(){
+    burgerWrapper.classList.toggle('burger-wrapper-open')
 })
-
-////////////////////////////////////////////////////
-////////////////////Burger-end//////////////////////////
-////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////
-////////////////////Accardion burger//////////////////////////
-////////////////////////////////////////////////////
-const items = document.querySelectorAll(".accordion button");
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
   
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
+
+const items = document.querySelectorAll(".accordion .burger__adressa");
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
 }
-
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
-//////////////////////////////////////////////////////////////////////////
