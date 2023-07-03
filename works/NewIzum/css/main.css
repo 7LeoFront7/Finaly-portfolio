@@ -1135,6 +1135,53 @@ body {
   background: #C7A287;
 }
 
+.home__left--box h1 {
+  color: #997760;
+}
+
+.home__left-ygol1 {
+  position: relative;
+  left: 1vw;
+  top: 1vw;
+}
+
+.home__left-ygol2 {
+  position: relative;
+  left: 32vw;
+  bottom: 2vw;
+}
+
+.home__left-tetxt {
+  padding-left: 50px;
+}
+
+.home__left-tetxt p {
+  color: #555;
+  font-size: 3em;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.home__right-dsds {
+  width: 50vw;
+}
+
+.home__buttons-OnlineZapis-slider {
+  padding-left: 25px;
+  margin-top: 20px;
+}
+
+.home__right-dsds-slider {
+  width: 70vw;
+}
+
+.swiper-slide .home__body .home__left {
+  position: relative;
+  top: 100px;
+}
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
