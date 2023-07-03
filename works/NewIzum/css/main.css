@@ -363,7 +363,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  top: -100%;
+  top: -600%;
   transition: 0.3s;
 }
 
@@ -580,7 +580,7 @@ body {
     font-size: 1.5em;
   }
   .burger {
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 }
 /*==========  Desktop First Method  ==========*/
