@@ -235,7 +235,7 @@ html .loader_inner {
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   height: 100vh;
 }
@@ -1435,6 +1435,54 @@ body {
     object-fit: cover;
     background-repeat: repeat;
     margin-top: 188px;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #A87F6D;
+  height: 100%;
+  padding: 25px;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__contact a {
+  margin-bottom: 15px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer__body {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer img {
+    width: 60vw;
+  }
+  .footer__info {
+    font-size: 12px;
+  }
+  .footer-ewq img {
+    width: 6vw;
   }
 }
 /*==========  Desktop First Method  ==========*/
