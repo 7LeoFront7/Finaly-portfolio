@@ -114,7 +114,7 @@ html .loader_inner {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.475);
-  z-index: 3444444444;
+  z-index: 344443;
   left: -1020%;
 }
 
@@ -147,7 +147,7 @@ html .loader_inner {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  z-index: 1000;
+  z-index: 100440;
   width: 100%;
   height: 100%;
   display: flex;
@@ -187,6 +187,39 @@ html .loader_inner {
 @media (max-width: 991px) {
   .clip video {
     max-width: 90%;
+  }
+}
+.wrapperZakazZvon1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.475);
+  z-index: 34444444443333330000000000000000000000000000000000000;
+  left: -1020%;
+}
+
+.formZakazZvon1 {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.wrapperZakazZvon1-opening {
+  left: 0;
+}
+
+.closeZakazZvon1 {
+  position: absolute;
+  right: 15px;
+  top: 3vh;
+}
+
+@media only screen and (max-width: 592px) {
+  .formZakazZvon1 {
+    width: 300px;
   }
 }
 :root {
@@ -237,7 +270,7 @@ body {
   background-color: #ffffff;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1044;
   width: 100%;
   padding: 25px 0;
   border-bottom: 1px solid #ececec;
