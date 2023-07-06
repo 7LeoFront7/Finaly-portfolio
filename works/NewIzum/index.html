@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.css">
+	
 
 	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
 	
@@ -49,6 +50,12 @@
 	</div>
 
 	<!---================================================--->
+
+	
+	  <div class="clip">
+		<video muted src="video/nub2.mp4" controls="true"></video>
+		<b class="close"><img src="img/home/close.png" alt="close"></b>
+	  </div>
 
 	<!---===================Бургер=======================--->
 	<div class="burger-wrapper">
@@ -130,7 +137,7 @@
 					  <div class="swiper-slide swiper-slide2">
 						<div class="buttons-home">
 							<button class="Zapis1BTN">Записаться онлайн</button>
-							<div class="yutoub"><img src="img/home/yyyyr.png" alt="3"></div>
+							<div class="yutoub btn"><img src="img/home/yyyyr.png" alt="3"></div>
 						</div>
 						
 							<img class="slideIMg" src="img/home/Frame 27.jpg" alt="f">
@@ -164,7 +171,7 @@
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-pagination"></div>
-				  </div>
+				  
 			</section>
 		</main>
 		<footer class="footer">
@@ -183,6 +190,25 @@
 	<script src="js/load.js"></script>
 	<!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript">
+	let btn = document.querySelector(".btn");
+	let clip = document.querySelector(".clip");
+	let video = document.querySelector("video");
+	let close = document.querySelector(".close");
+
+	btn.onclick = function(){
+	  btn.classList.add("active");
+	  clip.classList.add("active");
+	  video.currentTime = 0;
+	  video.play();
+	}
+	close.onclick = function(){
+	  btn.classList.remove("active");
+	  clip.classList.remove("active");
+	  video.pause(); 
+	}
+</script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -203,5 +229,6 @@
       },
     });
   </script>
+  <script src="libs/jquery/jquery-1.11.2.min.js"></script>
 </body>
 </html>
