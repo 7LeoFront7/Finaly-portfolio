@@ -1161,7 +1161,7 @@ body {
     width: 220px;
     gap: 20px;
     left: 40vw;
-    top: 34vh;
+    top: 43vh;
   }
   .buttons-home img {
     width: 100%;
@@ -1354,7 +1354,7 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
     background-repeat: repeat;
-    margin-top: 100px;
+    margin-top: 176px;
   }
 }
 /*==========  Desktop First Method  ==========*/
