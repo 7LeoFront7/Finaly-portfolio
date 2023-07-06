@@ -1,464 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru"> 
 <head>
-  <meta name="zen-verification" content="grrL35vgaUsbdbXj10Ps4fABiMtnIQJRC5859iJqmbJ0umUyBimgLrXG3gVtQ7ak" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/main.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>7LeoFront7 | Portfolio</title>
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Link Swiper's CSS -->
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"
-/>
+	<meta charset="utf-8">
+	<title>Студия лазерной эпиляции #IZUM</title>
+	<meta name="description" content="Избавьтесь от лишних волос, пройдя курс безопасной лазерной эпиляции на диодном аппарате нового поколения">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+	
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+		ym(52397308, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true,
+			ecommerce:"dataLayer"
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/52397308" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
-  <div class="mask">
-    <div id="loader" class='tetrominos'>
-      <div class='tetromino box1'></div>
-      <div class='tetromino box2'></div>
-      <div class='tetromino box3'></div>
-      <div class='tetromino box4'></div>
-    </div>
-  </div>
 
-  <div id="home" class="wrapper">
-    <nav class="social">
-      <ul>
-        <li class="vk"><a target="_blank" class="lan-vkontakte" href="https://vk.com/7leofront7"> Вконтакте <i class="fa fa-vk"></i></a></li>
-        <li class="git"><a target="_blank" class="lan-github" href="https://github.com/7LeoFront7"> Гитхаб <i class="fa fa-github"></i></a>
-        </li>
-        <li class="inst"><a class="lan-email" href="mailto:xonskyfilms@gmail.com">Почта <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-      </ul>
-    </nav>
-    <header id="header" class="header">
-      <div class="header__contanier">
-        <div class="header__body">
-          <div class="header__buttons">
-            <div class="header__lang">
-              <button id="lang" class="cybr-btn cyber-big lan-language">
-                English<span aria-hidden>_</span>
-                <span aria-hidden class="cybr-btn__glitch">Language</span>
-                <span aria-hidden class="cybr-btn__tag">R25</span>
-              </button>
-              <button id="lang2" class="cybr-btn cyber-min">
-                <i class='bx bx-globe iii'></i><span aria-hidden>_</span>
+	<!---=============Загрузка страницы==================--->
 
-              </button>
-              <button  class="cybr-btn cybr-min lan-">
-                English<span aria-hidden>_</span>
-                <span aria-hidden class="cybr-btn__glitch">Language</span>
-                <span aria-hidden class="cybr-btn__tag">R25</span>
-              </button>
-            </div>
-            <div class="header__mail-me">
-              <button style="background-color: rgb(129, 0, 250);" class="cybr-btn cybrg-big lan-mess-me open-popup">
-                Написать мне<span aria-hidden>_</span>
-                <span aria-hidden class="cybr-btn__glitch green lan-">Сообщение</span>
-                
-              </button>
-              <button style="background-color: rgb(129, 0, 250);" class="cybr-btn cybrg-min open-popup">
-                <i class='bx bx-envelope iii'></i><span aria-hidden>_</span>
-              </button>
-            </div>
-          </div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 
-          <div class="header__logo">
-            <div class="box">
+	<!---================================================--->
 
-              <div class="title">
-                <span class="block"></span>
-                <h1 class="lan-logo-title">Назаров Максим<span></span></h1>
-              </div>
+	<!---===================Бургер=======================--->
+	<div class="burger-wrapper">
+		<div class="burger">
+			<div class="accordion">
+				<div class="accordion-item">
+				  <a class="burger__adressa"><img src="img/header/icon-adres.svg" alt="adress">Наши адреса в Москве</a>
+				  <div class="content">
+					<div class="burger__dropdown-content">
+						<a class="burger__drop-adress" href="https://b900210.yclients.com/company/659527/select-master?o=" target="_blank"><div class="burger__metros"><img src="img/header/metro/metrogreen.svg" alt="Метро"><img src="img/header/metro/metroorange.svg" alt="Метро"><img src="img/header/metro/metroyellow.svg" alt="Метро"></div>Новокузнецкая, ул. Пятницкая , 20c1</a>
+						<a class="burger__drop-adress" href="https://b900210.yclients.com/company/475792/select-master?o=" target="_blank"><div class="burger__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metropurpul.svg" alt="Метро"><img src="img/header/metro/metroyellow.svg" alt="Метро"></div>Таганская, ул. Николоямская, 40c1</a>
+						<a class="burger__drop-adress" href="https://b900210.yclients.com/company/601350/select-master?o=" target="_blank"><div class="burger__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metrogrow.svg" alt="Метро"></div>Новослободская, ул. Долгоруковская, 4А</a>
+						<a class="burger__drop-adress" href="https://b900210.yclients.com/company/167044/select-master?o=" target="_blank"><div class="burger__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metrogreen.svg" alt="Метро"></div>Павелецкая, ул. Кожевническая 7c1</a>
+						<a class="burger__drop-adress" href="https://b900210.yclients.com/company/701744/select-master?o=" target="_blank"><div class="burger__metros"><img src="img/header/metro/metrored-borring.svg" alt="Метро"><img src="img/header/metro/metrogag.svg" alt="Метро"></div>Смоленская, ул. Арбат, 54/2c1</a>
+					  </div>
+				  </div>
+				</div>
+			</div>
 
-              <div class="role">
-                <div class="block"></div>
-                <p class="lan-logo-text">Веб-разработчик</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="header__nav">
-            <ul class="breadcrumb">
-              <a href="#home"><li class="breadcrumb__item breadcrumb__item-firstChild">
-                <span class="breadcrumb__inner">
-                  <span class="breadcrumb__title lan-nav-home">Главная</span>
-                </span>
-              </li></a>
-              <a href="#about"><li class="breadcrumb__item">
-                <span class="breadcrumb__inner">
-                  <span class="breadcrumb__title lan-nav-about">Обо мне</span>
-                </span>
-              </li></a>
-              <a href="#works"><li class="breadcrumb__item">
-                <span class="breadcrumb__inner">
-                  <span class="breadcrumb__title lan-nav-port">Портфолио</span>
-                </span>
-              </li></a>
-              <a href="#"><li class="breadcrumb__item breadcrumb__item-lastChild">
-                <span class="breadcrumb__inner">
-                  <span class="breadcrumb__title lan-logo-contact">Контакты</span>
-                </span>
-              </li></a>
-              <a href="#"><li class="breadcrumb__item breadcrumb__item-lastChild">
-                <span class="breadcrumb__inner">
-                  <span class="breadcrumb__title lan-nav-games">Пэт-проекты</span>
-                </span>
-              </li></a>
-            </ul>
-          </div>
-          <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-
-            <ul class="menu__box">
-              <li><a class="menu__item lan-nav-home2" href="#home"> Главная <i class='bx bx-home'></i></a></li>
-              <li><a class="menu__item lan-nav-about2" href="#about"> Обо мне <i class='bx bxs-user'></i></a></li>
-              <li><a class="menu__item lan-nav-port2" href="#works"> Портфолио <i class='bx bxs-briefcase' ></i><a></li>
-              <li><a class="menu__item lan-logo-contact2" href="#"> Контакты <i class='bx bxs-phone' ></i></a></li>
-              <li><a class="menu__item lan-nav-games2" href="#"> Пэт-проекты <i class='bx bx-dice-3' ></i></a></li>
-              <div class="box-buttons">
-                <button id="lang3" class="cybr-btn cyber-min">
-                  <i class='bx bx-globe iii'></i><span aria-hidden>_</span>
-  
-                </button>
-                <button style="background-color: rgb(129, 0, 250);" class="cybr-btn cybrg-min open-popup">
-                  <i class='bx bx-envelope iii'></i><span aria-hidden>_</span>
-                </button>
-              </div>
-            </ul>
-          </div>
-        </div>
+			<div class="burger__contact">
+					<div class="burger__telephone">
+						<a href="https://wa.me/79853392310?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E." target="_blank"><img src="img/header/whatsapp-icon.png" alt="Вотсап"></a>
+						<a href="tel:+74953238964">+7(495)323-89-64</a>
+					</div>
+					<div class="burger__call">
+						<p class="burger__callText">Заказать обратный звонок</p>
+					</div>
+			</div>
+			<div class="burger__timeWork">
+				<p class="burger__timeWorkText">Без выходных с 10:00 до 22:00</p>	
+			</div>
+		</div>
+	</div>
+	<!---================================================--->
 
 
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<img src="img/header/logo.svg" alt="izumstudios">
+					</div>
+					<div class="header__info">
+						<div class="header__adress">
+							<img src="img/header/icon-adres.svg" alt="adress"><p class="header__adress-BTN">Наши адреса в Москве</p><img class="header__arrow" src="img/header/arrow-up.svg" alt="arrow">
+							<div class="header__dropdown-content">
+								<a class="header__drop-adress" href="https://b900210.yclients.com/company/659527/select-master?o=" target="_blank"><div class="header__metros"><img src="img/header/metro/metrogreen.svg" alt="Метро"><img src="img/header/metro/metroorange.svg" alt="Метро"><img src="img/header/metro/metroyellow.svg" alt="Метро"></div>Новокузнецкая, ул. Пятницкая , 20c1</a>
+								<a class="header__drop-adress" href="https://b900210.yclients.com/company/475792/select-master?o=" target="_blank"><div class="header__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metropurpul.svg" alt="Метро"><img src="img/header/metro/metroyellow.svg" alt="Метро"></div>Таганская, ул. Николоямская, 40c1</a>
+								<a class="header__drop-adress" href="https://b900210.yclients.com/company/601350/select-master?o=" target="_blank"><div class="header__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metrogrow.svg" alt="Метро"></div>Новослободская, ул. Долгоруковская, 4А</a>
+								<a class="header__drop-adress" href="https://b900210.yclients.com/company/167044/select-master?o=" target="_blank"><div class="header__metros"><img src="img/header/metro/metrobolue.svg" alt="Метро"><img src="img/header/metro/metrogreen.svg" alt="Метро"></div>Павелецкая, ул. Кожевническая 7c1</a>
+								<a class="header__drop-adress" href="https://b900210.yclients.com/company/701744/select-master?o=" target="_blank"><div class="header__metros"><img src="img/header/metro/metrored-borring.svg" alt="Метро"><img src="img/header/metro/metrogag.svg" alt="Метро"></div>Смоленская, ул. Арбат, 54/2c1</a>
+							  </div>
+						</div>
+						<div class="header__timeWork">
+							<p class="header__timeWorkText">Без выходных с 10:00 до 22:00</p>	
+						</div>
+					</div>
+					<div class="header__contact">
+						<div class="header__telephone">
+							<a href="https://wa.me/79853392310?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E." target="_blank"><img src="img/header/whatsapp-icon.png" alt="Вотсап"></a>
+							<a href="tel:+74953238964">+7(495)323-89-64</a>
+						</div>
+						<div class="header__call">
+							<p class="header__callText">Заказать обратный звонок</p>
+						</div>
+					</div>
+					<div class="menu btn11" data-menu="11">
+						<div class="icon-left"></div>
+						<div class="icon-right"></div>
+					  </div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="home">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide">
+						<div class="home__container">
+							<div class="home__body">
+								<div class="home__left">
+									<div class="home__left-box">
+										<div class="home__left-box-title">
+											<h1>Избавьтесь от лишних<br> волос, пройдя курс <span>безопасной лазерной эпиляции на диодном аппарате</span> нового поколения</h1>
+										</div>
+										<div class="home__buttons">
+											<div class="home__buttons-OnlineZapis">
+												<button class="home__buttons-OnlineZapis-btn OnlineZapis-btn">Записаться онлайн</button>
+											</div>
+											<div class="home__buttons-youtube btn">
+												<img src="img/home/youtube.png" alt="youtube">
+												<h2>Познакомтесь с<br>#IZUM за 40 секунд</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="home__right">
+									<img src="img/home/home-img.png" alt="Лазерная эпиляция">
+								</div>
+							</div>
+						</div>
+					  </div>
+					  <div class="swiper-slide swiper-slide2">
+						<img class="slideIMg" src="img/home/Frame 56.jpg" alt="f">
+						<img class="slideIMgTel" src="img/home/123321.jpg" alt="f">
+						</div>
+						<div class="swiper-slide swiper-slide2">
+							<img class="slideIMg" src="img/home/Frame 57.jpg" alt="f">
+							<img class="slideIMgTel" src="img/home/телефон (1).jpg" alt="f">
+							</div>
+							<div class="swiper-slide swiper-slide2">
+								<img class="slideIMg" src="img/home/Frame 58.jpg" alt="f">
+								<img class="slideIMgTel" src="img/home/телефон (2).jpg" alt="f">
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<img class="slideIMg" src="img/home/Frame 59.jpg" alt="f">
+									<img class="slideIMgTel" src="img/home/телефон (3).jpg" alt="f">
+									</div>
+									<div class="swiper-slide swiper-slide2">
+										<img class="slideIMg" src="img/home/Frame 60.jpg" alt="f">
+										<img class="slideIMgTel" src="img/home/телефон (3).jpg" alt="f">
+										</div>
+										
+					  </div>
+					  
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				  </div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="header__container">
+				<div class="footer__body">
+					f
+				</div>
+			</div>
+		</footer>
+	</div>
+	
 
-      </div>
-    </header>
-    <main class="main">
-      <section class="home">
-        <div class="home__container">
-          <div class="home__body">
-            <div class="home__text">
-              <div class="satodsan-uvemopag">
-                <h1 class="lan-home-logo">Назаров Максим | Веб-разработчик
-                </h1>
-              </div>
-              <div class="home__buttons">
-                <button class="home__buton">HTLM5</button>
-                <button class="home__buton">CSS3</button>
-                <button class="home__buton">JavaScript</button>
-                <button class="home__buton">SCSS</button>
-                <button class="home__buton">Gulp</button> 
-                <button class="home__buton">React</button>
-                <button class="home__buton">Git</button>
-                <button class="home__buton">Figma</button>
-                <button class="home__buton">Python</button>
-                <button class="home__buton">QT Designer</button>
-              </div>
-              <a href="#about"><div class="arrow-8"></div></a>
-            </div>
-            
-            <div class="home__img">
-              <img  src="img/me-remo5vebg.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section >
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/load.js"></script>
+	<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-      <section id="about"  class="about">
-        <div class="about__container">
-          <div class="about__body">
-            <div class="about__photo">
-              <img src="img/me2.png" alt="">
-            </div>
-            <div class="about__me">
-              <div class="about__text">
-                <p class="about__text-inner lan-about-alltext">
-                  <span>Основоное:</span> Назаров Максим Сергеевич, родился в 05.10.2002 г., живу в Москве, гражданство РФ. <br>
-
-                  <span>Образование:</span> ГАПОУ ТК № 24
-Среднее профессиональное образование "Информационные системы и программирование" (Очная форма обучения)<br>
-
-<span>Опыт работы:</span> ИП "TURILOV media", Фронтенд-Разработчик (Частично фулстак) | Фриланс<br>
-  <span>Дополнительная информация:</span> Полный пакет Office | Photoshop + Figma |
-                </p>
-                <img src="img/Group 1.png" alt=""> 
-                
-              </div>
-              <div class="about__steck"> 
-                 <i style="color:red;" class='bx bxl-html5'></i> HTML5
-                <div class="progress"> 
-                  <div class="grayback"></div>
-                  <div class="strips"></div>
-                </div>
-                <i style="color:rgb(255, 204, 0);" class='bx bxl-javascript' ></i> JavaScript
-                <div class="progress"> 
-                  <div class="grayback3"></div>
-                  <div class="strips"></div>
-                </div>
-                <i style="color:rgb(0, 136, 255);" class='bx bxl-react' ></i> React
-                <div class="progress"> 
-                  <div class="grayback4"></div>
-                  <div class="strips"></div>
-                </div>
-                <i style="color:rgb(255, 0, 247);" class='bx bxl-css3' ></i> SCSS
-                <div class="progress"> 
-                  <div class="grayback5"></div>
-                  <div class="strips"></div>
-                </div>
-                <i style="color:red;" class='bx bxl-git' ></i> Git
-                <div class="progress"> 
-                  <div class="grayback6"></div>
-                  <div class="strips"></div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="works" class="works">
-        <div class="works__container">
-          <div class="works__title">
-              <h1 class="lan-myworks">Мои работы</h1>
-            </div>
-          <div class="works__body">
-            <div class="container">
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/10.jpg">
-                </div>
-                <a target="_blank" href="pages/k-block-Page.html"><div class="content">
-                  <div>
-                    <h2>Сайт-Кблок.</h2>
-                    <p>КК БЛОК - производитель настоящих газобетонных блоков
-                    </p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/1.jpg">
-                </div>
-                <a target="_blank" href="works/CenterZdrav/index.html"><div class="content">
-                  <div>
-                    <h2>Центр здоровья и лечения волос в Волгограде</h2>
-                    <p>Самый современный трихологический центр в Волгоградской области, открытый в 2012 году
-                    </p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/2.jpg">
-                </div>
-                <a target="_blank" href="works/Debit-Pay/index.html"><div class="content">
-                  <div>
-                    <h2>Debit-Pay</h2>
-                    <p>Современные решения для дебиторской задолженности
-                    </p>
-                  </div>
-                </div>
-              </a>
-              </div>
-               <div class="box">
-                <div class="imgBx">
-                  <img src="img/4.jpg">
-                </div>
-                <a target="_blank" href="works/NewIzum/index.html"><div class="content">
-                  <div>
-                    <h2>Discover
-                      Most Suitable
-                      Property</h2>
-                    <p>(Мобильная Вёрстка)
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/54t.png">
-                </div>
-                <a target="_blank" href="works/vkstage/index.html"><div class="content">
-                  <div>
-                    <h2>Discover
-                      Тестовое задание
-                      Property</h2>
-                    <p>Вк тест. задание
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/54.png">
-                </div>
-                <a target="_blank" href="works/izum/index.html"><div class="content">
-                  <div>
-                    <h2>Discover
-                      Most Suitable
-                      Property</h2>
-                    <p>(Новый сайт)
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-                    <div class="box">
-                <div class="imgBx">
-                  <img src="img/54.png">
-                </div>
-                <a target="_blank" href="works/izum/index.html"><div class="content">
-                  <div>
-                    <h2>Discover
-                      Most Suitable
-                      Property</h2>
-                    <p>(Новый сайт)
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-              <div class="box">
-                <div class="imgBx">
-                 <img src="img/3.jpg" alt="">
-                </div>
-                <a target="_blank" href="works/GoCorona/index.html"><div class="content">
-                  <div>
-                    <h2>GoCorona</h2>
-                    <p>All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.
-                    </p>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="box">
-                <div class="imgBx">
-                  <img src="img/4.jpg">
-                </div>
-                <a target="_blank" href="works/Homeyz/index.html"><div class="content">
-                  <div>
-                    <h2>Discover
-                      Most Suitable
-                      Property</h2>
-                    <p>(Мобильная Вёрстка)
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="box">
-              <div class="imgBx">
-                <img src="img/5.jpg">
-              </div>
-              <a target="_blank" href="works/Terminal/index.html"><div class="content">
-                <div>
-                  <h2>ООО "Терминал"</h2>
-                  <p>Комплексные поставки трубопроводной арматуры и деталей трубопровода по России и СНГ
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-         
-        <div class="box">
-          <div class="imgBx">
-            <img src="img/7.jpg">
-          </div>
-          <a target="_blank" href="works/VK-Test-main/index.html" > <div class="content">
-            <div>
-              <h2>Тестовое задание на Стажировку в Вконтакте</h2>
-              <p>Работа с JS
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-            
-            </div>
-           
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer">
-      <div class="footer__container">
-        
-      </div>
-    </footer>
-  </div>
-
-
-
-
-
-  <div class="popup-bg">
-    <div class="popup">
-      <div class="screen">
-        <div class="screen-header">
-          <div class="screen-header-left">
-            <div class="screen-header-button close"></div>
-            <div class="screen-header-button maximize"></div>
-            <div class="screen-header-button minimize"></div>
-          </div>
-          <div class="screen-header-right">
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-          </div>
-        </div>
-        <div class="screen-body">
-          <div class="screen-body-item left">
-            <div class="app-title">
-              <img src="img/me.jpg" alt="">
-            </div>
-            <div class="app-contact"></div>
-          </div>
-          <div class="screen-body-item">
-            <div class="app-form">
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder = "Введите ваше имя ...">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="Ваш Е-маил">
-              </div>
-              <div class="app-form-group">
-                <input class="app-form-control" placeholder="Ваш телефон">
-              </div>
-              <div class="app-form-group message">
-                <input class="app-form-control" placeholder="Сообщение">
-              </div>
-              <div class="app-form-group buttons">
-                <button class="app-form-button close-popup">Назад</button>
-                <button class="app-form-button">Отправить</button>
-              </div>
-            </div>
-          </div>
-    </div>
-  </div>
-
-  <script src="js/script.js"></script>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script>$('.open-popup').click(function(){
-    $('.popup-bg').fadeIn(600);
-  });
-  $('.close-popup').click(function(){
-     $('.popup-bg').fadeOut(600);
-  });</script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5555500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
-
 </html>
