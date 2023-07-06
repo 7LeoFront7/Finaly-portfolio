@@ -1158,10 +1158,10 @@ body {
 @media only screen and (max-width: 539px) {
   .buttons-home {
     flex-wrap: wrap;
-    width: 216px;
+    width: 220px;
     gap: 20px;
     left: 40vw;
-    top: 31vh;
+    top: 34vh;
   }
   .buttons-home img {
     width: 100%;
@@ -1247,7 +1247,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     background-repeat: repeat;
-    margin-top: 67px;
+    margin-top: 100px;
   }
   .slideIMg {
     display: none;
@@ -1354,7 +1354,7 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
     background-repeat: repeat;
-    margin-top: 67px;
+    margin-top: 100px;
   }
 }
 /*==========  Desktop First Method  ==========*/
