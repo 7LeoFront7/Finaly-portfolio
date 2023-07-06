@@ -109,6 +109,39 @@ html .loader_inner {
   display: none;
 }
 
+.wrapperOnlineZapis1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.475);
+  z-index: 3444444444;
+  left: -1020%;
+}
+
+.formOnlineZapis1 {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.wrapperOnlineZapis-opening {
+  left: 0;
+}
+
+.closeZapis1 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@media only screen and (max-width: 592px) {
+  .formOnlineZapis1 {
+    width: 300px;
+  }
+}
 :root {
   --main-bg-color: pink;
 }
@@ -122,7 +155,7 @@ html .loader_inner {
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
 }
@@ -1097,13 +1130,68 @@ body {
     left: -5vw;
   }
 }
-.OnlineZapis-btn {
+.Zapis1BTN {
   /* Важные стили для анимации */
   position: relative;
   overflow: hidden;
 }
 
-.OnlineZapis-btn:after {
+.Zapis1BTN {
+  background-color: #C7A287;
+  padding: 20px 40px;
+  border: 1px solid #C7A287;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons-home {
+  position: absolute;
+  display: flex;
+  gap: 50px;
+  left: 7vw;
+  top: 56vh;
+}
+
+@media only screen and (max-width: 539px) {
+  .buttons-home {
+    flex-wrap: wrap;
+    width: 216px;
+    gap: 20px;
+    left: 40vw;
+    top: 31vh;
+  }
+  .buttons-home img {
+    width: 100%;
+  }
+  .Zapis1BTN {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 439px) {
+  .Zapis1BTN {
+    background-color: #C7A287;
+    padding: 11px 21px;
+    border: 1px solid #C7A287;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+.yutoub {
+  display: flex;
+  cursor: pointer;
+}
+
+.Zapis1BTN:hover {
+  background-color: #fff;
+  color: #C7A287;
+}
+
+.Zapis1BTN:after {
   content: "";
   display: block;
   width: 20px;
@@ -1112,7 +1200,7 @@ body {
   background: #fff;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.5) 100%);
   left: -40px;
-  top: -100px;
+  top: -80px;
   z-index: 1;
   transform: rotate(45deg);
   position: absolute;
@@ -1159,6 +1247,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     background-repeat: repeat;
+    margin-top: 67px;
   }
   .slideIMg {
     display: none;
@@ -1248,9 +1337,26 @@ body {
 }
 
 .swiper-slide2 {
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
+@media only screen and (max-width: 1002px) {
+  .home__body .home__left .home__buttons-OnlineZapis-btn {
+    position: relative;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .slideIMgTel {
+    display: block;
+    width: 100%;
+    height: 78%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-repeat: repeat;
+    margin-top: 67px;
+  }
+}
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
