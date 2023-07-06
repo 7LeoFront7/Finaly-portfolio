@@ -933,7 +933,7 @@ body {
 }
 @media only screen and (max-width: 645px) {
   .home__body .home__left h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 31px;
     margin-bottom: 43px;
   }
