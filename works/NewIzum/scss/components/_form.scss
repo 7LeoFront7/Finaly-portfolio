@@ -1,0 +1,127 @@
+.wrapperOnlineZapis1{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: 344443;
+    left: -1020%;
+
+   
+}
+
+.formOnlineZapis1{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+}
+
+.wrapperOnlineZapis-opening{
+    left: 0;
+}
+
+.closeZapis1{
+    position: absolute;
+    right: 15px;
+    top: 3vh;
+}
+
+@media only screen and (max-width : 592px) {
+    .formOnlineZapis1{
+        width: 300px;
+    }
+}
+
+
+
+.clip
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  z-index: 100440;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.clip.active
+{
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+  transform: translate(-50%,-50%) scale(1);
+}
+.clip video
+{
+  max-width: 900px;
+  outline: none;
+  border: 10px solid #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+.clip .close
+{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px)
+{
+  .clip video
+  {
+    max-width: 90%;
+  }
+}
+
+.wrapperZakazZvon1{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.475);
+    z-index: 34444444443333333333333333333333333335555555555555555;
+    left: -1020%;
+
+   
+}
+
+.formZakazZvon1{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+}
+
+.wrapperZakazZvon1-opening{
+    left: 0;
+}
+
+.closeZakazZvon1{
+    position: absolute;
+    right: 15px;
+    top: 3vh;
+}
+
+@media only screen and (max-width : 592px) {
+    .formZakazZvon1{
+        width: 300px;
+    }
+}
+
+

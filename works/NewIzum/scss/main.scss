@@ -1,15 +1,13 @@
-@import 'reset'; // Обнулиение стилей
-@import 'settings'; // Подклчение основных настроек стилей
-@import 'vidjets'; // Подключение файла стилей с виджетами
+@import 'reset';
+@import 'loader';
 
-body{
-    font-family: 'Nunito', sans-serif;
-    font-size: 24px;
-    color: var(--main-color-def);
-}
+@import 'fonts';
+@import 'components/form';
+@import 'settings';
 
-@import 'components/header'; // Подключение стилей Header
-@import 'components/home'; // Подключение стилей Home
+@import 'components/header';
+@import 'components/home';
+@import 'components/footer';
 
 
-
+@import 'media';

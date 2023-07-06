@@ -1,659 +1,509 @@
 .header{
+    background-color: #ffffff;
     position: fixed;
-    z-index: 1113;
-    width: 100vw;
-    padding: 25px;
-    background-color: #fff;
-    font-weight: 300;
+    top: 0;
+    z-index: 1044;
+    width: 100%;
+    padding: 25px 0;
     border-bottom: 1px solid #ececec;
 
     &__body{
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        max-width: 315px;
+
+        img{
+            width: 100%;
+        }
     }
 
     &__info{
         display: flex;
-    }
-
-   
-
-    .info__adress{
-        display: flex;
-        margin-right: 30px;
         align-items: center;
-        cursor: pointer;
+        gap: 25px;
+        font-size: 1.4em;
 
-        .info-icon-adress{
-            height: 25px;
-        }
-
-        p{
-            margin: 0 8px;
-        }
-
-        .info-icon-up{
-            transition: .2s;
-        }
     }
 
-    .info__adress:hover{
-        transition: .2s;
-        color: var(--main-color);
-        .info-icon-up{
-            transform: rotate(180deg);
-        }
-    }
-
-    &__contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    .contact__phone{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        a{
-            font-weight: normal;
-        }
-
-        img{
-            width: 24px;
-        }
-    }
-
-    .contact__order-call{
-        margin-top: 8px;
-    }
-
-    .contact__order-call a{
-        text-decoration: underline;
-        transition: .2s;
-    }
-
-    .header__contact a{
-        transition: .2s;
-    }
-
-    .contact__order-call, .header__contact a:hover{
-        color: var(--main-color);
-    }
-
-    .contact__phone img{
-        transition: .4s;
-        position: relative;
-        top: 1px;
-    }
-
-    .contact__phone img:hover{
-        transform: scale(1.1);
-    }
-
-   .header__menu-adress{
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 5px 20px;
-    -webkit-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
--moz-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
-box-shadow: 12px 11px 8px 1px rgba(146, 146, 146, 0.21);
-
-z-index: 1;
-width: 45vw;
-top: 23px;
-   }
-
-
-   .menu-adress-item-item{
+   &__adress{
     display: flex;
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #d6d6d6;
-   }
-   .menu-adress-item-item:last-child{
-    border-bottom: none;
-   }
-
-   .block-metros{
-    width: 8vw;
-    margin-right: 1vw;
+    cursor: pointer;
+    gap: 8px;
+    transition: .3s;
 
     img{
-        width: 1.8vw;
-        margin-right: 5px;
+        width: 25px;
+        height: 21px;
     }
-
    }
 
-   .menu-adress-item-item a{
+   &__arrow{
     transition: .3s;
    }
 
-   .ssub0adres-link:hover{
-    color: var(--main-color);
-    padding-left: 10px;
+
+   &__adress:hover{
+    color: #C1987B;
+   }
+   &__adress:hover &__arrow{
+    transform: rotate(180deg);
    }
 
-   .menu-adress-item-item:hover .ssub0adres-link{
-    color: var(--main-color);
-    padding-left: 10px;
+   &__contact{
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 6px;
+
+    img{
+        width: 24px;
+        position: relative;
+        top: 4px;
+    }
+
+    a{
+        color: black;
+    }
    }
 
-   .info__adress{
-    position: relative;
+   &__callText{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s;
+   }
+   &__callText:hover{
+    color: #C1987B;
    }
 
-   /***При наведении на адрес*/
+   &__telephone a{
+    transition: .3s;
+   }
 
-   .info__adress:hover  .header__menu-adress {display: block;}
-   
-   .info__working-hours{
+   &__dropdown-content{
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow:12px 11px 8px 1px rgba(146, 146, 146, 0.596);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 15px;
+    top: 70px;
+    width: 700px;
+    display: none;
+    padding-top: 10px;
+   }
+
+   &__drop-adress{
+    color: #000;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 15px 0; 
+    transition: .3s;
     display: flex;
     align-items: center;
+}
+&__drop-adress:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+&__drop-adress:hover{
+    color: #C1987B; 
+    padding-left: 10px;
+}
+   &__metros{
+    width: 80px;
+    margin-right: 40px;
+    display: flex;
+    gap: 6px;
+
+    img{
+        width:28px;
+    }
    }
+   &__telephone a:hover{
+    color: #C1987B;
+   }
+
+   &__adress:hover &__dropdown-content {display: block;}
 }
 
+/////////////////////////////////////
+/// @import "compass/css3";
 
-.header__burger{
+$dark: #C1987B;
+$light: #efefef;
+$color: #b3e5fc;
+
+@mixin btn($right, $top) {
+  position: relative;
+  width: 30px;
+  height: 60px;
+  top: $top;
+  right: $right;
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 30px;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-circle($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 2px;
+  border-radius: 100%;
+  background: transparent;
+  border: 4px solid black;
+  left: -15px;
+}
+/// 
+.btn11{
     display: none;
-}
-//////////////////////////Burger//////////////////////////////////////
-.burger{
-    font-family: 'Nunito', sans-serif;
+    @include btn(0, 0);
+    
+    .icon-left {
+      @include icon(4px, 15px);
+      
+      &:before{
+        @include icon-before(4px, 15px, -10px);
+      }
+      
+      &:after{
+        @include icon-after(4px, 15px, 10px);
+      }
+      
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    
+    .icon-right {
+      @include icon(4px, 15px);
+      left: 15px;
+      
+      &:before{
+        @include icon-before(4px, 15px, -10px);
+      }
+      
+      &:after{
+        @include icon-after(4px, 15px, 10px);
+      }
+    }
+    
+    &.open {
+      .icon-left {
+        transition-duration: 0.5s;
+        background: transparent;
+        
+        &:before{
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        }
+  
+        &:after{
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        }
+      }
+      
+      .icon-right {
+        transition-duration: 0.5s;
+        background: transparent;  
+        
+        &:before{
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        }
+  
+        &:after{
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+.burger-wrapper{
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    z-index: 10;
-    top: -200%;
-    padding: 0 50px;
-    transition: .2s;
-    svg{
-        margin-right: -20px;
+    top: -600%;
+    transition: .3s;
+    z-index: 32329;
+
+    .burger__contact img{
+      margin-right: 10px;
     }
 }
 
-.block-metros-burger-point{
-    display: none;
-}
-
-.open-burger {
-    top: 78px;
-}
-
-.ham {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .hamRotate.active {
-    transform: rotate(45deg);
-  }
-  .hamRotate180.active {
-    transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:var(--main-color-lite);
-    stroke-width:5.5;
-    stroke-linecap:round;
-  }
-  .ham8 .top {
-    stroke-dasharray: 40 160;
-  }
-  .ham8 .middle {
-    stroke-dasharray: 40 142;
-    transform-origin: 50%;
-    transition: transform 400ms;
-  }
-  .ham8 .bottom {
-    stroke-dasharray: 40 85;
-    transform-origin: 50%;
-    transition: transform 400ms, stroke-dashoffset 400ms;
-  }
-  .ham8.active .top {
-    stroke-dashoffset: -64px;
-  }
-  .ham8.active .middle {
-    //stroke-dashoffset: -20px;
-    transform: rotate(90deg);
-  }
-  .ham8.active .bottom {
-    stroke-dashoffset: -64px;
-  }
-
-
-  .header__burger{
-    display: none;
+.burger-wrapper-open{
+    top: 110px;
 }
 
 
-$bg: #E4C4AB;
-$text: #E4C4AB;
-$gray: #E4C4AB;
-$lightgray: #E4C4AB;
-$blue: #E4C4AB;
 
-.accordion {
 
+
+
+.burger-wrapper{
     width: 100%;
-    
-    margin: 0 auto;
+}
 
-    .accordion-item {
-      border-bottom: 2px solid $lightgray;
-      button[aria-expanded='true'] {
-        border-bottom: 2px solid $blue;
-      }
-    }
-    button {
-      position: relative;
-      display: block;
-      text-align: left;
-      width: 100%;
-      padding: 1em 0;
-      color: #000;
-      font-size: 3vw;
-      font-weight: 400;
-      border: none;
-      background: none;
-      outline: none;
-      &:hover, &:focus {
-        cursor: pointer;
-        color: #000;
-        &::after {
-          cursor: pointer;
-          color: #000;
-          border: 1px solid $blue;
-        }
-      }
-      .accordion-title {
-        padding: 1em 1.5em 1em 0;
-      }
-      .icon {
-        display: inline-block;
-        position: absolute;
-        top: 4vw;
-        right: 0;
-        width: 22px;
-        height: 22px;
-        border: 1px solid;
-        border-radius: 22px;
-        &::before {
-          display: block;
-          position: absolute;
-          content: '';
-          top: 9px;
-          left: 5px;
-          width: 10px;
-          height: 2px;
-          background: currentColor;
-        }
-        &::after {
-          display: block;
-          position: absolute;
-          content: '';
-          top: 5px;
-          left: 9px;
-          width: 2px;
-          height: 10px;
-          background: currentColor;
-        }
-      }
-    }
-    button[aria-expanded='true'] {
-      color: $blue;
-      .icon {
-        &::after {
-          width: 0;
-        }
-      }
-      + .accordion-content {
-        opacity: 1;
-        max-height: 19em;
-        transition: all 200ms linear;
-        will-change: opacity, max-height;
-      }
-    }
-    .accordion-content {
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: opacity 200ms linear, max-height 200ms linear;
-      will-change: opacity, max-height;
-      p {
-        font-size: 1rem;
-        font-weight: 300;
-        margin: 2em 0;
-      }
-    }
-
-    .menu-adress-item-item-burger{
+.burger{
+    padding: 25px;
+  
+    &__contact{
+        margin-top: 20px;
+        font-size: 1.3em;
         display: flex;
-        padding: 15px;
-        align-items: center;
-        border-bottom: 1px solid #cbcbcb;
-
-        .ssub0adres-link{
-            font-size: 2.5vw;
-        }
-    }
-
-    .block-metros-burger{
-        width: 14vw;
-        margin-right: 15px;
-    }
-
-    .block-metros-burger img{
-        width: 3vw;
-        margin-right: 5px;
-    }
-
+        flex-direction: column;
+        align-items: start;
+        gap: 6px;
+        font-weight: 300;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #c9c9c9;
     
+        img{
+            width: 24px;
+            position: relative;
+            top: 4px;
+        }
+    
+        a{
+            color: black;
+        }
+       }
+    
+       &__callText{
+        text-decoration: underline;
+        cursor: pointer;
+        transition: .3s;
+       }
+       &__callText:hover{
+        color: #C1987B;
+       }
+    
+       &__telephone a{
+        transition: .3s;
+       }
+}
+
+    .burger__timeWork{
+        margin-top: 20px;
+    }
+
+.burger__drop-adress{
+    display: flex;
+    
+}
+.burger__metros{
+    display: flex;
+    gap: 10px;
+    width: 150px;
+    margin-right: 20px;
+    img{
+        width: 40px;
+    }
+}
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+   
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #000000;
+    font-size: 2em;
+    font-weight: 400;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  .accordion a:hover,
+  .accordion a:hover::after {
+    cursor: pointer;
+    color: #C1987B;
+  }
+  .accordion a:hover::after {
+    border: 1px solid #C1987B;
+  }
+  .accordion a.active {
+    color: #C1987B;
+    border-bottom: 1px solid #C1987B;
   }
 
-  .contact-burger{
-    width: 100%;
-    margin: 0 auto;
+  .burger__adressa img{
+    margin-right: 10px;
+  }
+
+  .burger__adressa::after {
+    font-family: "Ionicons";
+    content: "\f218";
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: #C1987B;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #C1987B;
+    text-align: center;
+}
+  .burger__adressa.active::after {
+    font-family: 'Ionicons';
+    content: '\f209';
+    color: #C1987B;
+    border: 1px solid #C1987B;
+  }
+  .accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
     
-    margin-top: 30px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #E4C4AB;
-}
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+  .accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+  }
 
-.contact__order-call-burger{
-    margin-top: 2vw;
-
-    a{
-        text-decoration: underline;
-    }
-}
-
-.contact__phone-burger img{
-    position: relative;
-    top: 4px;
-}
-
-.burger__timeWork{
-    width: 90vw;
-    margin: 0 auto;
-    
-    margin-top: 3vw;
-}
-
-
-/////////////////////////////////////////////////////////////////////////////
-/// 
-/// /* Custom, iPhone Retina */
-@media only screen and (max-width : 1555px) {
-    .header__logo{
-        width: 262px;
-        img{
-            width: 100%;
-        }
-    }
-    .header .info__adress p{
-        font-size: 20px;
-    }
-    .info__working-hours{
-        font-size: 20px;
-    }
-    .header .info__adress .info-icon-adress {
-        height: 20px;
-    }
-    .header .header__contact a{
-        font-size: 20px;
-    }
-    .header .contact__order-call {
-        margin-top: 2px;
-    }
-}
-
-@media only screen and (max-width : 1263px) {
-    .header__logo{
-        width: 222px;
-        img{
-            width: 100%;
-        }
-    }
-    .header .info__adress p{
-        font-size: 18px;
-    }
-    .info__working-hours{
-        font-size: 18px;
-    }
-    .header .info__adress .info-icon-adress {
-        height: 18px;
-    }
-    .header .header__contact a{
-        font-size: 18px;
-    }
-    .header .contact__order-call {
-        margin-top: 0px;
-    }
-}
-
-@media only screen and (max-width : 1170px) {
-    .header__burger{
-        display: block;
-    }
-    .header .info__adress{
+  @media only screen and (max-width : 1444px) {
+    .header__adress{
         display: none;
     }
-    .header{
-        padding: 0;
-    }
-    .accordion-title{
-        font-weight: 300;
-    }
-    .accordion button .icon {
-        display: inline-block;
-        position: absolute;
-        top: 3vw;
-        right: 0;
-        width: 40px;
-        height: 40px;
-        border: 1px solid;
-        border-radius: 22px;
-    }
-    .accordion button .icon::before {
+    .btn11{
         display: block;
-        position: absolute;
-        content: "";
-        top: 18px;
-        left: 12px;
-        width: 14px;
-        height: 2px;
-        background: currentColor;
     }
-    .accordion button .icon::after {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 11px;
-        left: 18px;
-        width: 2px;
-        height: 15px;
-        background: currentColor;
-    }
-   
 }
 
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1200px) {
     .header__info{
         display: none;
     }
-    .header__contact {
+    .header__contact{
         display: none;
     }
-    .header__logo {
-        width: 260px;
+}
+
+@media only screen and (max-width : 768px) {
+    .header__logo{
+        width: 240px;
+        margin-right: 30px;
     }
-    .header {
-       
-        padding: 10px 25px;
-        
+    
+    .header{
+        padding: 10px 0;
     }
-    .burger-phone{
-        margin-top: 27px;
+    .burger-wrapper-open{
+        top: 80px;
     }
 }
 
-@media only screen and (max-width : 850px) {
-    .accordion button .accordion-title{
-        font-size: 25px;
+@media only screen and (max-width : 968px) {
+    .accordion a{
+        font-size: 1.3em;
+        padding: 1rem 0;
     }
-    .accordion-title img{
-        position: relative;
-        top: 4px;
-    }
-    .accordion button .icon {
-        display: inline-block;
-        position: absolute;
-        top: 3vw;
-        right: 0;
+    .burger__metros img{
         width: 30px;
-        height: 30px;
-        border: 1px solid;
-        border-radius: 22px;
     }
-    .accordion button .icon::after {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 8px;
-        left: 13px;
-        width: 2px;
-        height: 13px;
-        background: currentColor;
+    .burger__metros{
+        width: 120px;
+        margin-right: 20px;
     }
-    .accordion button .icon::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 14px;
-        left: 8px;
-        width: 12px;
-        height: 2px;
-        background: currentColor;
-    }
-    .header__container{
+}
+
+@media only screen and (max-width : 640px) {
+    .accordion .content.active{
         padding: 0;
     }
-    .burger {
-        padding: 0 24px;
+    .accordion a{
+        font-size: 1.5em;
+        display: flex;
+    align-items: center;
     }
-    .header__burger{
-        position: relative;
-        left: 24px;
+    .burger__metros img{
+        width: 25px;
     }
-}
-@media only screen and (max-width : 718px) {
-    .accordion .menu-adress-item-item-burger .ssub0adres-link{
-        font-size: 18px;
+    .burger__metros{
+        width: 100px;
+        margin-right: 20px;
     }
-    .accordion .block-metros-burger img{
-        width: 21px;
-    }
-    .accordion .block-metros-burger{
-        width: 80px;
-    }
-    .accordion .menu-adress-item-item-burger{
-        padding: 15px 0;
-    }
-}
-@media only screen and (max-width : 503px) {
-    .accordion .menu-adress-item-item-burger .ssub0adres-link{
-        font-size: 14px;
-    }
-    .accordion .block-metros-burger img{
-        width: 19px;
-    }
-    .accordion .block-metros-burger{
-        width: 80px;
-        margin-right: 0px;
-    }
-    .accordion .menu-adress-item-item-burger{
-        padding: 15px 0;
+    .burger__dropdown-content .burger__drop-adress{
+        font-size: 1em;
     }
 }
 
-@media only screen and (max-width : 470px) {
-    .accordion-title img{
-        width: 20px;
+@media only screen and (max-width : 489px) {
+    .burger__metros{
+        gap: 5px;
+        width: 64px;
+        img{
+            width: 20px;
+        }
     }
-    .accordion button .accordion-title {
-        font-size: 20px;
-    }
-    .accordion button .icon {
-        display: inline-block;
-        position: absolute;
-        top: 4vw;
-        right: 0;
-        width: 20px;
-        height: 20px;
-        border: 1px solid;
-        border-radius: 22px;
-    }
-    .accordion button .icon::after {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 4px;
-        left: 8px;
-        width: 2px;
-        height: 10px;
-        background: currentColor;
-    }
-    .accordion button .icon::before {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 8px;
-        left: 4px;
-        width: 10px;
-        height: 2px;
-        background: currentColor;
-    }
-    .contact__phone-burger img{
-        width: 20px;
-    }
-    .contact__phone-burger a{
-        font-size: 22px;
-    }
-    .burger__timeWork p{
-        font-size: 20px;
-    }
-    .contact__order-call-burger a{
-        font-size: 20px;
+    .burger__dropdown-content .burger__drop-adress {
+        font-size: 0.8em;
     }
 }
 
-@media only screen and (max-width : 350px) {
-    
-    .burger-phone {
-        margin-top: 17px;
-    }
-    .header {
-        padding: 5px 20px;
-    }
-    .burger__timeWork p {
-        font-size: 19px;
-    }
-
-    .accordion button .icon{
-        top: 5vw;
-    }
+@media only screen and (max-width : 489px) {
+    .accordion a {
+        font-size: 1.5em;
+       
+        
 }
+.burger{
+    font-size: 1em;
+}
+}
+
 
