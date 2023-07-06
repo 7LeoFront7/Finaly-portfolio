@@ -365,7 +365,10 @@ body {
   background-color: #ffffff;
   top: -600%;
   transition: 0.3s;
-  z-index: 9;
+  z-index: 32329;
+}
+.burger-wrapper .burger__contact img {
+  margin-right: 10px;
 }
 
 .burger-wrapper-open {
@@ -1200,7 +1203,7 @@ body {
 }
 
 .slideIMg {
-  width: 100%;
+  width: 104%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
