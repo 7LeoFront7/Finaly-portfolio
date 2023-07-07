@@ -1,3 +1,5 @@
+
+
 $('.menu').click (function(){
     $(this).toggleClass('open');
   });
@@ -48,3 +50,5 @@ ZakazZvon2.addEventListener('click', function(){
 closeZakazZvon1.addEventListener('click', function(){
   wrapperZakazZvon1.classList.remove('wrapperZakazZvon1-opening')
 })
+
+///////////////////////////////////////////
