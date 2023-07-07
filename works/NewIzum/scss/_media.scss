@@ -1,8 +1,15 @@
 /*==========  Desktop First Method  ==========*/
-
+.mob{
+	display: none;
+}
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1000px) {
+.mob{
+	display: block;
+}
+.PC{
+	display: none;
+}
 }
 
 /* Medium Devices, Desktops */

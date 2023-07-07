@@ -1,0 +1,152 @@
+.map__container{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map__left{
+    width: 55vw;
+    padding: 0 100px;
+    h3{
+        text-align: center;
+        font-size: 60px;
+        span{
+        color: #c4915e;
+    }
+    }
+    
+}
+
+.map__right{
+    width: 45vw;
+}
+
+@media only screen and (max-width : 1000px) {
+   .map__container{
+    flex-wrap: wrap;
+   } 
+   .map__left{
+    padding: 0 20px;
+    h3{
+        font-size: 7vw;
+       }
+   }
+   
+
+   .map__right{
+    width: 87vw;
+    display: flex;margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.map__left{
+    width: 100vw;
+}
+.map__container{
+    margin-bottom: 0;
+}
+}
+
+.reviews__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews__left{
+    width: 55vw;
+    padding: 0 100px;
+    h3{
+        text-align: center;
+        font-size: 60px;
+        span{
+        color: #c4915e;
+    }
+    }
+    
+}
+
+.reviews__right{
+    width: 45vw;
+}
+
+@media only screen and (max-width : 1000px) {
+   .reviews__container{
+    flex-wrap: wrap;
+   } 
+   .reviews__left{
+    padding: 0 20px;
+    h3{
+        font-size: 7vw;
+       }
+   }
+   
+   .masters h1{
+    font-size: 2vw;
+   }
+
+   .reviews__right{
+    width: 87vw;
+    display: flex;margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.reviews__left{
+    width: 100vw;
+}
+.map__right {
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.map__container{
+    padding: 0;
+}
+}
+
+.map__burger__adressad{
+    font-size: 32px;
+    
+    img{
+        margin-right: 15px;
+    }
+}
+
+.map__burger__drop-adress{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b9b9b9;
+    font-size: 28px;
+    color: #000;
+}
+
+.map__burger__dropdown-content{
+    margin-top: 30px;
+}
+
+.dopper{
+    text-decoration: underline;
+    position: relative;
+    bottom: 10px;
+    color: #A87F6D;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 500px) {
+    .map__burger__adressad {
+        font-size: 6vw;
+    }
+    .burger__dropdown-content .burger__drop-adress {
+        font-size: 3vw;
+    }
+}
+
