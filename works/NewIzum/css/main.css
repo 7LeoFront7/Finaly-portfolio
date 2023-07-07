@@ -1766,6 +1766,61 @@ footer a {
   width: 100%;
 }
 
+.reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__left {
+  width: 55vw;
+  padding: 0 100px;
+}
+.reviews__left h3 {
+  text-align: center;
+  font-size: 60px;
+}
+.reviews__left h3 span {
+  color: #c4915e;
+}
+
+.reviews__right {
+  width: 45vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reviews__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reviews__left {
+    padding: 0 20px;
+  }
+  .reviews__left h3 {
+    font-size: 7vw;
+  }
+  .reviews__right {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .reviews__left {
+    width: 100vw;
+  }
+}
 /*==========  Desktop First Method  ==========*/
 .mob {
   display: none;
