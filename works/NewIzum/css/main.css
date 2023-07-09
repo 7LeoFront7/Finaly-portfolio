@@ -1548,6 +1548,145 @@ footer a {
   width: 100%;
 }
 
+.price__body {
+  display: flex;
+  color: #030303;
+}
+.price__body .price__left {
+  flex: 1 1 50%;
+}
+.price__body .price__right {
+  flex: 1 1 50%;
+}
+.price__body select {
+  border-radius: 15px;
+  border: 1px solid #030303;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 28px;
+  border-radius: 29px;
+  border: 2px solid #000;
+  background: #FFF;
+  text-align: center;
+}
+
+.price-box-select {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.price-box-title h2 {
+  margin-top: 30px;
+  color: #030303;
+  font-family: Nunito;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.4%;
+}
+
+.price-box-zona-title {
+  color: #000;
+  margin-top: 20px;
+  font-family: Nunito;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price-box-opisneaAndPrice {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price-box-opisneaAndPrice span {
+  color: #A6A6A6;
+  text-decoration: line-through;
+}
+
+.price-box-recomend-p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 29px;
+  margin-top: 30px;
+  padding-left: 30px;
+  max-width: 500px;
+}
+
+.aboment5, .aboment10 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.aboment5 span, .aboment10 span {
+  color: #A6A6A6;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1300px) {
+  .price-box-title h2 {
+    font-size: 50px;
+  }
+  .price__body {
+    flex-wrap: wrap;
+  }
+  .price__photo img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 521px) {
+  .price-box-title h2 {
+    font-size: 7vw;
+  }
+  .price__body select {
+    font-size: 5vw;
+  }
+  .price-box-zona-title {
+    font-size: 6vw;
+  }
+  .price-box-opisneaAndPrice {
+    font-size: 4vw;
+  }
+  .price-box-recomend-p {
+    font-size: 5vw;
+  }
+  .aboment5, .aboment10 {
+    font-size: 4vw;
+    padding: 15px 25px;
+  }
+  .price__left {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 521px) {
+  .price__body select {
+    font-size: 4vw;
+  }
+}
 .map__container {
   margin: 100px 0;
   display: flex;
@@ -1727,7 +1866,7 @@ footer a {
 }
 .masters .swiper-slide img {
   display: block;
-  width: 80%;
+  width: 220%;
   cursor: pointer;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1753,12 +1892,16 @@ footer a {
   }
   .masters {
     margin: 100px 0;
-    height: 278px;
+    height: 406px;
   }
   .masters h4 {
     font-size: 4vw;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+  }
+  .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+    display: flex;
+    gap: 150px;
   }
 }
 /*==========  Desktop First Method  ==========*/
