@@ -64,7 +64,7 @@ let priceOpis = document.querySelector('.price-box-opic')
 let priceNew = document.querySelector('.priceNew')
 let priceOld = document.querySelector('.priceOld')
 
-window.addEventListener('click', function(){
+window.addEventListener('change', function(){
 
   if (selectPol.value == 'men'){
     if (selectZona.value == '2zon'){
