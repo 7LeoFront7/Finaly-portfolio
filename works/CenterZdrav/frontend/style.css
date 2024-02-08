@@ -1,0 +1,243 @@
+@keyframes formAnimation {
+  0%{
+    transform: translate(300%, -50%);
+  }
+  100%{
+    transform: translate(160%, -50%);
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: none;
+}
+
+
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #fcfcfc;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 0 15px 2px #d1d1d1;
+  border-radius: 0 0 10px 10px;
+  color: rgb(61, 61, 225);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.header__Btn{
+  padding: 10px 15px;
+  color: rgb(61, 61, 225);
+  border: 2px solid rgb(61, 61, 225);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: .3s;
+}
+
+.header__Btn:hover{
+  background-color: rgb(61, 61, 225);
+  color: #ffffff;
+}
+
+.filter__input{
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.table{
+  width: 100%;
+  border: 2px solid rgb(61, 61, 225);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.table th{
+  padding: 15px;
+}
+
+.table__title{
+  background-color: rgb(255, 255, 255);
+  color: rgb(61, 61, 225);
+  font-weight: bold;
+  border: 2px solid rgb(61, 61, 225);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.table__title:hover{
+  background-color: rgb(61, 61, 225);
+  color: #fff
+}
+
+.table__svg{
+  width: 25px;
+  position: relative;
+  top: 6px;
+  left: 5px;
+  transition: .3s;
+  stroke: rgb(61, 61, 225);
+}
+
+.table__title:hover .table__svg{
+  stroke: rgb(255, 255, 255);
+}
+
+.table__student{
+  font-weight: normal;
+  border: 1px solid #ababab;
+}
+
+.wrapperForm{
+  position: absolute;
+  top: 0;right: 0px;left: 0;bottom: 0;
+  background-color: #0000009d;
+  z-index: 1;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  transition: .5s;
+}
+
+.sortAz{
+  background-color: #596bd6;
+
+  color: #fff;
+}
+
+.sortAz .table__svg{
+  stroke: #fff;
+}
+
+.btn-reset{
+  border-color: #cd4545;
+  color: #cd4545;
+  margin-right: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: .3s;
+}
+
+.btn-reset:hover{
+  background-color: #cd4545;
+  color: #ffffff;
+}
+.sortZa{
+  background-color: #596bd6;
+
+  color: #fff;
+}
+
+.delete{
+  background-color: #cd4545;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.delete:hover{
+  background-color: #fe2020;
+}
+
+.sortZa .table__svg{
+  stroke: #fff;
+}
+
+.open{
+  display: block;
+  opacity: 1;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  position: absolute;
+  background-color: #6556b3;
+  padding: 30px;
+  border-radius: 15px 0 0 15px;
+  height: 100vh;
+  width: 600px;
+  top: 50%;
+  right: 50%;
+  transform: translate(300%, -50%);
+  box-shadow: 0 0 15px 2px #363636;
+  transition: .3s;
+}
+.openForm{
+  animation: formAnimation .5s;
+  animation-fill-mode: forwards;
+}
+
+.form h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__input{
+  padding: 15px 25px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.form__descrp{
+  font-size: 14px;
+  color: #fcfcfc;
+  margin-bottom: 5px;
+}
+
+.form__btn{
+  padding: 20px 25px;
+  width: 100%;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-radius: 6px;
+  background-color: #18ae45;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form__btn:hover{
+  background-color: #29d65d;
+}
