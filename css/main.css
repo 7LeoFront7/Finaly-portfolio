@@ -2336,6 +2336,11 @@ body {
   padding: 15px 0;
 }
 
+.linkTG a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media all and (max-width: 600px) {
   .about__text p {
     line-height: 20px;
