@@ -71,8 +71,8 @@ const tableBody = document.querySelector('.table__body')
 
 function getStudentItem(studentObj) { // Рендер одного студента
 
-  const ageStudent = currentYear - studentObj.birthday.substr(-4);
-  let kurs = currentYear - studentObj.studyStart
+  const ageStudent = currentYear - studentObj.dateOfBirths.substr(-4)
+  let kurs = currentYear - studentObj.dateOfStudy
 
   const btnDeleteStudent = document.createElement('button')
   btnDeleteStudent.classList.add('delete')
@@ -99,10 +99,10 @@ function getStudentItem(studentObj) { // Рендер одного студен�
     kurs = `${kurs} Курс`
   }
 
-  thFIO.innerHTML = `${studentObj.surname} ${studentObj.name} ${studentObj.lastname}`
+  thFIO.innerHTML = `${studentObj.middleName} ${studentObj.firstName} ${studentObj.lastName}`
   thFacul.innerHTML = `${studentObj.faculty}`
-  thBirth.innerHTML = `${studentObj.birthday} (${ageStudent} лет)`
-  thStudy.innerHTML = `${studentObj.studyStart}-${Number(studentObj.studyStart) + 4} (${kurs})`
+  thBirth.innerHTML = `${studentObj.dateOfBirths} (${ageStudent} лет)`
+  thStudy.innerHTML = `${studentObj.dateOfStudy}-${Number(studentObj.dateOfStudy) + 4} (${kurs})`
   thDelete.append(btnDeleteStudent)
 
   btnDeleteStudent.id = studentObj.id
@@ -115,16 +115,24 @@ function getStudentItem(studentObj) { // Рендер одного студен�
 
   tableBody.append(tr)
 
-  btnDeleteStudent.addEventListener('click', async function(){
+  btnDeleteStudent.addEventListener('click', async function () {
 
-    const response = await fetch(`http://localhost:3000/api/students/${studentObj.id}`,{
+    const response = await fetch(`https://6548a4896fd5371e.mokky.dev/students/${studentObj.id}`, {
       method: 'DELETE',
-    });
+    })
 
     renderStudentsTable()
 
   })
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -134,13 +142,14 @@ let studentsList = []
 async function renderStudentsTable(studentsArray) { // Рендер всех студентов
   tableBody.innerHTML = ''
 
-  const response = await fetch('http://localhost:3000/api/students')
+  const response = await fetch('https://6548a4896fd5371e.mokky.dev/students')
   const data = await response.json()
 
-  let newArrStud = []
+  let arr = data
+  studentsList = [...arr]
+  let newArrStud = [...studentsList]
 
-  if (studentsArray === undefined){
-    studentsList = [...data]
+  if (studentsArray === undefined) {
     newArrStud = [...studentsList]
   } else {
     newArrStud = [...studentsArray]
@@ -156,21 +165,23 @@ async function renderStudentsTable(studentsArray) { // Рендер всех с�
   }
   if (inputFilterFullName.value.trim() != '') {
     newArrStud = newArrStud.filter(function (oneStudent) {
-      const fullName = `${oneStudent.name} ${oneStudent.lastname} ${oneStudent.surname}`
+      const fullName = `${oneStudent.firstName} ${oneStudent.lastName} ${oneStudent.middleName}`
       if (fullName.includes(inputFilterFullName.value.trim())) {
         return true
       }
     })
   }
 
-  if (inputFilterStudy.value.trim() != '') {
+  if (inputFilterStudy.value.trim() !== '') {
     newArrStud = newArrStud.filter(function (oneStudent) {
 
-      if (oneStudent.studyStart.includes(inputFilterStudy.value.trim())) {
+      if (oneStudent.dateOfStudy.toString().trim().includes(inputFilterStudy.value)) {
         return true
       }
     })
   }
+
+
   if (inputFilterBirth.value.trim() != '') {
 
     newArrStud = newArrStud.filter(function (oneStudent) {
@@ -186,7 +197,7 @@ async function renderStudentsTable(studentsArray) { // Рендер всех с�
 
       let date = `${dateDay}.${dateMonth}.${dateYear}`
 
-      if (date == oneStudent.birthday) {
+      if (date == oneStudent.dateOfBirths) {
         return true
       }
     })
@@ -261,29 +272,29 @@ formBtn.addEventListener('click', async function (e) { // Добавление �
   }
 
 
-  const response = await fetch('http://localhost:3000/api/students',{
+  const response = await fetch('https://6548a4896fd5371e.mokky.dev/students', {
     method: 'POST',
     body: JSON.stringify({
-      name: fullNameStudentArray[1],
-      lastname: fullNameStudentArray[2],
-      surname: fullNameStudentArray[0],
+      firstName: fullNameStudentArray[1],
+      lastName: fullNameStudentArray[2],
+      middleName: fullNameStudentArray[0],
       faculty: facultyStudent,
-      birthday: birthsStudentDay,
-      studyStart: studyStudent
+      dateOfBirths: birthsStudentDay,
+      dateOfStudy: studyStudent
     }),
     headers: {
       'Content-Type': 'application/json'
     }
-  });
+  })
   const student = await response.json()
 
   renderStudentsTable()
   closeFormAddStudent()
 
-  inputFullName.value = '';
-  inputFaculty.value = '';
-  inputStudy.value = '';
-  inputBirths.value = '';
+  inputFullName.value = ''
+  inputFaculty.value = ''
+  inputStudy.value = ''
+  inputBirths.value = ''
 })
 
 // Этап 5. Создайте функцию сортировки массива студентов и добавьте события кликов на соответствующие колонки.
@@ -378,8 +389,8 @@ function sortStudents(studentsArr, item) {
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
           if (arrStudents[j].faculty.toLowerCase() > arrStudents[j + 1].faculty.toLowerCase()) {
-            let temp;
-            temp = arrStudents[j];
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -389,8 +400,8 @@ function sortStudents(studentsArr, item) {
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
           if (arrStudents[j].faculty.toLowerCase() < arrStudents[j + 1].faculty.toLowerCase()) {
-            let temp;
-            temp = arrStudents[j];
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -402,9 +413,9 @@ function sortStudents(studentsArr, item) {
     if (tableBtnFullName.className.split(' ')[2] == 'sortAz') {
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
-          if (arrStudents[j].lastname.toLowerCase() > arrStudents[j + 1].lastname.toLowerCase()) {
-            let temp;
-            temp = arrStudents[j];
+          if (arrStudents[j].middleName.toLowerCase() > arrStudents[j + 1].middleName.toLowerCase()) {
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -413,9 +424,9 @@ function sortStudents(studentsArr, item) {
     } else if (tableBtnFullName.className.split(' ')[2] == 'sortZa') {
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
-          if (arrStudents[j].lastname.toLowerCase() < arrStudents[j + 1].lastname.toLowerCase()) {
-            let temp;
-            temp = arrStudents[j];
+          if (arrStudents[j].middleName.toLowerCase() < arrStudents[j + 1].middleName.toLowerCase()) {
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -430,12 +441,12 @@ function sortStudents(studentsArr, item) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
 
 
-          let newStudentDate = dateInNumber(arrStudents[j].birthday)
-          let newStudentDate2 = dateInNumber(arrStudents[j + 1].birthday)
+          let newStudentDate = dateInNumber(arrStudents[j].dateOfBirths)
+          let newStudentDate2 = dateInNumber(arrStudents[j + 1].dateOfBirths)
 
           if (newStudentDate - newCurrentDate > newStudentDate2 - newCurrentDate) {
-            let temp;
-            temp = arrStudents[j];
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -445,12 +456,12 @@ function sortStudents(studentsArr, item) {
       let newCurrentDate = dateInNumber(currentDate)
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
-          let newStudentDate = dateInNumber(arrStudents[j].birthday)
-          let newStudentDate2 = dateInNumber(arrStudents[j + 1].birthday)
+          let newStudentDate = dateInNumber(arrStudents[j].dateOfBirths)
+          let newStudentDate2 = dateInNumber(arrStudents[j + 1].dateOfBirths)
 
           if (newStudentDate - newCurrentDate < newStudentDate2 - newCurrentDate) {
-            let temp;
-            temp = arrStudents[j];
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -464,9 +475,9 @@ function sortStudents(studentsArr, item) {
       for (let i = 0; i < arrStudents.length; i++) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
 
-          if (arrStudents[j].studyStart < arrStudents[j + 1].studyStart) {
-            let temp;
-            temp = arrStudents[j];
+          if (arrStudents[j].dateOfStudy < arrStudents[j + 1].dateOfStudy) {
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
@@ -478,9 +489,9 @@ function sortStudents(studentsArr, item) {
         for (let j = 0; j < arrStudents.length - 1; j++) {
 
 
-          if (arrStudents[j].studyStart > arrStudents[j + 1].studyStart) {
-            let temp;
-            temp = arrStudents[j];
+          if (arrStudents[j].dateOfStudy > arrStudents[j + 1].dateOfStudy) {
+            let temp
+            temp = arrStudents[j]
             arrStudents[j] = arrStudents[j + 1]
             arrStudents[j + 1] = temp
           }
