@@ -1929,8 +1929,14 @@ body {
 .about__text span {
   font-family: "Anonymous Pro", monospace;
   font-weight: bold;
-  font-size: 30px;
-  color: rgb(65, 0, 205);
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.spanText {
+  color: #6200ff;
 }
 
 .about__text {
