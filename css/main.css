@@ -2341,6 +2341,11 @@ body {
   color: #fff;
 }
 
+.linkTG-mob a {
+  position: relative;
+  bottom: 16px;
+}
+
 @media all and (max-width: 600px) {
   .about__text p {
     line-height: 20px;
